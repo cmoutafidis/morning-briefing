@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>local.morning-briefing.push</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/cmoutafidis/Documents/projects/personal/morning-briefing/scripts/push.sh</string>
+  </array>
+
+  <!-- Push whenever a new commit lands on main -->
+  <key>WatchPaths</key>
+  <array>
+    <string>/Users/cmoutafidis/Documents/projects/personal/morning-briefing/.git/refs/heads/main</string>
+  </array>
+
+  <!-- Daily fallback at 07:20 local time -->
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>7</integer>
+    <key>Minute</key>
+    <integer>20</integer>
+  </dict>
+
+  <!-- Push the current commit immediately when the agent is (re)loaded -->
+  <key>RunAtLoad</key>
+  <true/>
+
+  <key>StandardOutPath</key>
+  <string>/Users/cmoutafidis/Library/Logs/morning-briefing-push.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/cmoutafidis/Library/Logs/morning-briefing-push.log</string>
+</dict>
+</plist>
