@@ -71,9 +71,28 @@
     return html + "</section>";
   }
 
+  function renderChecklist(cl) {
+    if (!cl || !cl.groups || !cl.groups.length) return "";
+    var html = '<section class="section"><h2 class="section__label">Your To-dos</h2>';
+    cl.groups.forEach(function (g) {
+      html += '<div class="todo-group"><h3 class="todo-group__title">' + esc(g.name) + "</h3>";
+      if (g.tasks && g.tasks.length) {
+        html += '<ul class="todo-list">';
+        g.tasks.forEach(function (t) { html += '<li class="todo-item">' + esc(t) + "</li>"; });
+        html += "</ul>";
+      } else {
+        html += '<p class="empty todo-empty">No open tasks.</p>';
+      }
+      html += "</div>";
+    });
+    if (cl.url) html += '<p class="todo-src"><a href="' + esc(cl.url) + '" target="_blank" rel="noopener noreferrer">Open checklist ↗</a></p>';
+    return html + "</section>";
+  }
+
   function renderBriefing(b) {
     return (b.greeting ? '<p class="greeting">' + esc(b.greeting) + "</p>" : "") +
       renderCalendar(b.calendar) +
+      renderChecklist(b.checklist) +
       renderNews(b.news);
   }
 

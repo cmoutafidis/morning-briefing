@@ -161,6 +161,37 @@ body {
 }
 .empty { color: hsl(var(--muted-foreground)); font-size: 0.92rem; margin: 0; }
 
+/* ---------- To-dos ---------- */
+.todo-group { margin-bottom: 0.9rem; }
+.todo-group:last-child { margin-bottom: 0; }
+.todo-group__title {
+  margin: 0 0 0.45rem;
+  font-size: 0.92rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+.todo-list { margin: 0; padding: 0; list-style: none; }
+.todo-item {
+  position: relative;
+  padding-left: 1.65rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+.todo-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.15em;
+  width: 1.05rem;
+  height: 1.05rem;
+  border: 2px solid hsl(var(--muted-foreground));
+  border-radius: 999px;
+}
+.todo-empty { margin: 0.1rem 0 0; }
+.todo-src { margin: 0.65rem 0 0; font-size: 0.82rem; }
+.todo-src a { color: hsl(var(--link)); text-decoration: none; }
+.todo-src a:hover { text-decoration: underline; }
+
 /* ---------- News ---------- */
 .news-group { margin-bottom: 1.1rem; }
 .news-group:last-child { margin-bottom: 0; }

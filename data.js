@@ -33,6 +33,14 @@ window.BRIEFINGS = [
       ],
       note: `Otherwise clear — nothing else scheduled this afternoon or evening.`
     },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Followup PAP Center`] },
+        { name: `Tasklist B`, tasks: [] }
+      ]
+    },
     news: [
       {
         group: "AI & ML",
