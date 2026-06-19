@@ -23,6 +23,96 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Friday, June 19, 2026`,
+    iso: `2026-06-19`,
+    greeting: `Good morning — here's your briefing for Friday, June 19, 2026 (Juneteenth). One fixed item today: a 09:00 bank visit. Two open to-dos and no leads due for follow-up.`,
+    calendar: {
+      allDay: [`Juneteenth (US holiday)`],
+      events: [
+        { time: `09:00–10:00`, title: `τραπεζα (bank)`, calendar: `charis@fijisolutions.net` }
+      ],
+      note: `Otherwise clear — nothing scheduled this afternoon or evening.`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Followup PAP Center`] },
+        { name: `Tasklist B`, tasks: [] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: []
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `Claude Fable 5 came back online after a six-day government-forced shutdown, restored following Anthropic–White House negotiations.`, source: `AI Update, Jun 18`, url: `https://medium.com/adi-insights-innovations-collective/ai-update-thursday-june-18-2026-f74c93022f92` },
+          { text: `Google made Gemini 2.5 Flash the default model across all Gemini products.`, source: `AI Update, Jun 18`, url: `https://medium.com/adi-insights-innovations-collective/ai-update-thursday-june-18-2026-f74c93022f92` },
+          { text: `Northwestern engineers printed artificial neurons that communicate with biological ones, advancing brain-machine interfaces.`, source: `ScienceDaily`, url: `https://www.sciencedaily.com/news/computers_math/artificial_intelligence/` }
+        ]
+      },
+      {
+        group: `Tech & startups`,
+        section: `global`,
+        items: [
+          { text: `Anthropic surpassed OpenAI in annualized revenue for the first time, hitting a ~$30B run rate (OpenAI ~$25–27B).`, source: `Tech Startups, Jun 18`, url: `https://techstartups.com/2026/06/18/top-tech-news-today-june-18-2026/` },
+          { text: `VivaTech 2026 becomes a key test of whether Europe can convert regulatory ambition into competitive AI firms as US labs pull ahead on compute.`, source: `Tech Startups, Jun 18`, url: `https://techstartups.com/2026/06/18/top-tech-news-today-june-18-2026/` },
+          { text: `Crunchbase flags a 2026 IPO boom and more large AI M&A among the year's top startup trends.`, source: `Crunchbase News`, url: `https://news.crunchbase.com/venture/2026-tech-startup-trends-ipo-ai-ma/` }
+        ]
+      },
+      {
+        group: `Software engineering`,
+        section: `global`,
+        items: [
+          { text: `AI coding tools dominate dev chatter — Claude Code stays most-used (46% "most loved") while OpenCode debuts at #1 in the latest rankings.`, source: `LogRocket`, url: `https://blog.logrocket.com/ai-dev-tool-power-rankings/` },
+          { text: `Google sunsets Gemini CLI on June 18, replaced by the Go-based Antigravity CLI with async workflows.`, source: `The Developer's World`, url: `https://medium.com/@umarhussainkhokhar1234/the-developers-world-in-june-2026-everything-that-s-changing-right-now-1de29f6d695e` },
+          { text: `Anthropic shipped the Claude Agent SDK (TypeScript & Python) with native MCP server and sub-agent support.`, source: `The Developer's World`, url: `https://medium.com/@umarhussainkhokhar1234/the-developers-world-in-june-2026-everything-that-s-changing-right-now-1de29f6d695e` }
+        ]
+      },
+      {
+        group: `Crypto`,
+        section: `global`,
+        items: [
+          { text: `Bitcoin slid to ~$62,300 as a hawkish Fed weighed on prices and a US–Iran signing faltered.`, source: `BlockchainReporter`, url: `https://blockchainreporter.net/crypto-market-today-june-19-2026-bitcoin-62328-iran-signing-collapses/` },
+          { text: `US spot Bitcoin ETFs saw an $82.2M net outflow on June 17, extending a ~$2B monthly drain.`, source: `BlockchainReporter`, url: `https://blockchainreporter.net/bitcoin-news-today/` },
+          { text: `BlackRock launched the iShares Bitcoin Premium Income ETF (BITA) on Nasdaq, a covered-call income strategy.`, source: `BlockchainReporter`, url: `https://blockchainreporter.net/bitcoin-news-today/` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `The US and Iran reached a preliminary peace agreement, though the planned signing ceremony has hit obstacles.`, source: `NPR World`, url: `https://www.npr.org/sections/world/` },
+          { text: `Labour's Andy Burnham won a by-election, positioning him to challenge PM Keir Starmer for the party's leadership.`, source: `NPR`, url: `https://www.npr.org/sections/news` },
+          { text: `World Cup 2026: Mexico reached the knockout stage; Scotland face Morocco in Boston tonight with a place in the last 16 on the line.`, source: `ESPN`, url: `https://www.espn.com/soccer/story/_/id/49114848/world-cup-2026-today-blog-19-06-2026-live-updates-news-fixtures-schedule-results-mexico-canada-win` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `Switzerland beat Bosnia-Herzegovina 4-1 to take control of its World Cup group, sparked by Johan Manzambi's late volley.`, source: `ESPN`, url: `https://www.espn.com/soccer/match/_/gameId/760439/bosnia-herzegovina-switzerland` },
+          { text: `Swiss parliament backed the government's proposal to allow construction of new nuclear power stations.`, source: `swissinfo`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `France–Geneva border crossings reopened earlier than planned after the G7 summit in Evian.`, source: `The Local CH`, url: `https://www.thelocal.ch/20260618/today-in-switzerland-a-roundup-of-the-latest-news-on-thursday-242` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `Scaffolding was removed from the Parthenon's western façade after restoration of its western pediment.`, source: `GreekReporter`, url: `https://greekreporter.com/greek-news/` },
+          { text: `A US Senate committee approved the Eastern Mediterranean Gateway Act.`, source: `Greek City Times`, url: `https://greekcitytimes.com/` },
+          { text: `The Corinth Canal is being fully reopened to maritime traffic.`, source: `Keep Talking Greece`, url: `https://www.keeptalkinggreece.com/` }
+        ]
+      }
+    ]
+  },
+  {
     date: "Friday, June 19, 2026",
     iso: "2026-06-19",
     greeting: `Good morning — here's your briefing for Friday, June 19, 2026. It's Juneteenth (US holiday), and your only fixed item is a 09:00 bank visit.`,
