@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="Daily morning briefing — calendar and news." />
+  <title>Morning Briefing</title>
+  <link rel="preconnect" href="https://rsms.me/" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <div class="site-header__titles">
+        <h1 class="site-title">Morning Briefing</h1>
+        <p id="latest-date" class="site-subtitle">—</p>
+      </div>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle theme">
+        <span class="theme-toggle__icon" aria-hidden="true"></span>
+      </button>
+    </header>
+
+    <main id="content">
+      <!-- Rendered by app.js -->
+    </main>
+
+    <footer class="site-footer">
+      <span id="archive-count"></span>
+      <span class="site-footer__dot">·</span>
+      <span>Updated automatically each morning</span>
+    </footer>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
