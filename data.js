@@ -25,77 +25,77 @@ window.BRIEFINGS = [
   {
     date: "Friday, June 19, 2026",
     iso: "2026-06-19",
-    greeting: `Good morning — here's your briefing for Friday, June 19, 2026.`,
+    greeting: `Good morning — here's your briefing for Friday, June 19, 2026. It's Juneteenth (US holiday), and your only fixed item is a 09:00 bank visit.`,
     calendar: {
       allDay: [`Juneteenth (US holiday)`],
       events: [
         { time: "09:00–10:00", title: `τράπεζα (bank)`, calendar: `charis@fijisolutions.net` }
       ],
-      note: `Otherwise clear — nothing scheduled this afternoon or evening.`
+      note: `Otherwise clear — nothing else scheduled this afternoon or evening.`
     },
     news: [
       {
         group: "AI & ML",
         section: "global",
         items: [
-          { text: `ChatGPT reportedly crossed 1 billion monthly active users.`, source: `AI Update, Jun 12`, url: `https://www.marketingprofs.com/opinions/2026/54994/ai-update-june-12-2026-ai-news-and-views-from-the-past-week` },
-          { text: `Visa × ChatGPT: users can connect payment credentials to let the AI agent search for and buy products directly.`, source: `AI News, Jun 8`, url: `https://www.buildfastwithai.com/blogs/ai-news-today-june-8-2026` },
-          { text: `Trump signed a revised AI + cybersecurity executive order directing federal AI cyber-capability benchmarking.`, source: `AI Update, Jun 12`, url: `https://www.marketingprofs.com/opinions/2026/54994/ai-update-june-12-2026-ai-news-and-views-from-the-past-week` },
-          { text: `Study finds top models' attention degrades sharply as tasks get longer and more complex.`, source: `ScienceDaily`, url: `https://www.sciencedaily.com/news/computers_math/artificial_intelligence/` }
+          { text: `MIT researchers show a small AI model can outperform the largest ones at roughly 1% of the cost.`, source: `MIT News`, url: `https://news.mit.edu/topic/machine-learning` },
+          { text: `UPenn's "Mollifier Layers" stabilize neural nets solving inverse PDEs, with results headed to NeurIPS 2026.`, source: `ScienceDaily`, url: `https://www.sciencedaily.com/news/computers_math/artificial_intelligence/` },
+          { text: `The industry's big shift is agentic systems — moving AI from chat to task completion across coding, support, payments and commerce.`, source: `AI News`, url: `https://www.artificialintelligence-news.com/` },
+          { text: `A new "ChartNet" dataset aims to improve how vision-language models read charts and scientific figures.`, source: `MIT News`, url: `https://news.mit.edu/topic/machine-learning` }
         ]
       },
       {
         group: "Tech & startups",
         section: "global",
         items: [
-          { text: `Hark closed a Series A north of $700M at a $6B valuation.`, source: `Funding roundup`, url: `https://blog.mean.ceo/tech-startup-funding-news-june-2026/` },
-          { text: `Ramp raised $500M (Series E) and Tennr $101M (Series C); AI is absorbing ~half of global VC.`, source: `Funding news`, url: `https://blog.mean.ceo/startup-funding-news-june-2026/` }
+          { text: `Anthropic surpassed OpenAI in annualized revenue for the first time, hitting a ~$30B run rate (OpenAI ~$25–27B).`, source: `Tech Startups, Jun 18`, url: `https://techstartups.com/2026/06/18/top-tech-news-today-june-18-2026/` },
+          { text: `VivaTech 2026 becomes a key test of whether Europe can turn regulatory ambition into competitive AI firms as US labs pull ahead on compute.`, source: `Tech Startups, Jun 18`, url: `https://techstartups.com/2026/06/18/top-tech-news-today-june-18-2026/` },
+          { text: `Funding is rotating toward defense tech, robotics, healthtech, compliance and industrial software over hype plays.`, source: `Tech Startups, Jun 18`, url: `https://techstartups.com/2026/06/18/top-tech-news-today-june-18-2026/` }
         ]
       },
       {
         group: "Software engineering",
         section: "global",
         items: [
-          { text: `Vercel launched "eve," an open-source agent framework (announced Jun 17).`, source: `Open-source AI roundup`, url: `https://www.devflokers.com/blog/open-source-ai-roundup-june-2026` },
-          { text: `MiniMax M3 — first open-weight model pairing frontier software-engineering ability with a 1M-token context and native computer use.`, source: `Open-source AI roundup`, url: `https://www.devflokers.com/blog/open-source-ai-roundup-june-2026` },
-          { text: `Gartner projects 80% of software firms adopt Internal Developer Platforms by 2026.`, source: `Developer's World, Jun 2026`, url: `https://medium.com/@umarhussainkhokhar1234/the-developers-world-in-june-2026-everything-that-s-changing-right-now-1de29f6d695e` }
+          { text: `AI coding tools dominate dev chatter — Claude Code stays most-used while OpenCode debuts at #1 in the latest rankings.`, source: `LogRocket`, url: `https://blog.logrocket.com/ai-dev-tool-power-rankings/` },
+          { text: `At Microsoft Build 2026, GitHub Copilot remote control went generally available on github.com and GitHub Mobile.`, source: `GitHub Blog`, url: `https://github.blog/news-insights/` },
+          { text: `Trust gap persists: a Stack Overflow survey found more developers distrust AI tools (46%) than trust them (33%).`, source: `LogRocket`, url: `https://blog.logrocket.com/ai-dev-tool-power-rankings/` }
         ]
       },
       {
         group: "Crypto",
         section: "global",
         items: [
-          { text: `Bitcoin ~$64k, Ethereum grinding a recovery; market cautious but stable.`, source: `Market recap`, url: `https://investingnews.com/cryptocurrency-market-recap/` },
-          { text: `Stellar (XLM) jumped 40%+ after DTCC picked its network for a tokenized-securities rollout.`, source: `CoinDesk`, url: `https://www.coindesk.com/markets/2026/06/01/bitcoin-ether-start-june-in-the-red-while-futures-show-taste-for-risk-xlm-hype-gain` },
-          { text: `Michael Saylor signaled a resumption of Bitcoin accumulation.`, source: `Market recap`, url: `https://investingnews.com/cryptocurrency-market-recap/` }
+          { text: `Bitcoin slipped to ~$62.4k (−2.9%) and Ethereum to ~$1,685 (−3.6%) after the Fed revived rate-hike risk.`, source: `Investing News`, url: `https://investingnews.com/cryptocurrency-market-recap/` },
+          { text: `BlackRock now holds ~764,000 BTC, making it the third-largest bitcoin holder.`, source: `Investing News`, url: `https://investingnews.com/cryptocurrency-market-recap/` },
+          { text: `Wyoming launched the first US state-backed stablecoin, the FRNT token.`, source: `Investing News`, url: `https://investingnews.com/cryptocurrency-market-recap/` }
         ]
       },
       {
         group: "World",
         section: "global",
         items: [
-          { text: `Trump signed a preliminary agreement with Iran to end the war and reopen the Strait of Hormuz.`, source: `Major Events of 2026`, url: `https://www.britannica.com/topic/Major-Events-of-2026` },
-          { text: `U.S. Defense Sec. Hegseth pushed a "NATO 3.0" reboot and a review of U.S. forces in Europe.`, source: `Major Events of 2026`, url: `https://www.britannica.com/topic/Major-Events-of-2026` },
-          { text: `World Cup: Mexico became the first team into the knockouts; FIFA mandated player hydration breaks.`, source: `Major Events of 2026`, url: `https://www.britannica.com/topic/Major-Events-of-2026` },
-          { text: `The Obama Presidential Center opens to the public in Chicago today.`, source: `Major Events of 2026`, url: `https://www.britannica.com/topic/Major-Events-of-2026` }
+          { text: `US–Iran implementation talks in Switzerland were abruptly cancelled, clouding the 14-point deal and its 60-day window.`, source: `NPR World`, url: `https://www.npr.org/sections/world/` },
+          { text: `US Defense Secretary Hegseth pushed a "NATO 3.0" reboot and announced a review of US forces in Europe.`, source: `NPR World`, url: `https://www.npr.org/sections/world/` },
+          { text: `World Cup 2026: Scotland faces Morocco in Boston tonight; FIFA has mandated player hydration breaks amid extreme heat.`, source: `ESPN`, url: `https://www.espn.com/soccer/story/_/id/49114848/world-cup-2026-today-blog-19-06-2026-live-updates-news-fixtures-schedule-results-mexico-canada-win` }
         ]
       },
       {
         group: "Switzerland",
         section: "local",
         items: [
-          { text: `Voters rejected the People's Party plan to cap the population at 10 million (Jun 14 vote).`, source: `swissinfo`, url: `https://www.swissinfo.ch/eng/swiss-politics/june-14-2026-votes-results-from-across-switzerland/91505856` },
-          { text: `G7 summit ran Jun 15–17 in Évian; Switzerland held temporary border controls Jun 10–19.`, source: `Swiss federal admin`, url: `https://www.eda.admin.ch/en/g7-summit-in-evian` },
-          { text: `The Swiss National Bank held its key rate at 0%; SECO nudged its GDP forecast down, citing the war in Iran.`, source: `iamexpat`, url: `https://www.iamexpat.ch/expat-info/swiss-news/june-2026-8-key-updates-radar-expats-switzerland` }
+          { text: `Switzerland beat Bosnia and Herzegovina 4-1 at the World Cup, bouncing back from a 1-1 draw with Qatar.`, source: `The Local CH`, url: `https://www.thelocal.ch/20260619/today-in-switzerland-a-roundup-of-the-latest-news-on-friday-248` },
+          { text: `Switzerland slipped to 3rd in the 2026 World Competitiveness Report (behind Singapore and Hong Kong) — still tops in Europe.`, source: `swissinfo`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `Planned US–Iran talks at the Bürgenstock resort near Lucerne were called off.`, source: `The Local CH`, url: `https://www.thelocal.ch/20260619/today-in-switzerland-a-roundup-of-the-latest-news-on-friday-248` }
         ]
       },
       {
         group: "Greece",
         section: "local",
         items: [
-          { text: `The "I Renovate" scheme launched, offering up to 95% subsidies for home renovations and energy upgrades across 20,000 properties.`, source: `Greek City Times`, url: `https://greekcitytimes.com/2026/04/19/greece-i-renovate-subsidy-june-2026/` },
-          { text: `Greece marked World Environment Day with 65 events nationwide.`, source: `GreekReporter`, url: `https://greekreporter.com/2026/06/05/world-environment-day-2026-greece/` },
-          { text: `Air traffic controllers publicly criticized the Civil Aviation Authority over delays.`, source: `Keep Talking Greece`, url: `https://www.keeptalkinggreece.com/` }
+          { text: `Greece ranked 2nd in the EU for bathing-water quality in 2026, with 97.1% of waters meeting standards.`, source: `GreekReporter`, url: `https://greekreporter.com/` },
+          { text: `Archaeologists rediscovered a long-lost temple to Poseidon — a dual-chamber sanctuary submerged for centuries.`, source: `GreekReporter`, url: `https://greekreporter.com/` },
+          { text: `Greece is weighing deploying naval units for mine-clearing and security in the Strait of Hormuz.`, source: `Greek City Times`, url: `https://greekcitytimes.com/` }
         ]
       }
     ]
