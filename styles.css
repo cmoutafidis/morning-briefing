@@ -192,6 +192,21 @@ body {
 .todo-src a { color: hsl(var(--link)); text-decoration: none; }
 .todo-src a:hover { text-decoration: underline; }
 
+/* ---------- Follow-up leads ---------- */
+.lead-list { margin: 0; padding: 0; list-style: none; }
+.lead-item {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid hsl(var(--border));
+}
+.lead-item:last-child { border-bottom: none; }
+.lead-name { font-weight: 600; }
+.lead-meta {
+  display: block;
+  color: hsl(var(--muted-foreground));
+  font-size: 0.82rem;
+  margin-top: 0.1rem;
+}
+
 /* ---------- News ---------- */
 .news-group { margin-bottom: 1.1rem; }
 .news-group:last-child { margin-bottom: 0; }

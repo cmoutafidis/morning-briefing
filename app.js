@@ -89,10 +89,34 @@
     return html + "</section>";
   }
 
+  function renderFollowups(fu) {
+    if (!fu || !fu.leads) return "";
+    var html = '<section class="section"><h2 class="section__label">Follow-ups</h2>';
+    if (!fu.leads.length) {
+      html += '<p class="empty">No follow-ups due.</p>';
+    } else {
+      html += '<ul class="lead-list">';
+      fu.leads.forEach(function (l) {
+        var meta = [];
+        if (l.status) meta.push(esc(l.status));
+        if (l.followUp) meta.push("follow-up " + esc(l.followUp));
+        if (l.email) meta.push(esc(l.email));
+        html += '<li class="lead-item"><span class="lead-name">' + esc(l.name) + "</span>" +
+          (l.company ? '<span class="lead-co"> · ' + esc(l.company) + "</span>" : "") +
+          (meta.length ? '<span class="lead-meta">' + meta.join(" · ") + "</span>" : "") +
+          "</li>";
+      });
+      html += "</ul>";
+    }
+    if (fu.url) html += '<p class="todo-src"><a href="' + esc(fu.url) + '" target="_blank" rel="noopener noreferrer">Open outreach ↗</a></p>';
+    return html + "</section>";
+  }
+
   function renderBriefing(b) {
     return (b.greeting ? '<p class="greeting">' + esc(b.greeting) + "</p>" : "") +
       renderCalendar(b.calendar) +
       renderChecklist(b.checklist) +
+      renderFollowups(b.followups) +
       renderNews(b.news);
   }
 

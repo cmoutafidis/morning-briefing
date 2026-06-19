@@ -41,6 +41,13 @@ window.BRIEFINGS = [
         { name: `Tasklist B`, tasks: [] }
       ]
     },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: [
+        { name: `Θεόδωρος Παπαθεοδώρου`, company: `PAP Center`, status: `Working - Contacted`, followUp: `2026-06-23`, email: `theo@papcenter.gr` }
+      ]
+    },
     news: [
       {
         group: "AI & ML",
