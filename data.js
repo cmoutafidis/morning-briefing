@@ -23,6 +23,94 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Saturday, June 20, 2026`,
+    iso: `2026-06-20`,
+    greeting: `Good morning — here's your briefing for Saturday, June 20, 2026. The calendar's clear today, two open to-dos remain in Tasklist A, and no leads are due for follow-up (PAP Center is next, on June 23).`,
+    calendar: {
+      allDay: [],
+      events: [],
+      note: `Nothing scheduled today. (Based on your Google calendar — the macOS Calendar work account couldn't be reached this run.)`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Followup PAP Center`] },
+        { name: `Tasklist B`, tasks: [] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: []
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `OpenAI launched DeployCo, a majority-owned enterprise unit with $4B+ in initial funding to help companies build and deploy AI systems.`, source: `LLM Stats`, url: `https://llm-stats.com/ai-news` },
+          { text: `A crowded June model wave is forming: Google's Gemini 3.5 Pro is expected this month, alongside xAI's Grok 5 and Anthropic's limited-access Claude Mythos 1.`, source: `WaveSpeed`, url: `https://wavespeed.ai/blog/posts/june-2026-ai-launch-wave/` },
+          { text: `Reuters Institute's Digital News Report 2026 finds 10% of people now use AI chatbots for news each week, up from 7% a year ago.`, source: `AI News`, url: `https://www.artificialintelligence-news.com/` }
+        ]
+      },
+      {
+        group: `Tech & startups`,
+        section: `global`,
+        items: [
+          { text: `Anthropic surpassed OpenAI in annualized revenue for the first time, reaching a roughly $30B run rate (OpenAI ~$25–27B).`, source: `Tech Startups, Jun 18`, url: `https://techstartups.com/2026/06/18/top-tech-news-today-june-18-2026/` },
+          { text: `Investors are pivoting from thin "AI wrapper" startups toward vertical AI in law, healthcare, logistics and finance, plus climate and cybersecurity tooling.`, source: `Mean CEO`, url: `https://blog.mean.ceo/startup-trends-news-june-2026/` },
+          { text: `A wave of ransomware attacks is hitting education-technology providers and schools.`, source: `Tech Startups, Jun 18`, url: `https://techstartups.com/2026/06/18/top-tech-news-today-june-18-2026/` }
+        ]
+      },
+      {
+        group: `Software engineering`,
+        section: `global`,
+        items: [
+          { text: `Microsoft Build 2026: Work IQ APIs reached general availability June 16, giving agents access to email, calendar, files and line-of-business context.`, source: `DEV Community`, url: `https://dev.to/pwd9000/microsoft-build-2026-top-announcements-from-a-devops-lens-419k` },
+          { text: `MiniMax M3 launched as the first open-weight model pairing frontier-tier software-engineering ability with a 1M-token context window and native computer use.`, source: `devFlokers`, url: `https://www.devflokers.com/blog/open-source-ai-roundup-june-2026` },
+          { text: `Claude Code is mid-2026's most-used AI coding tool (46% "most loved"); developer awareness jumped from 31% to 57%.`, source: `Medium`, url: `https://medium.com/@umarhussainkhokhar1234/the-developers-world-in-june-2026-everything-that-s-changing-right-now-1de29f6d695e` }
+        ]
+      },
+      {
+        group: `Crypto`,
+        section: `global`,
+        items: [
+          { text: `Bitcoin slid for a 4th straight day to about $62,900 (−2.4%) and Ethereum to about $1,709 (−2.2%) following the Fed's decision.`, source: `Yahoo Finance, Jun 19`, url: `https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-june-19-2026-prices-keep-falling-post-fed-decision-123239380.html` },
+          { text: `The FHFA director ordered Fannie Mae and Freddie Mac to prepare to count cryptocurrency as an asset in mortgage applications.`, source: `Yahoo Finance, Jun 19`, url: `https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-june-19-2026-prices-keep-falling-post-fed-decision-123239380.html` },
+          { text: `Microsoft flagged malware that hijacks crypto wallets and spreads through USB sticks.`, source: `Yahoo Finance, Jun 19`, url: `https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-june-19-2026-prices-keep-falling-post-fed-decision-123239380.html` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `The US and Iran signed a 14-point memorandum of understanding to end the war, signed by Trump at a Versailles dinner after the G7 wrapped in Évian.`, source: `Britannica`, url: `https://www.britannica.com/event/2026-Iran-war` },
+          { text: `Israel and Hezbollah agreed to halt fighting as the US–Iran deal came together.`, source: `Democracy Now, Jun 18`, url: `https://www.democracynow.org/2026/6/18/headlines` },
+          { text: `Ukraine launched one of its largest attacks on Moscow since the start of Russia's full-scale invasion.`, source: `NPR World`, url: `https://www.npr.org/sections/world/` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `Switzerland slipped to 3rd in the 2026 IMD World Competitiveness ranking (behind Singapore and Hong Kong) but remains Europe's most competitive.`, source: `The Local CH, Jun 19`, url: `https://www.thelocal.ch/20260619/today-in-switzerland-a-roundup-of-the-latest-news-on-friday-248` },
+          { text: `The Swiss men's national team beat Bosnia & Herzegovina 4-1 at the World Cup after a 1-1 opener with Qatar.`, source: `The Local CH, Jun 19`, url: `https://www.thelocal.ch/20260619/today-in-switzerland-a-roundup-of-the-latest-news-on-friday-248` },
+          { text: `Planned US–Iran talks at the Bürgenstock resort were called off.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `Greece raised concerns over a new Libya offshore energy exploration deal involving Turkish and European firms, tied to the contested Turkey–Libya maritime accord.`, source: `Greek Reporter`, url: `https://greekreporter.com/greek-news/` },
+          { text: `Scaffolding came off the Parthenon's western façade after restoration of its western pediment, Culture Minister Lina Mendoni announced.`, source: `Greek City Times`, url: `https://greekcitytimes.com/` },
+          { text: `Greece ranked 2nd in the EU for bathing-water quality in 2026, with 97.1% of waters meeting standards.`, source: `Keep Talking Greece`, url: `https://www.keeptalkinggreece.com/` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Friday, June 19, 2026`,
     iso: `2026-06-19`,
     greeting: `Good morning — here's your briefing for Friday, June 19, 2026 (Juneteenth). One fixed item today: a 09:00 bank visit. Two open to-dos and no leads due for follow-up.`,
