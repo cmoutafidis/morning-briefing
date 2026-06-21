@@ -23,6 +23,96 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Sunday, June 21, 2026`,
+    iso: `2026-06-21`,
+    greeting: `Good morning — here's your briefing for Sunday, June 21, 2026 (Father's Day in Greece). It's a travel day: you fly Zurich→Prague at 12:35 on LX 1486 and check into the Prague Marriott through Wednesday. Two open to-dos remain in Tasklist A, and no leads are due for follow-up.`,
+    calendar: {
+      allDay: [`Father's Day (Greece observance)`, `Stay: Prague Marriott Hotel (through Jun 24)`],
+      events: [
+        { time: `12:35–13:55`, title: `Flight: LX 1486 from ZRH to PRG`, calendar: `charismoutafidis@gmail.com` }
+      ],
+      note: `Hotel check-in from 15:00 (reservation 72656932). Based on your Google calendar — the macOS Calendar app couldn't be reached this run.`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Followup PAP Center`] },
+        { name: `Tasklist B`, tasks: [] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: []
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `Google made Gemini 2.5 Flash the default model across all Gemini products.`, source: `LLM Stats`, url: `https://llm-stats.com/llm-updates` },
+          { text: `China unveiled a ~$295B national AI infrastructure plan (2 trillion yuan over five years) for interconnected data centers built mostly on domestic chips.`, source: `AI News`, url: `https://www.artificialintelligence-news.com/` },
+          { text: `Northwestern engineers printed artificial neurons that can communicate with biological neurons — a step toward brain–machine interfaces.`, source: `Radical Data Science`, url: `https://radicaldatascience.wordpress.com/2026/06/04/ai-news-briefs-bulletin-board-for-june-2026/` }
+        ]
+      },
+      {
+        group: `Tech & startups`,
+        section: `global`,
+        items: [
+          { text: `Startup funding is concentrating in fewer names: Ramp raised $500M and Tennr $101M in new rounds.`, source: `Tech Funding News`, url: `https://techfundingnews.com/` },
+          { text: `US startups have raised ~$389B across ~3,680 equity rounds so far in 2026, with AI drawing roughly half of global venture funding.`, source: `Tracxn`, url: `https://tracxn.com/d/geographies/united-states/__agFBbaWLXQ9BaxreLIz_EPAASY3VwAK-kFQ6rvJvIco` },
+          { text: `Investors are clustering around AI, logistics, compute and deeptech bets.`, source: `Mean CEO`, url: `https://blog.mean.ceo/tech-startup-funding-news-june-2026/` }
+        ]
+      },
+      {
+        group: `Software engineering`,
+        section: `global`,
+        items: [
+          { text: `Coding agents went team-scale in early June: Cognition's Devin Desktop, Microsoft's Rayfin (Build 2026) and Augment's Cosmos all shipped.`, source: `The New Stack`, url: `https://thenewstack.io/coding-agents-team-infrastructure/` },
+          { text: `NVIDIA's RTX Spark Superchip brings ~1 petaflop of AI compute and 128GB of unified memory to workstation laptops.`, source: `devFlokers`, url: `https://www.devflokers.com/blog/open-source-ai-roundup-june-2026` },
+          { text: `Anthropic shipped the Claude Agent SDK (TypeScript/Python) with native MCP server and sub-agent support.`, source: `SD Times`, url: `https://sdtimes.com/` }
+        ]
+      },
+      {
+        group: `Crypto`,
+        section: `global`,
+        items: [
+          { text: `Bitcoin and Ethereum extended their post-Fed slide, with BTC near $62,900 and ETH near $1,709.`, source: `Yahoo Finance, Jun 19`, url: `https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-june-19-2026-prices-keep-falling-post-fed-decision-123239380.html` },
+          { text: `The Ethereum Foundation lost another senior leader as co-executive director Hsiao-Wei Wang resigned.`, source: `The Block`, url: `https://www.theblock.co/` },
+          { text: `The FHFA ordered Fannie Mae and Freddie Mac to prepare to count cryptocurrency as an asset in mortgage applications.`, source: `Yahoo Finance, Jun 19`, url: `https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-june-19-2026-prices-keep-falling-post-fed-decision-123239380.html` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `The new US–Iran understanding came under strain: Iran said it closed the Strait of Hormuz after Israel struck Lebanon on Saturday.`, source: `NPR World`, url: `https://www.npr.org/sections/world/` },
+          { text: `US and Iranian teams are set to hold "technical-level" talks, according to Pakistan's foreign ministry.`, source: `NPR World`, url: `https://www.npr.org/sections/world/` },
+          { text: `UK: Greater Manchester mayor Andy Burnham won a by-election, positioning him to challenge PM Keir Starmer.`, source: `NPR`, url: `https://www.npr.org/sections/news/` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `Several people were injured by falling trees during a violent storm in Zurich.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `Murten staged a ceremony marking the 550th anniversary of its decisive 1476 battle.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `Switzerland's men's national team beat Bosnia & Herzegovina 4-1 at the World Cup.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `A magnitude-5.0 earthquake struck near Chania, Crete on Saturday, alongside a 3.2 near Lesbos.`, source: `VolcanoDiscovery`, url: `https://www.volcanodiscovery.com/earthquake/news/314261/World-Earthquake-Report-for-Saturday-20-June-2026.html` },
+          { text: `Greece's South Aegean Region launched a major tourism campaign on the "Cube" billboard in New York's Times Square.`, source: `Greek City Times`, url: `https://greekcitytimes.com/` },
+          { text: `Athens ranks among the top international destinations for US travelers over the July 4th holiday.`, source: `Greek Reporter`, url: `https://greekreporter.com/greek-news/` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Saturday, June 20, 2026`,
     iso: `2026-06-20`,
     greeting: `Good morning — here's your briefing for Saturday, June 20, 2026. The calendar's clear today, two open to-dos remain in Tasklist A, and no leads are due for follow-up (PAP Center is next, on June 23).`,
