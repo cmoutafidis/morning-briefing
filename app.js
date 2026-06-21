@@ -126,6 +126,9 @@
 
   function render() {
     var data = (window.BRIEFINGS || []).slice().sort(bySpecDesc);
+    // Collapse duplicate same-day entries (e.g. a "Run now" after the scheduled run), keeping the newest.
+    var seen = {};
+    data = data.filter(function (b) { var k = b.iso || b.date; if (seen[k]) return false; seen[k] = 1; return true; });
     var content = document.getElementById("content");
     var dateEl = document.getElementById("latest-date");
     var countEl = document.getElementById("archive-count");
