@@ -27,11 +27,11 @@ window.BRIEFINGS = [
     iso: `2026-06-21`,
     greeting: `Good morning — here's your briefing for Sunday, June 21, 2026 (Father's Day in Greece). It's a travel day: you fly Zurich→Prague at 12:35 on LX 1486 and check into the Prague Marriott through Wednesday. Two open to-dos remain in Tasklist A, and no leads are due for follow-up.`,
     calendar: {
-      allDay: [`Father's Day (Greece observance)`, `Stay: Prague Marriott Hotel (through Jun 24)`],
+      allDay: [`Weekly Accounting work`, `Stay: Prague Marriott Hotel (through Jun 24)`, `Father's Day (Greece observance)`],
       events: [
         { time: `12:35–13:55`, title: `Flight: LX 1486 from ZRH to PRG`, calendar: `charismoutafidis@gmail.com` }
       ],
-      note: `Hotel check-in from 15:00 (reservation 72656932). Based on your Google calendar — the macOS Calendar app couldn't be reached this run.`
+      note: `Hotel check-in from 15:00 (reservation 72656932).`
     },
     checklist: {
       source: `The Real World — Daily Checklist`,
