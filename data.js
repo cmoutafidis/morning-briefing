@@ -25,6 +25,96 @@ window.BRIEFINGS = [
   {
     date: `Sunday, June 21, 2026`,
     iso: `2026-06-21`,
+    greeting: `Good morning — here's your briefing for Sunday, June 21, 2026 (Father's Day in Greece). It's a travel day: you fly Zurich→Prague at 12:35 on LX 1486 and check into the Prague Marriott through Wednesday. Two open to-dos remain in Tasklist A, and no leads are overdue or due today (PAP Center is next, on June 23).`,
+    calendar: {
+      allDay: [`Weekly Accounting work`, `Stay: Prague Marriott Hotel (through Jun 24)`, `Father's Day (Greece observance)`],
+      events: [
+        { time: `12:35–13:55`, title: `Flight: LX 1486 from ZRH to PRG`, calendar: `charismoutafidis@gmail.com` }
+      ],
+      note: `Hotel check-in from 15:00 (reservation 72656932).`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Followup PAP Center`] },
+        { name: `Tasklist B`, tasks: [] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: []
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `Qualcomm is in early talks to acquire AI-chip startup Tenstorrent for $8–10B, a bid to challenge Nvidia and AMD.`, source: `AI News`, url: `https://www.artificialintelligence-news.com/` },
+          { text: `HPE expanded its AI Factory portfolio with NVIDIA for agentic, multi-agent systems, adding the Vera CPU for agent orchestration.`, source: `AI News`, url: `https://www.artificialintelligence-news.com/` },
+          { text: `NYC's Department of Education will require every AI tool to pass a bias-and-equity review before classroom use.`, source: `Crescendo AI`, url: `https://www.crescendo.ai/news/latest-ai-news-and-updates` }
+        ]
+      },
+      {
+        group: `Tech & startups`,
+        section: `global`,
+        items: [
+          { text: `Ramp raised $750M (Iconiq, GIC, Ontario Teachers') at a $44B valuation.`, source: `Crunchbase News`, url: `https://news.crunchbase.com/venture/biggest-funding-rounds-june-5-2026/` },
+          { text: `Brain-inspired AI startup Flourish raised $500M, backed by Jeff Bezos, Lux Capital and GV.`, source: `Crunchbase News`, url: `https://news.crunchbase.com/venture/biggest-funding-rounds-june-5-2026/` },
+          { text: `Fusion startup Helion picked up $465M Series G led by Thrive Capital at a $15.5B valuation.`, source: `Crunchbase News`, url: `https://news.crunchbase.com/venture/biggest-funding-rounds-june-5-2026/` }
+        ]
+      },
+      {
+        group: `Software engineering`,
+        section: `global`,
+        items: [
+          { text: `Anthropic shipped the Claude Agent SDK (TypeScript/Python) with native MCP server and sub-agent support.`, source: `SD Times`, url: `https://sdtimes.com/` },
+          { text: `MiniMax M3 launched as the first open-weight model pairing frontier software-engineering skills with a 1M-token context window.`, source: `devFlokers`, url: `https://www.devflokers.com/blog/open-source-ai-roundup-june-2026` },
+          { text: `Checkmarx unveiled SAST, a static-analysis engine with a security-tuned LLM at its core.`, source: `Developer Tech`, url: `https://www.developer-tech.com/` }
+        ]
+      },
+      {
+        group: `Crypto`,
+        section: `global`,
+        items: [
+          { text: `Bitcoin recovered toward $64,000 as US–Iran ceasefire talks opened in Switzerland.`, source: `CoinDesk`, url: `https://www.coindesk.com/` },
+          { text: `The Ethereum Foundation lost another senior leader as co-executive director Hsiao-Wei Wang resigned.`, source: `The Block`, url: `https://www.theblock.co/` },
+          { text: `The FHFA ordered Fannie Mae and Freddie Mac to prepare to count cryptocurrency as a mortgage asset.`, source: `InvestingNews`, url: `https://investingnews.com/cryptocurrency-market-recap/` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `An Iranian delegation arrived in Switzerland for talks with the US at the Bürgenstock resort to halt the Middle East conflict.`, source: `Xinhua`, url: `https://english.news.cn/20260621/a80af3fb601f402ea226bd0847278d7e/c.html` },
+          { text: `Trump said no tolls would be charged in the Strait of Hormuz during the 60-day interim ceasefire with Iran.`, source: `Xinhua`, url: `https://english.news.cn/20260621/a80af3fb601f402ea226bd0847278d7e/c.html` },
+          { text: `The USMNT beat Australia in Seattle to clinch a World Cup 2026 knockout-stage spot.`, source: `ESPN`, url: `https://www.espn.com/soccer/story/_/id/49132616/world-cup-2026-today-blog-21-06-2026-live-updates-news-fixtures-schedule-results-curacao-make-history-germany-ivory-coast` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `Switzerland is hosting US–Iran peace talks at Bürgenstock; VP JD Vance said the US looks forward to the negotiations.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `Murten marked the 550th anniversary of its decisive 1476 battle.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/` },
+          { text: `The government proposed banning swastikas and the Hitler salute in public spaces.`, source: `The Local Switzerland`, url: `https://www.thelocal.ch/` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `Santorini was named one of the world's top 3 most romantic destinations for 2026 by Condé Nast Traveller.`, source: `Greek City Times`, url: `https://greekcitytimes.com/` },
+          { text: `Greece ranked 2nd in the EU for bathing-water quality, with 97.1% of areas meeting standards.`, source: `Greek Reporter`, url: `https://greekreporter.com/greek-news/` },
+          { text: `Markets are weighing the EU's new €3 duty on low-value (under €150) imports from Asian platforms.`, source: `Keep Talking Greece`, url: `https://www.keeptalkinggreece.com/` }
+        ]
+      }
+    ]
+  },
+  {
+    date: `Sunday, June 21, 2026`,
+    iso: `2026-06-21`,
     greeting: `Good morning — here's your briefing for Sunday, June 21, 2026 (Father's Day in Greece). It's a travel day: you fly Zurich→Prague at 12:35 on LX 1486 and check into the Prague Marriott through Wednesday. Two open to-dos remain in Tasklist A, and no leads are due for follow-up.`,
     calendar: {
       allDay: [`Weekly Accounting work`, `Stay: Prague Marriott Hotel (through Jun 24)`, `Father's Day (Greece observance)`],
