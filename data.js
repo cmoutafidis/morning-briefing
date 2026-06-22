@@ -23,6 +23,96 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Monday, June 22, 2026`,
+    iso: `2026-06-22`,
+    greeting: `Good morning — here's your briefing for Monday, June 22, 2026. You're in Prague (Marriott through Wednesday), with one timed item today: the Weekly TRW Dev Meeting at 18:00. Two open to-dos remain in Tasklist A, and no leads are overdue or due today — PAP Center's follow-up lands tomorrow, June 23.`,
+    calendar: {
+      allDay: [`Stay: Prague Marriott Hotel (through Jun 24)`],
+      events: [
+        { time: `18:00–19:00`, title: `Weekly TRW Dev Meeting`, calendar: `charismoutafidis@gmail.com` }
+      ],
+      note: `Hotel stay continues through Wednesday (checkout Jun 24); the TRW dev sync is on Google Meet.`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Followup PAP Center`] },
+        { name: `Tasklist B`, tasks: [] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: []
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `Meta began laying off about 8,000 employees in an AI-focused restructuring, moving 7,000 more staff onto AI teams.`, source: `AI News`, url: `https://www.artificialintelligence-news.com/` },
+          { text: `Qualcomm is in early talks to acquire RISC-V AI-chip startup Tenstorrent for $8–10B.`, source: `Mean.ceo`, url: `https://blog.mean.ceo/latest-ai-developments-news-june-2026/` },
+          { text: `EU AI Act transparency rules for chatbots take effect Aug 2, with major labs racing to comply.`, source: `Crescendo AI`, url: `https://www.crescendo.ai/news/latest-ai-news-and-updates` }
+        ]
+      },
+      {
+        group: `Tech & startups`,
+        section: `global`,
+        items: [
+          { text: `Ramp raised $750M at a $44B valuation for its spend-management platform.`, source: `Crunchbase News`, url: `https://news.crunchbase.com/venture/biggest-funding-rounds-june-5-2026/` },
+          { text: `Fusion startup Helion picked up a $465M Series G at a $15.5B valuation.`, source: `Crunchbase News`, url: `https://news.crunchbase.com/venture/biggest-funding-rounds-june-5-2026/` },
+          { text: `US-headquartered startups captured roughly 80% of global VC funding in 2026, with AI taking about half.`, source: `Crunchbase News`, url: `https://news.crunchbase.com/venture/us-ai-startup-funding-boom-data/` }
+        ]
+      },
+      {
+        group: `Software engineering`,
+        section: `global`,
+        items: [
+          { text: `Databricks released Genie One, an agentic "coworker" for business teams, expanding its Genie suite.`, source: `SD Times`, url: `https://sdtimes.com/` },
+          { text: `NVIDIA's RTX Spark Superchip launched with up to 128GB unified memory and ~1 petaflop on workstation laptops.`, source: `Developer Tech`, url: `https://www.developer-tech.com/` },
+          { text: `Hugging Face's smolagents compresses agent routing to ~1,000 lines of Python, letting models write and run code in a sandbox.`, source: `devFlokers`, url: `https://www.devflokers.com/blog/open-source-ai-roundup-june-2026` }
+        ]
+      },
+      {
+        group: `Crypto`,
+        section: `global`,
+        items: [
+          { text: `US spot-Bitcoin ETFs logged a record 13-day outflow streak (-$4.4B), with BTC down about 30% year-to-date.`, source: `The Block`, url: `https://www.theblock.co/` },
+          { text: `Bitcoin steadied near $64K and Ether attempted a gradual rebound after Friday's sell-off.`, source: `CoinDesk`, url: `https://www.coindesk.com/` },
+          { text: `An attacker drained $7.5M from an Ethereum sandwich bot by tricking it into approving fake trading routes.`, source: `The Block`, url: `https://www.theblock.co/` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `US–Iran talks in Switzerland set a 60-day roadmap to a final deal, but Trump threatened to resume strikes over the Strait of Hormuz.`, source: `CNN`, url: `https://www.cnn.com/2026/06/21/world/live-news/iran-war-trump-israel-lebanon` },
+          { text: `Oil rose after Trump's Hormuz "take over" comments, with Brent up 1.35% to $81.66 a barrel.`, source: `CNN`, url: `https://www.cnn.com/world` },
+          { text: `Britain unveiled one of the world's toughest social-media bans for children.`, source: `CNN`, url: `https://www.cnn.com/world` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `Mediators said the US–Iran talks at Bürgenstock concluded in a "positive and constructive" atmosphere; sessions continue this week.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `A heatwave pushed temperatures toward record highs with "tropical nights" (~35°C in Sion), possibly lasting until month-end.`, source: `The Local Switzerland`, url: `https://www.thelocal.ch/20260619/how-long-will-the-extreme-heat-last-in-switzerland` },
+          { text: `Switzerland slipped to 3rd in the 2026 World Competitiveness ranking, still the most competitive in Europe.`, source: `The Local Switzerland`, url: `https://www.thelocal.ch/` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `All cruise-ship arrivals to Santorini were canceled today as tourist-bus owners struck over the new "70-30" measure.`, source: `Keep Talking Greece`, url: `https://www.keeptalkinggreece.com/` },
+          { text: `The Hellenic Navy chief visited Israel for high-level talks on Eastern Mediterranean maritime security.`, source: `Greek City Times`, url: `https://greekcitytimes.com/` },
+          { text: `Greece's current-account deficit narrowed to €1.4B in April 2026, down €956M from a year earlier.`, source: `To Vima`, url: `https://www.tovima.com/` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Sunday, June 21, 2026`,
     iso: `2026-06-21`,
     greeting: `Good morning — here's your briefing for Sunday, June 21, 2026 (Father's Day in Greece). It's a travel day: you fly Zurich→Prague at 12:35 on LX 1486 and check into the Prague Marriott through Wednesday. Two open to-dos remain in Tasklist A, and no leads are overdue or due today (PAP Center is next, on June 23).`,
