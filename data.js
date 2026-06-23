@@ -23,6 +23,99 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Tuesday, June 23, 2026`,
+    iso: `2026-06-23`,
+    greeting: `Good morning — here's your briefing for Tuesday, June 23, 2026. It's a travel day: you fly Prague→Zurich first thing on LX 1483 (lands 07:40), check out of the Prague Marriott, and have German class at 17:30. Two open to-dos remain in Tasklist A, and one lead is due today: PAP Center's follow-up (Θεόδωρος Παπαθεοδώρου).`,
+    calendar: {
+      allDay: [`Stay: Prague Marriott Hotel (check-out today)`],
+      events: [
+        { time: `06:15–07:40`, title: `Flight: LX 1483 from PRG to ZRH`, calendar: `charismoutafidis@gmail.com` },
+        { time: `17:30–19:00`, title: `Deutsch`, calendar: `Home` }
+      ],
+      note: `Early flight back to Zurich (lands 07:40); German lesson at 17:30. Prague Marriott checkout is today.`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Followup PAP Center`] },
+        { name: `Tasklist B`, tasks: [] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: [
+        { name: `Θεόδωρος Παπαθεοδώρου`, company: `PAP Center`, status: `Working - Contacted`, followUp: `2026-06-23`, email: `theo@papcenter.gr` }
+      ]
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `Getty Images signed a multi-year deal to license its visual content to OpenAI for use in ChatGPT.`, source: `TechCrunch`, url: `https://techcrunch.com/category/artificial-intelligence/` },
+          { text: `MIT researchers unveiled a spatial-memory system that helps robots track objects as they explore new spaces.`, source: `MIT News`, url: `https://news.mit.edu/topic/artificial-intelligence2` },
+          { text: `New Swansea University research reframes AI as a creative collaborator rather than a replacement for human work.`, source: `ScienceDaily`, url: `https://www.sciencedaily.com/news/computers_math/artificial_intelligence/` }
+        ]
+      },
+      {
+        group: `Tech & startups`,
+        section: `global`,
+        items: [
+          { text: `Seedcamp closed its 7th fund at $220M plus a $100M select fund to back early-stage European startups.`, source: `Tech Funding News`, url: `https://techfundingnews.com/` },
+          { text: `Q1 2026 set a venture-funding record near $300B as the AI boom drove investment, with about half going to AI.`, source: `Crunchbase News`, url: `https://news.crunchbase.com/venture/record-breaking-funding-ai-global-q1-2026/` },
+          { text: `Defense-tech funding hit an all-time record, with True Anomaly, Sierra Space and Vast among the top recipients.`, source: `Crunchbase News`, url: `https://news.crunchbase.com/defense-tech/startup-venture-funding-all-time-record-ai-anduril/` }
+        ]
+      },
+      {
+        group: `Software engineering`,
+        section: `global`,
+        items: [
+          { text: `Checkmarx launched Checkmarx SAST, billed as the first static-analysis engine with a security-tuned LLM at its core.`, source: `SD Times`, url: `https://sdtimes.com/` },
+          { text: `Databricks released Genie One, an agentic "coworker" for business teams, expanding its Genie suite.`, source: `SD Times`, url: `https://sdtimes.com/` },
+          { text: `Reporting put Claude Code as the most-used AI coding tool as its rivalry with OpenAI Codex intensified.`, source: `The New Stack`, url: `https://thenewstack.io/software-development/` }
+        ]
+      },
+      {
+        group: `Crypto`,
+        section: `global`,
+        items: [
+          { text: `Bitcoin traded near $65,100 (+2.2%) and Ether around $1,760 (+2.6%) as the market steadied.`, source: `CoinDesk`, url: `https://www.coindesk.com/` },
+          { text: `Taiko halted its Ethereum layer-2 after a bridge exploit drained about $1.7M via forged withdrawal proofs.`, source: `The Block`, url: `https://www.theblock.co/` },
+          { text: `The Bank of England softened its stablecoin rules, dropping retail holding limits for a ~£40B aggregate cap.`, source: `CoinDesk`, url: `https://www.coindesk.com/` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `Alan Greenspan, who chaired the US Federal Reserve under four presidents, died Monday at age 100.`, source: `CNBC`, url: `https://www.cnbc.com/2026/06/22/alan-greenspan-former-chairman-of-the-fed-dies-at-age-100.html` },
+          { text: `US–Iran talks in Switzerland set a roadmap toward a final deal within 60 days, including a Lebanon "de-confliction cell."`, source: `Al Jazeera`, url: `https://www.aljazeera.com/news/2026/6/22/what-are-the-key-outcomes-of-the-iran-us-talks-in-switzerland-what-next` },
+          { text: `China sanctioned 10 US military-related firms after Washington barred some Chinese tech companies from defense contracts.`, source: `CBS News`, url: `https://www.cbsnews.com/world/` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `The Swiss government said it's ready to put up to CHF 200M toward hosting the 2038 Winter Olympics.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/` },
+          { text: `A heatwave pushed the Lakes Neuchâtel, Biel and Murten areas, plus central Valais and Lake Geneva, to high-risk level.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `From Friday, Zurich Airport passengers can carry liquids up to two litres in hand luggage.`, source: `The Local Switzerland`, url: `https://www.thelocal.ch/` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `Greek tourism revenue rose sharply early in 2026, with April receipts topping €1.1B.`, source: `GTP Headlines`, url: `https://news.gtp.gr/` },
+          { text: `Cruise-ship arrivals to Santorini on June 22 were canceled as tourist-bus owners struck over the new "70-30" measure.`, source: `Keep Talking Greece`, url: `https://www.keeptalkinggreece.com/` },
+          { text: `Greece won 39 medals, including 11 golds, at the Balkan Athletics Championships in Volos.`, source: `GreekReporter`, url: `https://greekreporter.com/` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Monday, June 22, 2026`,
     iso: `2026-06-22`,
     greeting: `Good morning — here's your briefing for Monday, June 22, 2026. You're in Prague (Marriott through Wednesday), with one timed item today: the Weekly TRW Dev Meeting at 18:00. Two open to-dos remain in Tasklist A, and no leads are overdue or due today — PAP Center's follow-up lands tomorrow, June 23.`,
