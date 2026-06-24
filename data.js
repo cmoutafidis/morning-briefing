@@ -23,6 +23,99 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Wednesday, June 24, 2026`,
+    iso: `2026-06-24`,
+    greeting: `Good morning — here's your briefing for Wednesday, June 24, 2026. Your personal calendars are clear today; the only items are two private holds on the Fiji Solutions calendar (10:00 and 17:30, no titles shared). Two open to-dos remain in Tasklist A, and one lead is due today: PAP Center's follow-up (Θεόδωρος Παπαθεοδώρου).`,
+    calendar: {
+      allDay: [],
+      events: [
+        { time: `10:00–10:30`, title: `Busy (private)`, calendar: `charis@fijisolutions.net` },
+        { time: `17:30–19:00`, title: `Busy (private)`, calendar: `charis@fijisolutions.net` }
+      ],
+      note: `Both blocks are private holds on the Fiji Solutions work calendar (titles not shared); your personal calendars are otherwise clear.`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `handover L2`] },
+        { name: `Tasklist B`, tasks: [] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: [
+        { name: `Θεόδωρος Παπαθεοδώρου`, company: `PAP Center`, status: `Working - Contacted`, followUp: `2026-06-24`, email: `theo@papcenter.gr` }
+      ]
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `Qualcomm is in early talks to acquire AI-chip startup Tenstorrent in a deal valued at roughly $8–10B.`, source: `TechCrunch`, url: `https://techcrunch.com/category/artificial-intelligence/` },
+          { text: `Reflection AI agreed to pay Nvidia about $150M a month from July for GB300 chips hosted in SpaceX's Colossus 2.`, source: `Crescendo AI`, url: `https://www.crescendo.ai/news/latest-ai-news-and-updates` },
+          { text: `UPenn researchers introduced "Mollifier Layers," a technique that solves inverse PDEs with neural nets more stably.`, source: `ScienceDaily`, url: `https://www.sciencedaily.com/news/computers_math/artificial_intelligence/` }
+        ]
+      },
+      {
+        group: `Tech & startups`,
+        section: `global`,
+        items: [
+          { text: `AI-infrastructure startup Baseten raised $1.5B at a $13B valuation, one of the year's largest deployment-focused rounds.`, source: `Tech Startups`, url: `https://techstartups.com/2026/06/23/venture-capital-startup-funding-roundup-june-23-2026/` },
+          { text: `Berlin drone maker Stark Defence raised €500M led by Sequoia and Founders Fund, valuing it above €3.5B.`, source: `Tech Startups`, url: `https://techstartups.com/2026/06/23/top-tech-news-today-june-23-2026/` },
+          { text: `Oracle cut 21,000 roles, attributing the layoffs directly to its AI deployment.`, source: `Tech Startups`, url: `https://techstartups.com/2026/06/23/top-tech-news-today-june-23-2026/` }
+        ]
+      },
+      {
+        group: `Software engineering`,
+        section: `global`,
+        items: [
+          { text: `GitHub made remote control for Copilot sessions generally available on github.com and GitHub Mobile.`, source: `The GitHub Blog`, url: `https://github.blog/news-insights/` },
+          { text: `Checkmarx unveiled Checkmarx SAST, billed as the first static-analysis engine with a security-tuned LLM at its core.`, source: `SD Times`, url: `https://sdtimes.com/` },
+          { text: `A February 2026 survey of 906 engineers ranked Claude Code the most-used AI coding tool, with a 46% "most loved" rating.`, source: `Developer Tech`, url: `https://www.developer-tech.com/` }
+        ]
+      },
+      {
+        group: `Crypto`,
+        section: `global`,
+        items: [
+          { text: `Bitcoin traded near $62,660 (−0.2%) and Ether near $1,672 (−0.5%), with BTC down about 5% on the week.`, source: `CoinDesk`, url: `https://www.coindesk.com/` },
+          { text: `Vitalik Buterin said the Ethereum Foundation will cut its budget 40% and trim roughly 20% of headcount.`, source: `The Block`, url: `https://www.theblock.co/` },
+          { text: `Bitcoin slid to its lowest level since late 2024 amid a hawkish Fed, ETF outflows and capital rotating into AI.`, source: `CoinDesk`, url: `https://www.coindesk.com/` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `VP Vance reported "significant progress" in US–Iran talks in Switzerland, with Iran agreeing to readmit nuclear inspectors.`, source: `NBC News`, url: `https://www.nbcnews.com/world/iran/president-jd-vance-switzerland-iran-talks-trump-threatens-toll-rcna351033` },
+          { text: `The US temporarily lifted oil sanctions on Iran as the peace talks continued.`, source: `NPR`, url: `https://www.npr.org/sections/world/` },
+          { text: `China sanctioned 10 US military-related firms after Washington barred some Chinese tech companies from defense contracts.`, source: `CNN`, url: `https://www.cnn.com/world` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `Red-level heat warnings held around Lakes Neuchâtel, Biel and Murten, plus central Valais and the Lake Geneva region.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `From Friday, June 26, Zurich Airport passengers can carry up to two litres of liquids in hand luggage thanks to new scanners.`, source: `The Local Switzerland`, url: `https://www.thelocal.ch/` },
+          { text: `The Swiss government said it's ready to put up to CHF 200M toward hosting the 2038 Winter Olympics.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `The government unveiled fresh economic reforms — debt relief, child benefits and investment pledges — ahead of 2027 elections.`, source: `To Vima`, url: `https://www.tovima.com/` },
+          { text: `Greece signed a €120M concession deal for Kalamata Airport.`, source: `GreekReporter`, url: `https://greekreporter.com/` },
+          { text: `The National Housing Strategy 2026–2035 went out for public consultation, floating possible rent caps and tax incentives.`, source: `GreekReporter`, url: `https://greekreporter.com/` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Tuesday, June 23, 2026`,
     iso: `2026-06-23`,
     greeting: `Good morning — here's your briefing for Tuesday, June 23, 2026. It's a travel day: you fly Prague→Zurich first thing on LX 1483 (lands 07:40), check out of the Prague Marriott, and have German class at 17:30. Two open to-dos remain in Tasklist A, and one lead is due today: PAP Center's follow-up (Θεόδωρος Παπαθεοδώρου).`,
