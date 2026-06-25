@@ -23,6 +23,98 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Thursday, June 25, 2026`,
+    iso: `2026-06-25`,
+    greeting: `Good morning — here's your briefing for Thursday, June 25, 2026. Two events today: Dev Day Virtual (10:00–13:00) and the Weekly TRW Dev Meeting (18:00–19:00). Four open to-dos remain in Tasklist A, and no lead follow-ups are due today.`,
+    calendar: {
+      allDay: [],
+      events: [
+        { time: `10:00–13:00`, title: `Dev Day Virtual`, calendar: `charismoutafidis@gmail.com` },
+        { time: `18:00–19:00`, title: `Weekly TRW Dev Meeting`, calendar: `charismoutafidis@gmail.com` }
+      ],
+      note: `Snowflake Dev Day runs through midday; the weekly TRW dev sync is at 18:00.`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `handover L2`, `Get the files to get stamps or whatever`, `Call the new accountant`] },
+        { name: `Tasklist B`, tasks: [] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: []
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `Anthropic is in early talks with Microsoft to run Claude inference on Microsoft's custom Maia 200 chips via Azure.`, source: `Latest AI News`, url: `https://blog.mean.ceo/latest-ai-developments-news-june-2026/` },
+          { text: `Qualcomm is in early talks to acquire RISC-V AI-chip designer Tenstorrent for roughly $8–10B.`, source: `Latest AI News`, url: `https://blog.mean.ceo/latest-ai-developments-news-june-2026/` },
+          { text: `A study comparing 100,000+ people with leading AI systems found generative AI can now beat the average human on some creativity tests.`, source: `Crescendo AI`, url: `https://www.crescendo.ai/news/latest-ai-news-and-updates` }
+        ]
+      },
+      {
+        group: `Tech & startups`,
+        section: `global`,
+        items: [
+          { text: `AI-memory startup Engram emerged from stealth with a $98M round at a $600M valuation, backed by General Catalyst, Kleiner Perkins and Sequoia.`, source: `Tech Startups`, url: `https://techstartups.com/2026/06/23/top-tech-news-today-june-23-2026/` },
+          { text: `Qualcomm announced a $4B all-stock acquisition of AI-software startup Modular, taking aim at Nvidia's CUDA platform.`, source: `Tech Startups`, url: `https://techstartups.com/2026/06/23/top-tech-news-today-june-23-2026/` },
+          { text: `SpaceX signed a $6.3B compute deal with Reflection AI, which will pay $150M/month from July 1 for GB300 access at its Memphis data center.`, source: `Tech Startups`, url: `https://techstartups.com/2026/06/23/top-tech-news-today-june-23-2026/` }
+        ]
+      },
+      {
+        group: `Software engineering`,
+        section: `global`,
+        items: [
+          { text: `Pragmatic Engineer's 2026 survey found Claude Code is now the most-used AI coding tool, overtaking GitHub Copilot and Cursor.`, source: `The Pragmatic Engineer`, url: `https://newsletter.pragmaticengineer.com/p/ai-tooling-2026` },
+          { text: `A roundup flagged Temporal, Pkl, Faro, Devbox and Socket as the emerging developer tools to watch in 2026.`, source: `DEV Community`, url: `https://dev.to/thebitforge/top-5-emerging-developer-tools-to-watch-in-2026-12pl` },
+          { text: `Gartner projects the low-code market will reach $44.5B in 2026 as platform engineering scales across teams.`, source: `Intelegain`, url: `https://www.intelegain.com/top-20-software-development-trends-in-2026/` }
+        ]
+      },
+      {
+        group: `Crypto`,
+        section: `global`,
+        items: [
+          { text: `Bitcoin held above $62,500 and Ether near $1,665, with widening put skews signaling bears remain in control.`, source: `CoinDesk`, url: `https://www.coindesk.com/` },
+          { text: `Binance has under a week to secure a replacement EU license before June 30 after its Greek passporting bid collapsed.`, source: `The Block`, url: `https://www.theblock.co/` },
+          { text: `Crypto slid on a strong dollar and risk-off mood as this week's AI-stock selloff weighed on Bitcoin and Ether.`, source: `Investing News`, url: `https://investingnews.com/cryptocurrency-market-recap/` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `Millions in France endured extreme heat, with 40 drowning deaths reported since June 18.`, source: `CBS News`, url: `https://www.cbsnews.com/world/` },
+          { text: `An Ebola outbreak in eastern DR Congo topped 1,000 confirmed cases and 250 deaths in just over a month.`, source: `CBS News`, url: `https://www.cbsnews.com/world/` },
+          { text: `UK PM Keir Starmer is resigning, with a fellow Labour MP known as the "King of the North" tipped to succeed him.`, source: `NPR`, url: `https://www.npr.org/sections/world/` },
+          { text: `Iran says there are no plans to allow inspections of its bombed nuclear sites, despite Trump claiming Tehran agreed.`, source: `CNN`, url: `https://www.cnn.com/world` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `Switzerland plans a compulsory civil-protection service to boost available personnel.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `A Swiss–EU electricity deal advanced in parliament, promising market access and consumer choice.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `Switzerland beat Canada 2–1 to top Group B at the FIFA World Cup 2026.`, source: `Outlook India`, url: `https://www.outlookindia.com/sports/football/switzerland-vs-canada-live-score-fifa-world-cup-2026-group-b-sui-v-can-updates-bc-place-highlights` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `The government released its National Housing Strategy 2026–2035 for consultation, floating rent caps and mortgage incentives.`, source: `Greek City Times`, url: `https://greekcitytimes.com/` },
+          { text: `Owners in Athens and Thessaloniki are rushing permits before strict new Airbnb rules take effect July 1.`, source: `GreekReporter`, url: `https://greekreporter.com/` },
+          { text: `The Parthenon's west façade is visible in full for the first time in about 220 years after scaffolding was removed.`, source: `GreekReporter`, url: `https://greekreporter.com/` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Wednesday, June 24, 2026`,
     iso: `2026-06-24`,
     greeting: `Good morning — here's your briefing for Wednesday, June 24, 2026. Your personal calendars are clear; the only items are two private holds on the Fiji Solutions calendar (10:00 and 17:30, no titles shared). Two open to-dos remain in Tasklist A, and no lead follow-ups are due today.`,
