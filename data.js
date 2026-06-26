@@ -23,6 +23,95 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Friday, June 26, 2026`,
+    iso: `2026-06-26`,
+    greeting: `Good morning — here's your briefing for Friday, June 26, 2026. Your calendar is clear today, four open to-dos remain in Tasklist A, and no lead follow-ups are due. In the headlines: Venezuela's deadliest earthquake in over a century, a $10.5B Bitcoin options expiry, and Swiss median salaries climbing to CHF 87,000.`,
+    calendar: {
+      allDay: [],
+      events: [],
+      note: ``
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `handover L2`, `Get the files to get stamps or whatever`, `Call the new accountant`] },
+        { name: `Tasklist B`, tasks: [] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: []
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `Five Eyes cyber agencies (US, UK, Canada, Australia and New Zealand) jointly published "Careful Adoption of Agentic AI Services" guidance for critical-infrastructure and defense deployments.`, source: `devFlokers`, url: `https://www.devflokers.com/blog/ai-news-june-2026-models-research-developments` },
+          { text: `New York City's Department of Education will require every AI tool to pass a bias-and-equity review before use across its 1.1M-student system.`, source: `devFlokers`, url: `https://www.devflokers.com/blog/ai-news-june-2026-models-research-developments` },
+          { text: `The 2026 throughline: agentic systems are pushing AI from chat to task completion across research, coding, support, legal work and payments.`, source: `Crescendo AI`, url: `https://www.crescendo.ai/news/latest-ai-news-and-updates` }
+        ]
+      },
+      {
+        group: `Tech & startups`,
+        section: `global`,
+        items: [
+          { text: `AI-infrastructure startup Baseten raised $1.5B at a $13B valuation, one of the year's largest deployment-focused rounds.`, source: `Tech Startups`, url: `https://techstartups.com/2026/06/25/top-tech-news-today-june-25-2026/` },
+          { text: `SpaceX pulled off a record $75B IPO while Alphabet ran an $80B stock sale and Microsoft pushed into on-device AI agents.`, source: `Tech Startups`, url: `https://techstartups.com/2026/06/25/top-tech-news-today-june-25-2026/` },
+          { text: `VCs are pivoting to hard tech as AI squeezes software margins — Eclipse-backed firms have raised $14B in 2026, including Cerebras' IPO.`, source: `Tech Startups`, url: `https://techstartups.com/2026/06/25/top-tech-news-today-june-25-2026/` }
+        ]
+      },
+      {
+        group: `Software engineering`,
+        section: `global`,
+        items: [
+          { text: `Mistral AI shipped OCR 4 on June 23, moving from plain-text extraction to structured document output.`, source: `MarkTechPost`, url: `https://www.marktechpost.com/2026/06/24/top-generative-ai-coding-tools-of-2026/` },
+          { text: `At Microsoft Build 2026, GitHub made remote control of Copilot coding sessions generally available on github.com and GitHub Mobile.`, source: `The GitHub Blog`, url: `https://github.blog/news-insights/` },
+          { text: `Surveys now put AI-generated code at up to 46% of new code in some organizations, with tool cost a rising concern.`, source: `Developer Tech`, url: `https://www.developer-tech.com/` }
+        ]
+      },
+      {
+        group: `Crypto`,
+        section: `global`,
+        items: [
+          { text: `Bitcoin fell below $60,000 to multi-year lows (~$59,300, -2.3%) and Ether slid to ~$1,560 amid ETF outflows.`, source: `Yahoo Finance`, url: `https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-thursday-june-25-2026-bitcoin-hits-its-lowest-levels-in-years-125308371.html` },
+          { text: `A $10.5B Bitcoin options expiry lands Friday, June 26 — analysts call it a critical market reset.`, source: `PANews`, url: `https://www.panewslab.com/en/articles/019efc82-17c1-70d4-b58a-a09035abf615` },
+          { text: `BlackRock moved ~$257M of BTC and ETH to Coinbase, while Kraken weighs a 15% stake in DeFi lender Aave at a $385M valuation.`, source: `PANews`, url: `https://www.panewslab.com/en/articles/019efc82-17c1-70d4-b58a-a09035abf615` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `Two major earthquakes struck Venezuela, killing at least 164 (officials now cite up to 188 dead) — the country's strongest in over a century.`, source: `CBS News`, url: `https://www.cbsnews.com/world/` },
+          { text: `An Ebola outbreak in eastern DR Congo has topped 1,000 cases and 250 deaths in just over a month, among the largest in years.`, source: `CBS News`, url: `https://www.cbsnews.com/world/` },
+          { text: `The US Supreme Court issued two major immigration rulings, one lifting deportation restrictions for thousands of Haitian and Syrian immigrants.`, source: `CBS News`, url: `https://www.cbsnews.com/world/` },
+          { text: `At the FIFA World Cup, Türkiye beat the US with a stoppage-time winner — the Americans' first defeat of the tournament.`, source: `ESPN`, url: `https://www.espn.com/soccer/story/_/id/49183943/world-cup-2026-today-blog-26-06-2026-live-updates-news-fixtures-schedule-results-ecuador-sweden-norway-france` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `Switzerland's median full-time gross salary climbed to CHF 87,000 in 2025, up from CHF 81,500 a year earlier.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `The Federal Council scaled back its planned VAT increase for the armed forces, proposing 0.5% instead of 0.8% after criticism.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `Amid a heatwave, Bern's River Aare hit its highest-ever June temperature and Ticino's heat-danger level was raised to 4.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `Greece joined "Pax Silica," a US-led pact on AI, energy, semiconductors and critical minerals, signed June 23 in Washington.`, source: `GreekReporter`, url: `https://greekreporter.com/` },
+          { text: `The Education Ministry unveiled a major restructuring of the school network for 2026–2027, merging or closing low-enrollment schools amid a demographic crisis.`, source: `To Vima`, url: `https://www.tovima.com/` },
+          { text: `Boxing legend Floyd Mayweather faces Greek kickboxing icon Mike Zambidis in an exhibition bout on June 27 at Athens' OAKA.`, source: `GreekReporter`, url: `https://greekreporter.com/` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Thursday, June 25, 2026`,
     iso: `2026-06-25`,
     greeting: `Good morning — here's your briefing for Thursday, June 25, 2026. Two events today: Dev Day Virtual (10:00–13:00) and the Weekly TRW Dev Meeting (18:00–19:00). Four open to-dos remain in Tasklist A, and no lead follow-ups are due today.`,
