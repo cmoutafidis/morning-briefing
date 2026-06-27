@@ -23,6 +23,95 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Saturday, June 27, 2026`,
+    iso: `2026-06-27`,
+    greeting: `Good morning — here's your briefing for Saturday, June 27, 2026. One timed item today: invoicing New Era Learning at 09:00, and it's John Mavroudopoulos's birthday. Two open to-dos remain in Tasklist A and five in Tasklist B, with no lead follow-ups due. In the headlines: Venezuela's earthquake toll passes 920, Bitcoin slides toward $58K, and Switzerland sets a new June heat record of 38.8°C.`,
+    calendar: {
+      allDay: [`John Mavroudopoulos (birthday)`],
+      events: [
+        { time: `09:00–10:00`, title: `Invoice NEW ERA LEARNING`, calendar: `charismoutafidis@gmail.com` }
+      ],
+      note: `One timed item on your personal calendar; the rest of the day is open.`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Get the files to get stamps or whatever`] },
+        { name: `Tasklist B`, tasks: [`Vibe code an app for time tracking personal projects`, `Vibe code an app for tracking expenses for your companies`, `Peak Code Consulting website copy — home page should not be slop`, `Fiji Solutions website copy — home page should not be slop`, `Define the flow for creating new vibe-coded apps with a small backend — Lambda functions vs a small app in a k8s cluster, monorepo in both cases? Have a flow ready to blast out a lot of apps.`] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: []
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `Qualcomm is in early talks to acquire RISC-V AI-chip designer Tenstorrent for roughly $8–10B, a major bet on AI infrastructure.`, source: `AI News`, url: `https://www.artificialintelligence-news.com/` },
+          { text: `The European Commission's proposed Cloud and AI Development Act aims to coordinate compute investment and protect EU data residency.`, source: `devFlokers`, url: `https://www.devflokers.com/blog/ai-news-june-2026-models-research-developments` },
+          { text: `DeepSeek v3.2 (671B MoE, 37B active, MIT-licensed) leads open models on math, scoring 96.0% on the GSM8K benchmark.`, source: `LLM Stats`, url: `https://llm-stats.com/llm-updates` }
+        ]
+      },
+      {
+        group: `Tech & startups`,
+        section: `global`,
+        items: [
+          { text: `General Intuition raised $320M (Khosla, General Catalyst, Jeff Bezos) to train AI agents on millions of hours of gameplay.`, source: `Tech Startups`, url: `https://techstartups.com/2026/06/26/top-tech-news-today-june-26-2026/` },
+          { text: `Quantifind secured a $200M growth investment led by Summit Partners for AI-driven anti-money-laundering and fraud detection.`, source: `Tech Startups`, url: `https://techstartups.com/2026/06/26/top-tech-news-today-june-26-2026/` },
+          { text: `OpenAI detailed "Jalapeño," a custom inference chip built with Broadcom, joining Google, Apple and SpaceX in reducing single-supplier risk.`, source: `Tech Startups`, url: `https://techstartups.com/2026/06/26/top-tech-news-today-june-26-2026/` }
+        ]
+      },
+      {
+        group: `Software engineering`,
+        section: `global`,
+        items: [
+          { text: `At Microsoft Build 2026, the Agent 365 SDK reached general availability, adding observability, access controls and compliance for enterprise agents.`, source: `Microsoft`, url: `https://news.microsoft.com/build-2026-live-blog/microsoft-build-2026-live/` },
+          { text: `MiniMax M3 launched as the first open-weight model pairing frontier software-engineering ability with a 1M-token context window and native computer use.`, source: `devFlokers`, url: `https://www.devflokers.com/blog/open-source-ai-roundup-june-2026` },
+          { text: `Anthropic's Claude Agent SDK (TypeScript/Python) ships native MCP server and sub-agent support for building custom agents.`, source: `devFlokers`, url: `https://www.devflokers.com/blog/open-source-ai-roundup-june-2026` }
+        ]
+      },
+      {
+        group: `Crypto`,
+        section: `global`,
+        items: [
+          { text: `Bitcoin fell to about $58,189 on June 26 — its lowest since September 2024 — before recovering near $60,300; Ether traded around $1,580.`, source: `Yahoo Finance`, url: `https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-thursday-june-25-2026-bitcoin-tumbles-further-below-60000-125308371.html` },
+          { text: `US spot-Bitcoin ETFs logged a ~$692M net outflow on June 25, the largest single-day redemption since May 27.`, source: `CoinDesk`, url: `https://www.coindesk.com/` },
+          { text: `Binance told EU users it will halt services after failing to secure a MiCA license, with permits set to expire June 30.`, source: `The Block`, url: `https://www.theblock.co/` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `Venezuela's earthquake disaster: at least 920 dead and over 3,000 injured as rescuers race to reach survivors.`, source: `CNN`, url: `https://www.cnn.com/2026/06/26/world/live-news/venezuela-earthquake-hnk` },
+          { text: `World Cup 2026: Cape Verde reached the knockout stage and Uruguay crashed out, while France beat Norway 4-1 on a Dembélé hat-trick.`, source: `ESPN`, url: `https://www.espn.com/soccer/story/_/id/49194724/world-cup-2026-today-blog-27-06-2026-live-updates-news-fixtures-schedule-results-cape-verde-uruguay-england` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `Switzerland recorded a new June heat record of 38.8°C, with glacier "melt day" reached unusually early.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `The Beznau nuclear reactors were taken off the grid as river water overheated during the heatwave.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `Swiss intelligence warned the security climate is worsening amid rising Russian hybrid threats and terrorism risk.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `The 2026 EKO Acropolis Rally (WRC round 8) opened Friday with its grueling first leg.`, source: `GreekReporter`, url: `https://greekreporter.com/` },
+          { text: `The Parthenon's west façade is fully visible for the first time in about 220 years after scaffolding was permanently removed.`, source: `GreekReporter`, url: `https://greekreporter.com/greek-news/` },
+          { text: `The government opened its National Housing Strategy 2026–2035 for consultation, floating rent caps, mortgage incentives and lower VAT on social housing.`, source: `Keep Talking Greece`, url: `https://www.keeptalkinggreece.com/` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Friday, June 26, 2026`,
     iso: `2026-06-26`,
     greeting: `Good morning — here's your briefing for Friday, June 26, 2026. Your calendar is clear today, four open to-dos remain in Tasklist A, and no lead follow-ups are due. In the headlines: Venezuela's deadliest earthquake in over a century, a $10.5B Bitcoin options expiry, and Swiss median salaries climbing to CHF 87,000.`,
