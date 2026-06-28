@@ -23,6 +23,94 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Sunday, June 28, 2026`,
+    iso: `2026-06-28`,
+    greeting: `Good morning — here's your briefing for Sunday, June 28, 2026. One all-day item today (Weekly Accounting work) and no timed meetings; two open to-dos remain in Tasklist A and five in Tasklist B, with no lead follow-ups due. In the headlines: the big frontier AI launches (GPT-5.6, Gemini 3.5 Pro, Grok 5) all slipped into July, Bitcoin steadied near $59K after multi-year lows, and Switzerland logged its hottest-ever June at 38°C in Basel.`,
+    calendar: {
+      allDay: [`Weekly Accounting work`],
+      events: [],
+      note: `One all-day accounting block on your Home calendar; no timed events scheduled.`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Get the files to get stamps or whatever`] },
+        { name: `Tasklist B`, tasks: [`Vibe code an app for time tracking personal projects`, `Vibe code an app for tracking expenses for your companies`, `Peak Code Consulting website copy home page should not be slop`, `Fiji Solutions website copy home page should not be slop`, `Understand what the flow is for creating new vibe coded apps with a small backend.`] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: []
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `Frontier launches stalled: GPT-5.6, Gemini 3.5 Pro and Grok 5 all slipped past June into July as the week ended with no releases.`, source: `Build Fast with AI`, url: `https://www.buildfastwithai.com/blogs/ai-news-today-june-27-2026` },
+          { text: `ChatGPT's market share reportedly fell below 50% for the first time as rival assistants gained ground.`, source: `Build Fast with AI`, url: `https://www.buildfastwithai.com/blogs/ai-news-today-june-27-2026` },
+          { text: `The June AI model tracker logs the latest frontier and open-weight releases plus benchmark shifts.`, source: `LLM Stats`, url: `https://llm-stats.com/llm-updates` }
+        ]
+      },
+      {
+        group: `Tech & startups`,
+        section: `global`,
+        items: [
+          { text: `Ex-Infosys chief Vishal Sikka's new startup Hang Ten Systems raised a $32M seed (Mayfield, with Aramco Ventures) for AI-driven software automation.`, source: `TechCrunch`, url: `https://techcrunch.com/2026/06/24/former-infosys-chief-has-a-new-startup-that-wants-to-challenge-the-it-services-world/` },
+          { text: `US startups captured nearly 80% of global seed-to-growth funding so far in 2026 as AI concentrates capital.`, source: `Crunchbase News`, url: `https://news.crunchbase.com/venture/us-ai-startup-funding-boom-data/` },
+          { text: `AI now draws roughly half of all global venture funding, which reached $425B in 2025.`, source: `Crunchbase News`, url: `https://news.crunchbase.com/venture/us-ai-startup-funding-boom-data/` }
+        ]
+      },
+      {
+        group: `Software engineering`,
+        section: `global`,
+        items: [
+          { text: `NVIDIA's RTX Spark Superchip brings up to 1 petaflop of AI compute and 128GB unified memory to workstation laptops.`, source: `devFlokers`, url: `https://www.devflokers.com/blog/open-source-ai-roundup-june-2026` },
+          { text: `Microsoft Build 2026: Fabric Data Warehouse now runs eligible queries directly on NVIDIA accelerated compute — no cluster sizing needed.`, source: `Microsoft`, url: `https://news.microsoft.com/build-2026-live-blog/microsoft-build-2026-live/` },
+          { text: `Hugging Face's smolagents compresses agent routing to ~1,000 lines of Python, letting models write and run code in a managed sandbox.`, source: `devFlokers`, url: `https://www.devflokers.com/blog/open-source-ai-roundup-june-2026` }
+        ]
+      },
+      {
+        group: `Crypto`,
+        section: `global`,
+        items: [
+          { text: `Bitcoin touched its lowest level since September 2024 (~$59.2K) before rebounding; roughly $1B in futures positions were liquidated.`, source: `Yahoo Finance`, url: `https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-thursday-june-25-2026-bitcoin-hits-its-lowest-levels-in-years-125308371.html` },
+          { text: `Binance has days to secure a replacement EU license before June 30 or halt services for millions of European users.`, source: `The Block`, url: `https://www.theblock.co/` },
+          { text: `Tether expanded its tokenized-gold play, letting XAUT holders borrow against their bullion without selling.`, source: `CoinDesk`, url: `https://www.coindesk.com/` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `World Cup 2026: Egypt reached the knockouts for the first time (1-1 with Iran), Belgium beat New Zealand 5-1 to top Group G, and Uzbekistan became the first Central Asian side to qualify.`, source: `ESPN`, url: `https://www.espn.com/soccer/story/_/id/49194724/world-cup-2026-today-blog-27-06-2026-live-updates-news-fixtures-schedule-results-cape-verde-uruguay-england` },
+          { text: `The US-Iran ceasefire looked increasingly fragile after fresh hostilities, including US strikes on Iranian military targets.`, source: `NPR`, url: `https://www.npr.org/sections/world/` },
+          { text: `Venezuela declared a state of emergency as powerful earthquakes caused widespread damage.`, source: `NPR`, url: `https://www.npr.org/sections/world/` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `Switzerland logged its hottest-ever June, hitting 38°C in Basel and breaking a record set roughly eight decades earlier.`, source: `The Local`, url: `https://www.thelocal.ch/20260626/today-in-switzerland-a-roundup-of-the-latest-news-on-friday-249` },
+          { text: `Eighty Swiss rescue specialists landed in Caracas to aid search efforts after two deadly Venezuelan earthquakes.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `The Beznau nuclear reactors were taken off the grid as river water overheated during the heatwave.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `The government opened its National Housing Strategy 2026–2035 for consultation, floating rent caps, mortgage tax incentives and lower VAT on social housing.`, source: `Greek City Times`, url: `https://greekcitytimes.com/` },
+          { text: `The Hellenic Olympic Committee began a major restoration of the Panathenaic Stadium ahead of a planned 2027 Diamond League meet.`, source: `GreekReporter`, url: `https://greekreporter.com/greek-news/` },
+          { text: `A proposed €136.5M tourism development on Kalamata's western beachfront sparked debate over coastal access and the environment.`, source: `GreekReporter`, url: `https://greekreporter.com/greek-news/` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Saturday, June 27, 2026`,
     iso: `2026-06-27`,
     greeting: `Good morning — here's your briefing for Saturday, June 27, 2026. One timed item today: invoicing New Era Learning at 09:00, and it's John Mavroudopoulos's birthday. Two open to-dos remain in Tasklist A and five in Tasklist B, with no lead follow-ups due. In the headlines: Venezuela's earthquake toll passes 920, Bitcoin slides toward $58K, and Switzerland sets a new June heat record of 38.8°C.`,
