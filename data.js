@@ -23,6 +23,97 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Monday, June 29, 2026`,
+    iso: `2026-06-29`,
+    greeting: `Good morning — here's your briefing for Monday, June 29, 2026. No all-day items, but two timed events this evening: the Weekly TRW Dev Meeting at 18:00 and Box at 19:00. Two open to-dos remain in Tasklist A and two in Tasklist B, with no lead follow-ups due (the outreach CRM is currently empty). In the headlines: Qualcomm is in talks to buy AI-chip startup Tenstorrent for $8–10B, spot bitcoin ETFs are heading for their worst month on record, and Switzerland pushes through a 10th straight day above 30°C.`,
+    calendar: {
+      allDay: [],
+      events: [
+        { time: `18:00–19:00`, title: `Weekly TRW Dev Meeting`, calendar: `charismoutafidis@gmail.com` },
+        { time: `19:00–21:00`, title: `Box`, calendar: `charismoutafidis@gmail.com` }
+      ],
+      note: `Two timed items this evening on your personal calendar; the daytime is open.`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Get the files to get stamps or whatever`] },
+        { name: `Tasklist B`, tasks: [`Peak Code Consulting website copy home page should not be slop`, `Fiji Solutions website copy home page should not be slop`] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: []
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `Qualcomm is in early talks to acquire RISC-V AI-chip startup Tenstorrent for $8–10B.`, source: `TechCrunch`, url: `https://techcrunch.com/category/artificial-intelligence/` },
+          { text: `HPE expanded its AI Factory portfolio with NVIDIA, adding the Vera CPU and Agent Toolkit to run agentic AI in production.`, source: `AI News`, url: `https://www.artificialintelligence-news.com/` },
+          { text: `DeepSeek v3.2 (671B MoE, MIT license) leads open models on math, scoring 96.0% on GSM8K.`, source: `LLM Stats`, url: `https://llm-stats.com/ai-news` }
+        ]
+      },
+      {
+        group: `Tech & startups`,
+        section: `global`,
+        items: [
+          { text: `SpaceX is reportedly planning a record ~$75B IPO to fund space-based AI data centers.`, source: `Tech Startups`, url: `https://techstartups.com/2026/06/26/top-tech-news-today-june-26-2026/` },
+          { text: `AI-infrastructure startup Baseten raised $1.5B at a $13B valuation for model deployment.`, source: `TechCrunch`, url: `https://techcrunch.com/` },
+          { text: `Onsemi agreed to acquire Synaptics in an all-stock deal worth ~$7B to expand in edge AI and robotics.`, source: `Tech Startups`, url: `https://techstartups.com/2026/06/26/top-tech-news-today-june-26-2026/` }
+        ]
+      },
+      {
+        group: `Software engineering`,
+        section: `global`,
+        items: [
+          { text: `At Microsoft Build 2026, GitHub shipped new agent tooling and made Copilot remote control GA on web and mobile.`, source: `GitHub Blog`, url: `https://github.blog/news-insights/` },
+          { text: `MiniMax M3 launched as the first open-weight model pairing frontier software-engineering skills with a 1M-token context window.`, source: `devFlokers`, url: `https://www.devflokers.com/blog/open-source-ai-roundup-june-2026` },
+          { text: `The Model Context Protocol (MCP) has become a foundational layer across major agent frameworks.`, source: `Developer Tech`, url: `https://www.developer-tech.com/` }
+        ]
+      },
+      {
+        group: `Crypto`,
+        section: `global`,
+        items: [
+          { text: `Bitcoin traded near $59.8K (-0.4%) and Ethereum near $1,578 (+0.3%).`, source: `The Block`, url: `https://www.theblock.co/` },
+          { text: `Spot bitcoin ETFs are headed for their worst month on record, with ~$4B of outflows in June.`, source: `CoinDesk`, url: `https://www.coindesk.com/` },
+          { text: `Coinbase and OKX are courting Binance's EU users after Binance failed to secure a MiCA license.`, source: `CoinDesk`, url: `https://www.coindesk.com/` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `Iran launched drone and missile attacks on Kuwait and Bahrain and threatened to halt talks with the US.`, source: `CBS News`, url: `https://www.cbsnews.com/live-updates/us-iran-war-israel-hezbollah-strait-of-hormuz-peace-deal-talks/` },
+          { text: `Twin earthquakes in Venezuela killed more than 1,400 people, with US search-and-rescue teams deployed.`, source: `CBS News`, url: `https://www.cbsnews.com/world/` },
+          { text: `World Cup 2026: Canada reached the round of 16; Brazil–Japan and Germany–Paraguay play knockout ties.`, source: `ESPN`, url: `https://www.espn.com/soccer/story/_/id/49213287/world-cup-2026-today-blog-29-06-2026-live-updates-news-fixtures-schedule-results-canada-brazil-japan` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `President Guy Parmelin began a US, Canada and Mexico economic and scientific mission (June 29–July 9).`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/` },
+          { text: `Switzerland endured a 10th straight day above 30°C, with 19 stations hitting record highs and the Aare setting a record.`, source: `Le News`, url: `https://lenews.ch/` },
+          { text: `Switzerland completed a CHF500M advance payment for US F-35 fighter jets.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `Greek startup funding reached €732.2M across 90+ startups in 2025, up 35% year over year.`, source: `Mean CEO`, url: `https://blog.mean.ceo/startups-greece-news-june-2026/` },
+          { text: `The Bank of Greece warned that climate change and overtourism threaten tourism's long-term sustainability.`, source: `GreekReporter`, url: `https://greekreporter.com/` },
+          { text: `The government announced plans to send a Greek astronaut into space within two years.`, source: `Keep Talking Greece`, url: `https://www.keeptalkinggreece.com/` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Sunday, June 28, 2026`,
     iso: `2026-06-28`,
     greeting: `Good morning — here's your briefing for Sunday, June 28, 2026. One all-day item today (Weekly Accounting work) and no timed meetings; two open to-dos remain in Tasklist A and five in Tasklist B, with no lead follow-ups due. In the headlines: the big frontier AI launches (GPT-5.6, Gemini 3.5 Pro, Grok 5) all slipped into July, Bitcoin steadied near $59K after multi-year lows, and Switzerland logged its hottest-ever June at 38°C in Basel.`,
