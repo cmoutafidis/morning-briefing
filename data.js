@@ -23,6 +23,154 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Tuesday, June 30, 2026`,
+    iso: `2026-06-30`,
+    greeting: `Good morning — here's your briefing for Tuesday, June 30, 2026. One all-day item today (Invoice AKB) and no timed events, so the day is open. Two open to-dos remain in each of Tasklist A and Tasklist B. Your outreach CRM lit up overnight: 58 leads now flag for follow-up today — one genuine scheduled follow-up (Theodoros Papatheodorou at PAP Center) plus 57 newly added, not-yet-contacted prospects across Thessaloniki aesthetic clinics and Swiss enterprises. In the headlines: Meta ships its Llama 4 family, Qualcomm eyes an $8–10B deal for AI-chip maker Tenstorrent, bitcoin hovers near $60K, and a record heatwave grips Switzerland as President Parmelin heads to North America over US tariffs.`,
+    calendar: {
+      allDay: [`Invoice AKB`],
+      events: [],
+      note: `No timed events today — just the Invoice AKB reminder on your personal calendar.`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Get the files to get stamps or whatever`] },
+        { name: `Tasklist B`, tasks: [`Peak Code Consulting website copy home page should not be slop`, `Fiji Solutions website copy home page should not be slop`] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: [
+        { name: `Ευάγγελος Ακτσαλής`, company: `Aktsalis Plastic Surgery`, status: `Open - Not Contacted`, followUp: ``, email: `contact@aktsalis.gr` },
+        { name: `Δημήτριος Θεοδώρου`, company: `Theodorou Plastic Surgery`, status: `Open - Not Contacted`, followUp: ``, email: `info@dtheodorou.gr` },
+        { name: `KALIKA Med Care`, company: `KALIKA Med Care – Hair Clinic`, status: `Open - Not Contacted`, followUp: ``, email: `info@kalikamedhair.com` },
+        { name: `Αναστάσιος Στρεβίνας`, company: `Strevinas Plastic Surgery`, status: `Open - Not Contacted`, followUp: ``, email: `info.strevinas@gmail.com` },
+        { name: `Δημήτρης Τριανταφύλλου`, company: `Dr.Plastic (Triantafyllou Plastic Surgery)`, status: `Open - Not Contacted`, followUp: ``, email: `info@drplastic.gr` },
+        { name: `Σωτήριος Τσέπουρας`, company: `Tsepouras Plastic Surgery`, status: `Open - Not Contacted`, followUp: ``, email: `info@tsepourasplasticsurgery.gr` },
+        { name: `Sascha Justl`, company: `Finnova AG Bankware`, status: `Open - Not Contacted`, followUp: ``, email: `sascha.justl@finnova.com` },
+        { name: `Χριστίνα Γούλα`, company: `CG Plastic Surgery`, status: `Open - Not Contacted`, followUp: ``, email: `ch_goula@yahoo.gr` },
+        { name: `Ιωάννης Γκότσικας`, company: `Gkotsikas Plastic Surgery`, status: `Open - Not Contacted`, followUp: ``, email: `info@gkotsikas.gr` },
+        { name: `Τριαντάφυλλος Βρύζας`, company: `Vryzas Plastic Surgery`, status: `Open - Not Contacted`, followUp: ``, email: `tvryzas@yahoo.gr` },
+        { name: `Χρήστος Τσάκαλος`, company: `ChoiExpert (By Dr. Chris)`, status: `Open - Not Contacted`, followUp: ``, email: `info@choiexpert.com` },
+        { name: `Guido Steiner`, company: `Allianz Suisse`, status: `Open - Not Contacted`, followUp: ``, email: `guido.steiner@allianz-suisse.ch` },
+        { name: `Michael Rieger`, company: `CSS Versicherung`, status: `Open - Not Contacted`, followUp: ``, email: `michael.rieger@css.ch` },
+        { name: `Philipp Knus`, company: `SBB Cargo`, status: `Open - Not Contacted`, followUp: ``, email: `philipp.knus@sbbcargo.com` },
+        { name: `Π. Καραϊσκάκης`, company: `Karaiskakis Plastic Surgery`, status: `Open - Not Contacted`, followUp: ``, email: `info@drkaraiskakis.gr` },
+        { name: `Andre Hurschler`, company: `Suva`, status: `Open - Not Contacted`, followUp: ``, email: `andre.hurschler@suva.ch` },
+        { name: `Θεόδωρος Παπαθεοδώρου`, company: `PAP Center`, status: `Working - Contacted`, followUp: `2026-06-30`, email: `theo@papcenter.gr` },
+        { name: `Bjoern Zapadlo`, company: `Adcubum`, status: `Open - Not Contacted`, followUp: ``, email: `bjoern.zapadlo@adcubum.com` },
+        { name: `Dieter Wijngaards`, company: `SUISA`, status: `Open - Not Contacted`, followUp: ``, email: `dieter.wijngaards@suisa.ch` },
+        { name: `Θεόδωρος Μπρέντας`, company: `Brentas Hair Clinic`, status: `Open - Not Contacted`, followUp: ``, email: `brentastheodoros@gmail.com` },
+        { name: `Adrian Lingenhag`, company: `PostFinance`, status: `Open - Not Contacted`, followUp: ``, email: `adrian.lingenhag@postfinance.ch` },
+        { name: `Michael Wuersch`, company: `Helsana`, status: `Open - Not Contacted`, followUp: ``, email: `michael.wuersch@helsana.ch` },
+        { name: `Γεωργία Βαδαρλή`, company: `ClinicVIE (Vadarli Plastic Surgery)`, status: `Open - Not Contacted`, followUp: ``, email: `info@vadarli.gr` },
+        { name: `Βασίλειος Σταματίου`, company: `Stamatiou Aesthetics / Excel Plastic Surgery`, status: `Open - Not Contacted`, followUp: ``, email: `info@drstamatiou.com` },
+        { name: `Γεώργιος Πάγκαλος`, company: `Dr. Pagkalos Plastic Surgery`, status: `Open - Not Contacted`, followUp: ``, email: `doctor@drpagkalos.gr` },
+        { name: `Martin Christen`, company: `Berner Fachhochschule (BFH)`, status: `Open - Not Contacted`, followUp: ``, email: `martin.christen@bfh.ch` },
+        { name: `Bernd Dahmen`, company: `Kuehne+Nagel`, status: `Open - Not Contacted`, followUp: ``, email: `bernd.dahmen@kuehne-nagel.com` },
+        { name: `Σωτήριος Ιωαννίδης`, company: `Plastic Surgery Clinic (Thessaloniki)`, status: `Open - Not Contacted`, followUp: ``, email: `info@plastic-surgery-clinic.gr` },
+        { name: `Σταμάτης Σαπουντζής`, company: `Dr.Stam Plastic Surgery`, status: `Open - Not Contacted`, followUp: ``, email: `info@drstam.gr` },
+        { name: `Νικόλαος Ισσόπουλος`, company: `Surgical Artistry`, status: `Open - Not Contacted`, followUp: ``, email: `info@surgicalartistry.gr` },
+        { name: `Μαρία Κανακίδου`, company: `MK Plastic Surgery`, status: `Open - Not Contacted`, followUp: ``, email: `info@mk-plasticsurgery.gr` },
+        { name: `Χρήστος Χριστάκης`, company: `Bergmann Kord Hair Clinics – Θεσσαλονίκη`, status: `Open - Not Contacted`, followUp: ``, email: `info@kord.gr` },
+        { name: `Σωτήρης Τυρκαλάς`, company: `Starks Medical (Starks Greece)`, status: `Open - Not Contacted`, followUp: ``, email: `thessaloniki@starksmedical.gr` },
+        { name: `Fabian Voegeli`, company: `Visana Group`, status: `Open - Not Contacted`, followUp: ``, email: `fabian.voegeli@visana.ch` },
+        { name: `Αθανάσιος Εξαδάκτυλος`, company: `Exadaktylos Plastic Surgery`, status: `Open - Not Contacted`, followUp: ``, email: `exadac@plasticsurgery.gr` },
+        { name: `Αθανάσιος Αντωνιάδης`, company: `Kalaesthesis`, status: `Open - Not Contacted`, followUp: ``, email: `info@kalaesthesis.gr` },
+        { name: `Dirk Appelzoeller`, company: `msg global solutions`, status: `Open - Not Contacted`, followUp: ``, email: `dirk.appelzoeller@msg-global.com` },
+        { name: `Πρόδρομος Παπαϊωάννου`, company: `Papaioannou Clinic`, status: `Open - Not Contacted`, followUp: ``, email: `info@drpapaioannou.gr` },
+        { name: `Γεωργία Χουρπουλιάδου-Χόρτη`, company: `PROFILE Centre of Plastic Surgery`, status: `Open - Not Contacted`, followUp: ``, email: `info@profilelaser.gr` },
+        { name: `Αχιλλέας Χαντές`, company: `Chantes Plastic Surgery`, status: `Open - Not Contacted`, followUp: ``, email: `info@chantes.gr` },
+        { name: `Juergen Horwath`, company: `Swiss Federal Institute of Intellectual Property (IGE/IPI)`, status: `Open - Not Contacted`, followUp: ``, email: `juergen.horwath@ipi.ch` },
+        { name: `Urs Zihlmann`, company: `Sanitas`, status: `Open - Not Contacted`, followUp: ``, email: `urs.zihlmann@sanitas.com` },
+        { name: `Αναστάσιος Βεκρής`, company: `Advanced Hair Clinics – Θεσσαλονίκη`, status: `Open - Not Contacted`, followUp: ``, email: `info@advancedhairclinics.gr` },
+        { name: `Rouven Oberholzer`, company: `Solveva AG`, status: `Open - Not Contacted`, followUp: ``, email: `rouven.oberholzer@solveva.com` },
+        { name: `Federica Pattarozzi`, company: `Citta di Lugano`, status: `Open - Not Contacted`, followUp: ``, email: `federica.pattarozzi@lugano.ch` },
+        { name: `Aurelio Cortesi`, company: `enovetic AG`, status: `Open - Not Contacted`, followUp: ``, email: `aurelio.cortesi@enovetic.ch` },
+        { name: `Βασιλική Παπαδοπούλου`, company: `Dermis Clinic`, status: `Open - Not Contacted`, followUp: ``, email: `info@dermis-clinic.gr` },
+        { name: `Άγγελος Κεραμιδάς`, company: `K-Hair Clinic`, status: `Open - Not Contacted`, followUp: ``, email: `info@k-hairclinic.gr` },
+        { name: `Peter Herger`, company: `CONCORDIA`, status: `Open - Not Contacted`, followUp: ``, email: `peter.herger@concordia.ch` },
+        { name: `Ανδρέας Μουτσούδης`, company: `Dr. Moutsoudis Plastic Surgery`, status: `Open - Not Contacted`, followUp: ``, email: `info@drmoutsoudis.gr` },
+        { name: `Pascal Auderset`, company: `Die Mobiliar`, status: `Open - Not Contacted`, followUp: ``, email: `pascal.auderset@mobi.ch` },
+        { name: `Απόστολος Παγανός`, company: `Maco Health (Hair Transplant)`, status: `Open - Not Contacted`, followUp: ``, email: `info@macohealth.gr` },
+        { name: `Κωνσταντίνος Καλοκασίδης`, company: `Dr. Kalokasidis Dermatology`, status: `Open - Not Contacted`, followUp: ``, email: `info@dermatologist.gr` },
+        { name: `DHI Θεσσαλονίκη`, company: `DHI Thessaloniki (DHI Global)`, status: `Open - Not Contacted`, followUp: ``, email: `info@dhiglobal.com` },
+        { name: `Antonio Gallicchio`, company: `Generali Switzerland`, status: `Open - Not Contacted`, followUp: ``, email: `antonio.gallicchio@generali.com` },
+        { name: `Andreas Eigenmann`, company: `Helvetia`, status: `Open - Not Contacted`, followUp: ``, email: `andreas.eigenmann@helvetia.ch` },
+        { name: `Alexander Galman`, company: `Pro Informatik AG`, status: `Open - Not Contacted`, followUp: ``, email: `alexander@pro-info.ch` },
+        { name: `Μιχαήλ Στάμπος`, company: `Stampos Plastic Surgery`, status: `Open - Not Contacted`, followUp: ``, email: `info@stampos.gr` }
+      ]
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `Meta deployed its Llama 4 family — Scout (109B, 10M-token context) and Maverick (400B) — under the Llama 4 Community License.`, source: `LLM Stats`, url: `https://llm-stats.com/llm-updates` },
+          { text: `Qualcomm is in early talks to acquire RISC-V AI-chip maker Tenstorrent for $8–10B.`, source: `TechCrunch`, url: `https://techcrunch.com/category/artificial-intelligence/` },
+          { text: `WEF analysis finds 37% of young workers are in roles highly exposed to AI, with entry-level jobs being "seniorised" rather than cut.`, source: `AI News`, url: `https://www.artificialintelligence-news.com/` }
+        ]
+      },
+      {
+        group: `Tech & Startups`,
+        section: `global`,
+        items: [
+          { text: `Ramp raised $750M (Iconiq, GIC, Ontario Teachers') at a $44B valuation — the week's largest round.`, source: `Crunchbase News`, url: `https://news.crunchbase.com/venture/biggest-funding-rounds-june-5-2026/` },
+          { text: `Flourish, building brain-inspired AI models, raised $500M from backers including Jeff Bezos, Lux Capital and Google Ventures.`, source: `Tech Funding News`, url: `https://techfundingnews.com/` },
+          { text: `Ex-Infosys chief Vishal Sikka's new startup Hang Ten Systems raised a $32M seed led by Mayfield.`, source: `TechCrunch`, url: `https://techcrunch.com/2026/06/24/former-infosys-chief-has-a-new-startup-that-wants-to-challenge-the-it-services-world/` }
+        ]
+      },
+      {
+        group: `Software & Dev Tools`,
+        section: `global`,
+        items: [
+          { text: `MiniMax launched M3, billed as the first open-weight model pairing frontier software-engineering skill with a 1M-token context.`, source: `devFlokers`, url: `https://www.devflokers.com/blog/open-source-ai-roundup-june-2026` },
+          { text: `NVIDIA launched the RTX Spark Superchip, bringing up to 128GB unified memory and ~1 petaflop of AI compute to workstation laptops.`, source: `Developer Tech`, url: `https://www.developer-tech.com/` },
+          { text: `The Model Context Protocol (MCP) is becoming a foundational layer across major agent frameworks.`, source: `InfoQ`, url: `https://www.infoq.com/` }
+        ]
+      },
+      {
+        group: `Cryptocurrency`,
+        section: `global`,
+        items: [
+          { text: `Bitcoin traded near $60,100 (+0.9%) and Ether near $1,610 (+2.5%) on June 29.`, source: `CoinDesk`, url: `https://www.coindesk.com/` },
+          { text: `BlackRock pushed deeper into DeFi via an Ethena integration, adding a $100M liquidity facility for its tokenized money-market fund.`, source: `The Block`, url: `https://www.theblock.co/` },
+          { text: `JPMorgan urged Congress to pair crypto market-structure clarity with strong safeguards as the Senate weighs the Clarity Act.`, source: `CoinDesk`, url: `https://www.coindesk.com/` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `The US Supreme Court ruled 5–4 that states may count mailed-on-time ballots arriving after Election Day.`, source: `Fox News`, url: `https://www.foxnews.com/politics/supreme-court-rules-mail-in-ballots-received-after-election-day` },
+          { text: `A skydiving plane (Pilatus PC-6) crashed in northeastern France, killing all 11 aboard.`, source: `Fox News`, url: `https://www.foxnews.com/world/french-investigators-probe-fatal-skydiving-plane-crash-killed-pilot-10-parachutists` },
+          { text: `Trump said US–Iran talks would take place in Doha today; Tehran denied any meeting is planned.`, source: `Al Jazeera`, url: `https://www.aljazeera.com/news/liveblog/2026/6/30/iran-war-live-tehran-denies-trumps-claims-of-meeting-in-doha` },
+          { text: `A dangerous, prolonged heat wave is set to scorch the eastern two-thirds of the US this week.`, source: `CBS News`, url: `https://www.cbsnews.com/news/dangerous-long-heat-wave-large-swathes-of-us-this-week/` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `A record heatwave hit Switzerland — 39°C in Basel — with temperatures set to drop ~10°C in the days ahead.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/swiss-diaspora/switzerland-today/91668728` },
+          { text: `President Guy Parmelin travelled to North America aiming to avert new US tariff hikes before the 10% rate expires July 24.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/` },
+          { text: `The 32nd Swiss Yodelling Festival in Basel closed with a festive parade.`, source: `Le News`, url: `https://lenews.ch/` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `June 29 marked Greece's Tax Freedom Day — Greeks work ~179 days before earning for themselves.`, source: `Keep Talking Greece`, url: `https://www.keeptalkinggreece.com/` },
+          { text: `The government opened its National Housing Strategy 2026–2035 for consultation, floating rent caps and affordable-mortgage incentives.`, source: `Greek City Times`, url: `https://greekcitytimes.com/` },
+          { text: `Sébastien Ogier won his 69th WRC title at the EKO Acropolis Rally Greece.`, source: `Athens Times`, url: `https://athens-times.com/` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Monday, June 29, 2026`,
     iso: `2026-06-29`,
     greeting: `Good morning — here's your briefing for Monday, June 29, 2026. No all-day items, but two timed events this evening: the Weekly TRW Dev Meeting at 18:00 and Box at 19:00. Two open to-dos remain in Tasklist A and two in Tasklist B, with no lead follow-ups due (the outreach CRM is currently empty). In the headlines: Qualcomm is in talks to buy AI-chip startup Tenstorrent for $8–10B, spot bitcoin ETFs are heading for their worst month on record, and Switzerland pushes through a 10th straight day above 30°C.`,
