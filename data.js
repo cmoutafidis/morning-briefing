@@ -23,6 +23,99 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Wednesday, July 1, 2026`,
+    iso: `2026-07-01`,
+    greeting: `Good morning — here's your briefing for Wednesday, July 1, 2026. Your personal calendars are clear; the only item is a private evening hold (17:30) on the Fiji Solutions work calendar. Two open to-dos remain in each of Tasklist A and Tasklist B, and one lead follow-up is now overdue — Theodoros Papatheodorou at PAP Center (due June 30). In the headlines: MiniMax ships its open-weight M3 model, Italy's Bending Spoons heads for a Nasdaq IPO, bitcoin hovers near $59K, and a batch of new Swiss traffic fines takes effect today.`,
+    calendar: {
+      allDay: [],
+      events: [
+        { time: `17:30–19:00`, title: `Busy (private)`, calendar: `charis@fijisolutions.net` }
+      ],
+      note: `One private hold on the Fiji Solutions work calendar this evening (title not shared); your personal calendars are otherwise clear.`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Get the files to get stamps or whatever`] },
+        { name: `Tasklist B`, tasks: [`Peak Code Consulting website copy home page should not be slop`, `Fiji Solutions website copy home page should not be slop`] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: [
+        { name: `Θεόδωρος Παπαθεοδώρου`, company: `PAP Center`, status: `Working - Contacted`, followUp: `2026-06-30`, email: `theo@papcenter.gr` }
+      ]
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `MiniMax released MiniMax-M3, an open-weight model pairing frontier agentic-coding performance with a 1M-token context and native multimodality.`, source: `Open Data Science`, url: `https://opendatascience.com/in-case-you-missed-it-last-week-in-ai-week-of-june-22-28-2026/` },
+          { text: `OpenAI launched its GPT-5.6 family in a government-gated preview, as regulatory review moves to the center of how frontier models ship.`, source: `AI News`, url: `https://www.artificialintelligence-news.com/` },
+          { text: `Qualcomm is in early talks to acquire AI-chip maker Tenstorrent for $8–10B.`, source: `TechCrunch`, url: `https://techcrunch.com/category/artificial-intelligence/` }
+        ]
+      },
+      {
+        group: `Tech & Startups`,
+        section: `global`,
+        items: [
+          { text: `Italy's Bending Spoons filed for a US IPO and is heading toward a Nasdaq listing.`, source: `TechCrunch`, url: `https://techcrunch.com/` },
+          { text: `Lime (Neutron Holdings) updated its IPO terms, targeting a late-June/early-July debut.`, source: `AccessIPOs`, url: `https://accessipos.com/upcoming-ipos/` },
+          { text: `Robotics funding hit ~$14B in 2025 (+70% YoY), topping the 2021 peak, as capital concentrates in AI, robotics and defense tech.`, source: `Crunchbase News`, url: `https://news.crunchbase.com/venture/2026-tech-startup-trends-ipo-ai-ma/` }
+        ]
+      },
+      {
+        group: `Software & Dev Tools`,
+        section: `global`,
+        items: [
+          { text: `At Microsoft Build 2026, GitHub shipped new agent tooling and made remote control of Copilot sessions GA on github.com and GitHub Mobile.`, source: `The GitHub Blog`, url: `https://github.blog/news-insights/` },
+          { text: `GitHub Copilot switched to usage-based billing with AI Credits on June 1, briefly pausing new paid sign-ups during the rollout.`, source: `The GitHub Blog`, url: `https://github.blog/news-insights/` },
+          { text: `Claude Fable 5 entries landed on the Terminal-Bench 2.1 leaderboard, with Claude Code + Fable 5 at 83.1%, just behind Codex + GPT-5.5.`, source: `Morph`, url: `https://www.morphllm.com/best-ai-coding-agents-2026` }
+        ]
+      },
+      {
+        group: `Cryptocurrency`,
+        section: `global`,
+        items: [
+          { text: `Bitcoin hovered near $59,000 (-0.6%) and Ether near $1,590 (+0.4%) as both retested key support levels.`, source: `CoinDesk`, url: `https://www.coindesk.com/` },
+          { text: `Binance has under a week to secure a replacement EU license before permissions expire June 30, or halt services for European users.`, source: `The Block`, url: `https://www.theblock.co/` },
+          { text: `Circle slid 17% after Stripe, Coinbase and BlackRock backed a rival stablecoin network.`, source: `Investing News`, url: `https://investingnews.com/cryptocurrency-market-recap/` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `Twin earthquakes in Venezuela have killed more than 1,700 people, with tens of thousands still missing.`, source: `CBS News`, url: `https://www.cbsnews.com/world/` },
+          { text: `The US Supreme Court struck down President Trump's executive order seeking to end birthright citizenship.`, source: `NPR`, url: `https://www.npr.org/sections/news/` },
+          { text: `Australia moved to double potential fines for social media platforms that fail to keep children off their services.`, source: `ABC News`, url: `https://abcnews.com/` },
+          { text: `Pakistan said it struck militant hideouts along the Afghan border; Kabul condemned the strikes as aggression.`, source: `NPR`, url: `https://www.npr.org/sections/world/` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `From July 1, undertaking (passing on the right) on motorways brings a CHF 200 fine, alongside new penalties for other maneuvers.`, source: `IamExpat`, url: `https://www.iamexpat.ch/expat-info/swiss-news/july-2026-changes-expats-need-know-switzerland` },
+          { text: `Switzerland lifted its ban on organised circuit racing on public roads from July 1, with cantons overseeing safety.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/` },
+          { text: `Switzerland recorded its third-warmest June since records began in 1864.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `Greek tourism revenues and arrivals in the first four months of 2026 far outpaced the same period in 2025.`, source: `GreekReporter`, url: `https://greekreporter.com/` },
+          { text: `Chevron applied to join the "Block 10" offshore exploration area in the Ionian Sea, bolstering Greece's energy role.`, source: `Euronews`, url: `https://www.euronews.com/tag/greece` },
+          { text: `Athens' Panathēnea 2026 gathering spotlighted access to capital, risk-taking and building global companies.`, source: `GreekReporter`, url: `https://greekreporter.com/` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Tuesday, June 30, 2026`,
     iso: `2026-06-30`,
     greeting: `Good morning — here's your briefing for Tuesday, June 30, 2026. One all-day item today (Invoice AKB) and no timed events, so the day is open. Two open to-dos remain in each of Tasklist A and Tasklist B. Your outreach CRM lit up overnight: 58 leads now flag for follow-up today — one genuine scheduled follow-up (Theodoros Papatheodorou at PAP Center) plus 57 newly added, not-yet-contacted prospects across Thessaloniki aesthetic clinics and Swiss enterprises. In the headlines: Meta ships its Llama 4 family, Qualcomm eyes an $8–10B deal for AI-chip maker Tenstorrent, bitcoin hovers near $60K, and a record heatwave grips Switzerland as President Parmelin heads to North America over US tariffs.`,
