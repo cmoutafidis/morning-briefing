@@ -23,6 +23,102 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Thursday, July 2, 2026`,
+    iso: `2026-07-02`,
+    greeting: `Good morning — here's your briefing for Thursday, July 2, 2026. Three timed events today: a private 10:00 hold on the Fiji Solutions calendar, the VHOL: Agent Evaluations with Cortex Code virtual session (11:00–12:30), and the Weekly TRW Dev Meeting (18:00). Two open to-dos remain in each of Tasklist A and Tasklist B, and one lead follow-up is overdue — Theodoros Papatheodorou at PAP Center (due June 30). In the headlines: Together AI raises $800M at an $8.3B valuation, Italy's Bending Spoons debuts on Nasdaq at $18.4B, bitcoin reclaims $60K, and President Parmelin cheers Switzerland at the World Cup in Vancouver.`,
+    calendar: {
+      allDay: [],
+      events: [
+        { time: `10:00–10:30`, title: `Busy (private)`, calendar: `charis@fijisolutions.net` },
+        { time: `11:00–12:30`, title: `VHOL: Agent Evaluations with Cortex Code`, calendar: `charismoutafidis@gmail.com` },
+        { time: `18:00–19:00`, title: `Weekly TRW Dev Meeting`, calendar: `charismoutafidis@gmail.com` }
+      ],
+      note: `Three timed events today, including a private hold on the Fiji Solutions work calendar at 10:00 (title not shared).`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Get the files to get stamps or whatever`] },
+        { name: `Tasklist B`, tasks: [`Peak Code Consulting website copy home page should not be slop`, `Fiji Solutions website copy home page should not be slop`] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: [
+        { name: `Θεόδωρος Παπαθεοδώρου`, company: `PAP Center`, status: `Working - Contacted`, followUp: `2026-06-30`, email: `theo@papcenter.gr` }
+      ]
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `Together AI raised $800M at an $8.3B valuation (led by Aramco's Prosperity7), pushing total funding to $1.3B.`, source: `Crescendo AI`, url: `https://www.crescendo.ai/news/latest-vc-investment-deals-in-ai-startups` },
+          { text: `A UN scientific panel co-chaired by Yoshua Bengio delivered its first global AI assessment, warning capabilities are outpacing understanding ahead of the July 6–7 Geneva governance summit.`, source: `AI News`, url: `https://www.artificialintelligence-news.com/` },
+          { text: `Qualcomm is in early talks to acquire AI-chip maker Tenstorrent for $8–10B.`, source: `TechCrunch`, url: `https://techcrunch.com/category/artificial-intelligence/` },
+          { text: `Anthropic redeployed Claude Fable 5 after US export controls were lifted, as Sonnet 5 topped Terminal-Bench at lower cost.`, source: `LLM Stats`, url: `https://llm-stats.com/ai-news` }
+        ]
+      },
+      {
+        group: `Tech & Startups`,
+        section: `global`,
+        items: [
+          { text: `Italy's Bending Spoons went public on Nasdaq, raising $1.7B at a reported $18.4B valuation.`, source: `Mean CEO`, url: `https://blog.mean.ceo/startup-funding-news-july-2026/` },
+          { text: `Shield AI secured $1.5B in Series G (part of a $2.25B package), valuing it at $12.7B — up 140% in a year.`, source: `Mean CEO`, url: `https://blog.mean.ceo/startup-funding-news-july-2026/` },
+          { text: `Ottawa-based Dominion Dynamics raised $100M Series A, described as the largest defense-tech round in Canadian history.`, source: `Mean CEO`, url: `https://blog.mean.ceo/startup-funding-news-july-2026/` }
+        ]
+      },
+      {
+        group: `Software & Dev Tools`,
+        section: `global`,
+        items: [
+          { text: `The 2025 Stack Overflow survey finds 84% of developers use or plan to use AI tools, and 51% use them daily.`, source: `Pragmatic Engineer`, url: `https://newsletter.pragmaticengineer.com/p/the-impact-of-ai-on-software-engineers-2026` },
+          { text: `Tools like Temporal, Pkl, Faro, Devbox and Socket are gaining traction around testing, deployment confidence and supply-chain security.`, source: `InfoQ`, url: `https://www.infoq.com/` },
+          { text: `Platform engineering is a defining 2026 trend as more orgs build Internal Developer Platforms for self-service infrastructure.`, source: `DevOps.com`, url: `https://devops.com/3-notable-software-development-trends-for-2026-and-beyond/` }
+        ]
+      },
+      {
+        group: `Cryptocurrency`,
+        section: `global`,
+        items: [
+          { text: `Bitcoin pushed back above $60,000 after Fed Chair Warsh said inflation risks have eased.`, source: `CoinDesk`, url: `https://www.coindesk.com/` },
+          { text: `Ethereum is getting a new nonprofit, EthLabs, focused on institutional adoption as the Ethereum Foundation narrows to core-protocol stewardship.`, source: `The Block`, url: `https://www.theblock.co/` },
+          { text: `Citi cut its 12-month bitcoin and ether price targets, scrapping its ETF-inflow forecasts amid stalled US crypto legislation.`, source: `CoinDesk`, url: `https://www.coindesk.com/` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `President Trump said he won't renew the USMCA trade pact, unsettling a pillar of North American trade.`, source: `NBC News`, url: `https://www.nbcnews.com/business/economy/trump-usmca-renewal-tariffs-trade-rcna352594` },
+          { text: `Iran war: Qatar's PM met US envoys as Tehran held firm on its conditions and fought to keep its grip on the Strait of Hormuz.`, source: `Al Jazeera`, url: `https://www.aljazeera.com/news/liveblog/2026/7/1/iran-war-live-qatars-pm-meets-us-envoys-tehran-holds-firm-on-conditions` },
+          { text: `South Africa deployed thousands of police as deadly anti-immigration protests spread across multiple cities.`, source: `Fox News`, url: `https://www.foxnews.com/world/thousands-police-deployed-south-africa-deadly-anti-immigration-protests-spread-multiple-cities` },
+          { text: `The Ebola outbreak in the Democratic Republic of Congo has now killed more than 300 people.`, source: `NPR`, url: `https://www.npr.org/sections/world/` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `President Guy Parmelin is in North America to deepen economic and scientific ties; on July 2 he attended Switzerland's World Cup round-of-32 match in Vancouver.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/swiss-diaspora/switzerland-today/91668728` },
+          { text: `US tariffs on Swiss goods — cut to 10% after a court ruling — expire July 24, with Parmelin aiming to hold them below the agreed 15% cap.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/` },
+          { text: `Zurich Airport cancelled about 70 flights amid thunderstorms, as Switzerland logged its third-warmest June since 1864.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `The Tourism Ministry relaunched VisitGreece.gr with a new design and digital tools to bolster year-round tourism.`, source: `GreekReporter`, url: `https://greekreporter.com/` },
+          { text: `Chevron applied to join the "Block 10" offshore exploration area in the Ionian Sea, strengthening Greece's energy role.`, source: `Greek City Times`, url: `https://greekcitytimes.com/` },
+          { text: `Planning advanced for the first Greek astronaut's ISS mission, discussed at a meeting chaired by PM Mitsotakis.`, source: `Keep Talking Greece`, url: `https://www.keeptalkinggreece.com/` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Wednesday, July 1, 2026`,
     iso: `2026-07-01`,
     greeting: `Good morning — here's your briefing for Wednesday, July 1, 2026. Your personal calendars are clear; the only item is a private evening hold (17:30) on the Fiji Solutions work calendar. Two open to-dos remain in each of Tasklist A and Tasklist B, and one lead follow-up is now overdue — Theodoros Papatheodorou at PAP Center (due June 30). In the headlines: MiniMax ships its open-weight M3 model, Italy's Bending Spoons heads for a Nasdaq IPO, bitcoin hovers near $59K, and a batch of new Swiss traffic fines takes effect today.`,
