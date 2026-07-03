@@ -23,6 +23,99 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Friday, July 3, 2026`,
+    iso: `2026-07-03`,
+    greeting: `Good morning — here's your briefing for Friday, July 3, 2026. A light calendar today: just Box at 19:00. Two open to-dos remain in each of Tasklist A and Tasklist B, and one follow-up is overdue — Theodoros Papatheodorou at PAP Center (due June 30). In the headlines: Claude Fable 5 is back worldwide after export controls lifted, US hiring slowed sharply in June, bitcoin holds above $60K, and Switzerland reaches the World Cup last 16 for the first knockout win since 1938.`,
+    calendar: {
+      allDay: [],
+      events: [
+        { time: `19:00–21:00`, title: `Box`, calendar: `Home` }
+      ],
+      note: `One timed event today — boxing at 19:00.`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Get the files to get stamps or whatever`] },
+        { name: `Tasklist B`, tasks: [`Peak Code Consulting website copy home page should not be slop`, `Fiji Solutions website copy home page should not be slop`] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: [
+        { name: `Θεόδωρος Παπαθεοδώρου`, company: `PAP Center`, status: `Working - Contacted`, followUp: `2026-06-30`, email: `theo@papcenter.gr` }
+      ]
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `Claude Fable 5 returned to all users worldwide on July 1 after the US Commerce Department lifted export controls; Sonnet 5 is now the default for Free and Pro users.`, source: `Build Fast with AI`, url: `https://www.buildfastwithai.com/blogs/ai-news-today-july-3-2026` },
+          { text: `The White House is in advanced talks with AI companies on voluntary standards for frontier model releases — an announcement could come as soon as the week of July 7.`, source: `Build Fast with AI`, url: `https://www.buildfastwithai.com/blogs/ai-news-today-july-3-2026` },
+          { text: `The UN Global Dialogue on AI Governance begins in Geneva on July 6, where member states will discuss international approaches to managing AI.`, source: `UN News`, url: `https://news.un.org/en/story/2026/07/1167848` },
+          { text: `June payrolls rose just 57,000 — far below estimates — with tech layoffs at 142,000 YTD as AI erodes entry-level knowledge work.`, source: `Build Fast with AI`, url: `https://www.buildfastwithai.com/blogs/ai-news-today-july-3-2026` }
+        ]
+      },
+      {
+        group: `Tech & Startups`,
+        section: `global`,
+        items: [
+          { text: `Tesla will cap employees' AI spending at $200 per week from July 6 — a sign even AI-committed companies are watching costs.`, source: `The Information`, url: `https://www.theinformation.com/` },
+          { text: `LinqAlpha raised $22M, positioning itself against AlphaSense in financial and market intelligence.`, source: `Mean CEO`, url: `https://blog.mean.ceo/startup-funding-announcements-news-july-2026/` },
+          { text: `Ottawa-based Dominion Dynamics closed a $100M Series A — the largest defense-tech round in Canadian history.`, source: `Mean CEO`, url: `https://blog.mean.ceo/startup-funding-announcements-news-july-2026/` }
+        ]
+      },
+      {
+        group: `Software & Dev Tools`,
+        section: `global`,
+        items: [
+          { text: `Temporal, Pkl, Faro, Devbox and Socket are the emerging dev tools gaining real traction — targeting workflow reliability, config correctness and supply-chain security.`, source: `DEV Community`, url: `https://dev.to/thebitforge/top-5-emerging-developer-tools-to-watch-in-2026-12pl` },
+          { text: `TanStack has exploded in popularity for data and routing in full-stack setups by early 2026.`, source: `Let's Code Future`, url: `https://medium.com/lets-code-future/top-5-emerging-dev-tools-to-watch-in-2026-2f2607e8f6b9` },
+          { text: `AI testing tools are reshaping QA in 2026, automating test generation amid the tension between thoroughness and delivery speed.`, source: `DevOps.com`, url: `https://devops.com/3-notable-software-development-trends-for-2026-and-beyond/` }
+        ]
+      },
+      {
+        group: `Cryptocurrency`,
+        section: `global`,
+        items: [
+          { text: `Bitcoin trades at $60,200 (+2.5% in 24h), holding the critical $60K level as ethereum shows strength after June's correction.`, source: `Journal Arta`, url: `https://journalarta.com/en/economy/bitcoin-ethereum-prices-july-3-2026-btc-60200/` },
+          { text: `$1.9B in token unlocks land this month — Hyperliquid ($630M) on July 6 and Rain ($812M) on July 11 — keeping traders cautious.`, source: `Bitcoin Foundation`, url: `https://bitcoinfoundation.org/news/altcoins/top-july-2026-crypto-updates-is-crypto-crash-coming/` },
+          { text: `After $4.06B of Bitcoin-ETF outflows in June, Standard Chartered still targets $100K by end-2026 while Citi sees $82K.`, source: `The Crypto Times`, url: `https://www.cryptotimes.io/2026/07/02/bitcoin-price-prediction-july-2026-will-btc-go-up-or-crash/` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `A security guard was pulled alive from a collapsed basement nine days after Venezuela's twin earthquakes; ~2,300 are confirmed dead and nearly 50,000 remain unaccounted for.`, source: `The Vindicator`, url: `https://www.vindy.com/news/national-news/2026/07/nation-and-world-at-a-glance-for-july-3/` },
+          { text: `Russia launched a large-scale overnight missile and drone attack on Kyiv, killing several people.`, source: `WORLD`, url: `https://wng.org/podcasts/friday-morning-news-july-3-2026-1783036030` },
+          { text: `Funeral processions for Iran's late supreme leader take place July 3–9 across Iran and Iraq.`, source: `The Vindicator`, url: `https://www.vindy.com/news/national-news/2026/07/nation-and-world-at-a-glance-for-july-3/` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `Switzerland beat Algeria 2-0 to reach the World Cup last 16 — the first knockout-stage win since 1938; Colombia or Ghana await in Vancouver.`, source: `NBC News`, url: `https://www.nbcnews.com/sports/soccer/switzerland-sweep-algeria-world-cup-last-16-rcna352843` },
+          { text: `President Parmelin is in North America until July 9, working to stave off new tariff hikes from Washington.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/swiss-diaspora/switzerland-today/91668728` },
+          { text: `Migros opened its first 24-hour supermarket in Switzerland.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `Opposition leader Tsipras says Greece must reconsider its "blank check" to the US, criticizing open-ended base access granted to Washington.`, source: `GreekReporter`, url: `https://greekreporter.com/2026/07/03/tsipras-greece-reconsider-strategic-alignment-us/` },
+          { text: `Police in Evros seized 50 vacuum-packed semi-automatic pistols smuggled via Turkish mafia supply lines; two arrested.`, source: `GreekReporter`, url: `https://greekreporter.com/2026/07/03/major-arms-seizure-evros-turkish-mafia-greece/` },
+          { text: `WRC EKO Acropolis Rally Greece 2026 is underway, with day-2 stages completed.`, source: `WRC`, url: `https://www.youtube.com/watch?v=QYU3gd7aoM8` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Thursday, July 2, 2026`,
     iso: `2026-07-02`,
     greeting: `Good morning — here's your briefing for Thursday, July 2, 2026. Three timed events today: a private 10:00 hold on the Fiji Solutions calendar, the VHOL: Agent Evaluations with Cortex Code virtual session (11:00–12:30), and the Weekly TRW Dev Meeting (18:00). Two open to-dos remain in each of Tasklist A and Tasklist B, and one lead follow-up is overdue — Theodoros Papatheodorou at PAP Center (due June 30). In the headlines: Together AI raises $800M at an $8.3B valuation, Italy's Bending Spoons debuts on Nasdaq at $18.4B, bitcoin reclaims $60K, and President Parmelin cheers Switzerland at the World Cup in Vancouver.`,
