@@ -23,6 +23,99 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Saturday, July 4, 2026`,
+    iso: `2026-07-04`,
+    greeting: `Good morning — here's your briefing for Saturday, July 4, 2026. One event today: Deutsch at 09:00. The same four to-dos remain open in Tasklist A and B, and no follow-ups are due or overdue — the PAP Center lead has been cleared. In the news: Meta begins ~8,000 AI-restructuring layoffs, H1 startup funding hit a record $510B, bitcoin steadies near $62K after the Warsh confirmation, and Iran pauses peace talks for Khamenei's funeral.`,
+    calendar: {
+      allDay: [],
+      events: [
+        { time: `09:00–10:30`, title: `Deutsch`, calendar: `Personal` }
+      ],
+      note: `One timed event today — German class at 09:00.`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Get the files to get stamps or whatever`] },
+        { name: `Tasklist B`, tasks: [`Peak Code Consulting website copy home page should not be slop`, `Fiji Solutions website copy home page should not be slop`] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: []
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `Meta began laying off roughly 8,000 employees in an AI-focused restructuring, with a further 7,000 reassigned to AI teams.`, source: `Crescendo AI News`, url: `https://www.crescendo.ai/news/latest-ai-news-and-updates` },
+          { text: `President Trump abruptly canceled the signing ceremony for a new AI executive order, citing concerns it could undermine the US lead over China.`, source: `Crescendo AI News`, url: `https://www.crescendo.ai/news/latest-ai-news-and-updates` },
+          { text: `Claude Sonnet 5 tops Terminal-Bench and ties Opus 4.8 on knowledge work at 40–60% lower cost, per latest benchmark roundups.`, source: `LLM Stats`, url: `https://llm-stats.com/ai-news` },
+          { text: `Vercel launched Agent Run observability via MCP and CLI — full trace visibility into agent reasoning, tool calls and token usage.`, source: `Crescendo AI News`, url: `https://www.crescendo.ai/news/latest-ai-news-and-updates` }
+        ]
+      },
+      {
+        group: `Tech & Startups`,
+        section: `global`,
+        items: [
+          { text: `Global startups raised a record $510 billion in H1 2026, per Crunchbase data.`, source: `Tech Startups`, url: `https://techstartups.com/2026/07/03/top-tech-news-today-july-3-2026/` },
+          { text: `German drone maker Quantum Systems raised $1.2B at an $8B valuation, backed by Airbus, Blackstone and Advent.`, source: `Tech Startups`, url: `https://techstartups.com/2026/07/03/top-tech-news-today-july-3-2026/` },
+          { text: `Higharc raised a $95M Series C to scale its AI platform for homebuilders.`, source: `Mean CEO`, url: `https://blog.mean.ceo/tech-startup-funding-news-july-2026/` },
+          { text: `The FTC is seeking public comment on a proposed policy statement on AI accuracy and manipulation of AI system behavior.`, source: `Mean CEO`, url: `https://blog.mean.ceo/startup-trends-news-july-2026/` }
+        ]
+      },
+      {
+        group: `Software & Dev Tools`,
+        section: `global`,
+        items: [
+          { text: `OpenAI detailed "Harness Engineering" — Codex agents generating, testing and deploying a million-line production system.`, source: `InfoQ`, url: `https://www.infoq.com/SoftwareEngineering/news/` },
+          { text: `Stripe's "Minions" autonomous coding agents now produce 1,300+ production-ready pull requests per week from Slack and bug reports.`, source: `InfoQ`, url: `https://www.infoq.com/SoftwareEngineering/news/` },
+          { text: `84% of developers use or plan to use AI tools, but ~15% now flag AI tooling cost as a concern.`, source: `The Pragmatic Engineer`, url: `https://newsletter.pragmaticengineer.com/p/the-impact-of-ai-on-software-engineers-2026` }
+        ]
+      },
+      {
+        group: `Crypto`,
+        section: `global`,
+        items: [
+          { text: `Bitcoin trades around $62.5K (+1.8%) after briefly slipping below $60K earlier this week.`, source: `Fortune`, url: `https://fortune.com/article/price-of-bitcoin-07-02-2026/` },
+          { text: `$221M flowed into Bitcoin ETFs, ending a 10-day outflow streak in a fragile market.`, source: `Bitcoin Foundation`, url: `https://bitcoinfoundation.org/news/altcoins/top-july-2026-crypto-updates-is-crypto-crash-coming/` },
+          { text: `The Senate confirmed Kevin Warsh as Fed Chair 54–45; his softer inflation remarks helped lift bitcoin back above $60K.`, source: `24/7 Wall St`, url: `https://247wallst.com/investing/cryptocurrency/2026/07/02/bitcoin-price-prediction-for-july-2026/` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `US–Iran peace talks paused as Iran begins a days-long funeral for slain supreme leader Ayatollah Khamenei.`, source: `CBS News`, url: `https://www.cbsnews.com/live-updates/us-iran-war-trump-negotiations-pause-ayatollah-funeral/` },
+          { text: `Russia struck Kyiv, killing several people, in what it called retaliatory attacks.`, source: `CBS News`, url: `https://www.cbsnews.com/world/` },
+          { text: `The Vatican declared a 'schism' after bishops were ordained without Pope Leo XIV's approval.`, source: `CBS News`, url: `https://www.cbsnews.com/world/` },
+          { text: `A massive heat dome could make this July 4th the hottest on record for much of the US.`, source: `CBS News`, url: `https://www.cbsnews.com/news/heat-wave-hottest-july-4th-record-temperatures/` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `Migros opened its first 24-hour supermarket in Switzerland.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `Swiss Solidarity has raised over CHF 10 million for Venezuela earthquake victims.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `SVP heavyweight Peter Spuhler accused the Farmers' Union of breaking an internal understanding over the Mercosur trade deal.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `PM Mitsotakis marked the 250th anniversary of US independence with a dinner for Ambassador Guilfoyle, calling bilateral ties an unprecedented peak.`, source: `Keep Talking Greece`, url: `https://www.keeptalkinggreece.com/` },
+          { text: `Three arrests over negligence-related wildfires in Western Greece and Halkidiki; police also intercepted a major untraceable-firearms shipment in the northeast.`, source: `Greek Reporter`, url: `https://greekreporter.com/greek-news/` },
+          { text: `The EU and Greece condemned Turkey's decision to exclude Cyprus from the COP31 climate conference.`, source: `Greek Reporter`, url: `https://greekreporter.com/greek-news/` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Friday, July 3, 2026`,
     iso: `2026-07-03`,
     greeting: `Good morning — here's your briefing for Friday, July 3, 2026. A light calendar today: just Box at 19:00. Two open to-dos remain in each of Tasklist A and Tasklist B, and one follow-up is overdue — Theodoros Papatheodorou at PAP Center (due June 30). In the headlines: Claude Fable 5 is back worldwide after export controls lifted, US hiring slowed sharply in June, bitcoin holds above $60K, and Switzerland reaches the World Cup last 16 for the first knockout win since 1938.`,
