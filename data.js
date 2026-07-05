@@ -23,6 +23,94 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Sunday, July 5, 2026`,
+    iso: `2026-07-05`,
+    greeting: `Good morning — here's your briefing for Sunday, July 5, 2026. A quiet day: no timed events, just the all-day Weekly Accounting work. The same four to-dos remain open in Tasklist A and B, and no follow-ups are due or overdue. In the news: the UN's Global Dialogue on AI Governance opens in Geneva tomorrow, bitcoin hit a one-month high above $63K, and Switzerland beat Algeria 2-0 to reach the World Cup Round of 16.`,
+    calendar: {
+      allDay: [`Weekly Accounting work`],
+      events: [],
+      note: `No timed events today — only the all-day accounting block.`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Get the files to get stamps or whatever`] },
+        { name: `Tasklist B`, tasks: [`Peak Code Consulting website copy home page should not be slop`, `Fiji Solutions website copy home page should not be slop`] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: []
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `The UN Global Dialogue on AI Governance opens in Geneva on July 6, following the first report of the UN's Independent International Scientific Panel on AI.`, source: `UN News`, url: `https://news.un.org/en/story/2026/07/1167848` },
+          { text: `Claude Fable 5 is back for all users worldwide after the US Commerce Department lifted the export controls imposed on June 12.`, source: `Build Fast with AI`, url: `https://www.buildfastwithai.com/blogs/ai-news-today-july-3-2026` },
+          { text: `Gemini 3.5 Pro, which missed Google's June I/O deadline, is expected to launch this month with advanced coding and agentic capabilities.`, source: `Mean CEO`, url: `https://blog.mean.ceo/latest-ai-announcements-news-july-2026/` }
+        ]
+      },
+      {
+        group: `Tech & Startups`,
+        section: `global`,
+        items: [
+          { text: `OpenAI is floating an equity stake to the US government, while Meta prepares to rent out its own AI compute.`, source: `Tech Startups`, url: `https://techstartups.com/2026/07/03/top-tech-news-today-july-3-2026/` },
+          { text: `Britain's National Grid is investing $1.75B for a 35% stake in Joulent, a US platform building power infrastructure for AI data centers.`, source: `Tech Startups`, url: `https://techstartups.com/2026/07/03/top-tech-news-today-july-3-2026/` },
+          { text: `Google's data centers drove a record 37% jump in electricity use as frontier labs race to secure custom chips.`, source: `Tech Startups`, url: `https://techstartups.com/2026/07/02/top-tech-news-today-july-2-2026/` }
+        ]
+      },
+      {
+        group: `Software & Dev Tools`,
+        section: `global`,
+        items: [
+          { text: `GitHub cut token costs in agentic CI workflows by up to 62% by pruning unused MCP tools and running daily auditor/optimizer agents.`, source: `SD Times`, url: `https://sdtimes.com/` },
+          { text: `Anthropic introduced a three-agent harness separating planning, generation and evaluation to keep long autonomous coding sessions coherent.`, source: `InfoQ`, url: `https://www.infoq.com/SoftwareEngineering/news/` },
+          { text: `Microsoft is expanding the .NET AI ecosystem — Semantic Kernel, Model Builder and a new Agent Framework let developers build AI features end-to-end.`, source: `Technology.org`, url: `https://www.technology.org/2026/07/01/top-ai-net-development-companies-july-2026-overview/` }
+        ]
+      },
+      {
+        group: `Crypto`,
+        section: `global`,
+        items: [
+          { text: `Bitcoin jumped above $63K, its highest in over a month, during thin July 4 holiday trading; XRP led majors, up 5%.`, source: `The Block`, url: `https://www.theblock.co/` },
+          { text: `US Bitcoin ETFs posted a record $4.51B monthly outflow in June, and Citigroup cut its 12-month target from $112K to $82K.`, source: `Bitcoin Foundation`, url: `https://bitcoinfoundation.org/news/altcoins/top-july-2026-crypto-updates-is-crypto-crash-coming/` },
+          { text: `Bitcoin and ether extended gains after the June jobs report missed expectations, easing rate fears.`, source: `Yahoo Finance`, url: `https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-thursday-july-2-prices-move-up-following-june-jobs-report-125118367.html` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `Thousands remain missing more than a week after twin earthquakes struck Venezuela, as rescue shifts to recovery.`, source: `CBS News`, url: `https://www.cbsnews.com/world/` },
+          { text: `Xi Jinping promoted new generals in Beijing in a move seen as securing the military's loyalty to the Communist Party.`, source: `CBS News`, url: `https://www.cbsnews.com/world/` },
+          { text: `Americans marked the country's 250th birthday on July 4 amid a sweltering record heat wave.`, source: `NPR`, url: `https://www.npr.org/sections/world/` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `President Guy Parmelin is in North America until July 9, working to keep US tariffs below the 15% cap agreed last November.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `Switzerland beat Algeria 2-0 — goals from Embolo and Ndoye — to reach the World Cup Round of 16.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `A protest camp against an AI data centre in Beringen (SH) was cleared; activists regrouped across the German border.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `National security adviser Thanos Dokos was tricked in a video call by Russian pranksters posing as Ukrainian officials, prompting resignation calls.`, source: `To Vima`, url: `https://www.tovima.com/` },
+          { text: `Greece will receive €233.9M from the EU Modernisation Fund as part of a new €2.5B disbursement.`, source: `Greek Reporter`, url: `https://greekreporter.com/` },
+          { text: `Greece is permanently abolishing the widow-pension reduction that kicked in after the first three years of payment.`, source: `Keep Talking Greece`, url: `https://www.keeptalkinggreece.com/` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Saturday, July 4, 2026`,
     iso: `2026-07-04`,
     greeting: `Good morning — here's your briefing for Saturday, July 4, 2026. One event today: Deutsch at 09:00. The same four to-dos remain open in Tasklist A and B, and no follow-ups are due or overdue — the PAP Center lead has been cleared. In the news: Meta begins ~8,000 AI-restructuring layoffs, H1 startup funding hit a record $510B, bitcoin steadies near $62K after the Warsh confirmation, and Iran pauses peace talks for Khamenei's funeral.`,
