@@ -23,6 +23,95 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Monday, July 6, 2026`,
+    iso: `2026-07-06`,
+    greeting: `Good morning — here's your briefing for Monday, July 6, 2026. One event today: the Weekly TRW Dev Meeting at 18:00. The same four to-dos remain open in Tasklist A and B, and no follow-ups are due or overdue. In the news: the UN's AI governance dialogue opens in Geneva today, Microsoft stands up a $2.5B AI deployment unit, bitcoin holds near $63K after its rebound, and Greece battled 60 wildfires in a single day.`,
+    calendar: {
+      allDay: [],
+      events: [
+        { time: `18:00–19:00`, title: `Weekly TRW Dev Meeting`, calendar: `Personal` }
+      ],
+      note: `One timed event this evening — otherwise clear.`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Get the files to get stamps or whatever`] },
+        { name: `Tasklist B`, tasks: [`Peak Code Consulting website copy home page should not be slop`, `Fiji Solutions website copy home page should not be slop`] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: []
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `The UN Global Dialogue on AI Governance opens in Geneva today, with member states debating how to keep safety rules apace with accelerating AI capabilities.`, source: `UN News`, url: `https://news.un.org/en/story/2026/07/1167848` },
+          { text: `Meituan released LongCat-2.0, a 1.6T-parameter open MoE model (MIT license) trained entirely on 50,000 domestic Chinese ASICs — pitched as proof China can train frontier models without Nvidia.`, source: `Build Fast with AI`, url: `https://www.buildfastwithai.com/blogs/ai-news-today-july-4-2026` },
+          { text: `Musk says Grok 4.5 is in private beta at SpaceX and Tesla, with 'completely new models trained from scratch' promised monthly through year-end.`, source: `Build Fast with AI`, url: `https://www.buildfastwithai.com/blogs/ai-news-today-july-4-2026` }
+        ]
+      },
+      {
+        group: `Tech & Startups`,
+        section: `global`,
+        items: [
+          { text: `Microsoft launched 'Microsoft Frontier Company', a $2.5B AI-deployment unit of ~6,000 engineers and specialists embedded directly with enterprise clients.`, source: `TechCrunch`, url: `https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/` },
+          { text: `The FTC is seeking public comment on a proposed policy statement on AI accuracy and manipulation of AI behavior against consumer expectations.`, source: `Tech Startups`, url: `https://techstartups.com/2026/07/03/top-tech-news-today-july-3-2026/` },
+          { text: `Video-AI startup TwelveLabs raised a $100M Series B and named AWS its preferred cloud.`, source: `Tech Startups`, url: `https://techstartups.com/2026/07/01/top-tech-news-today-july-1-2026/` }
+        ]
+      },
+      {
+        group: `Software & Dev Tools`,
+        section: `global`,
+        items: [
+          { text: `OpenAI detailed 'Harness Engineering' — Codex agents generating, testing and deploying a million-line production system under architectural constraints.`, source: `InfoQ`, url: `https://www.infoq.com/SoftwareEngineering/news/` },
+          { text: `Stripe's 'Minions' autonomous coding agents now produce 1,300+ production PRs a week from Slack tasks and bug reports, with human review retained.`, source: `InfoQ`, url: `https://www.infoq.com/SoftwareEngineering/news/` },
+          { text: `Pure Virtual C++ 2026, a free one-day virtual conference for the C++ community, is set for July 21.`, source: `Microsoft Dev Blogs`, url: `https://devblogs.microsoft.com/` }
+        ]
+      },
+      {
+        group: `Crypto`,
+        section: `global`,
+        items: [
+          { text: `Bitcoin holds near $63K after rebounding from 21-month lows — its highest in over a month — as inflation fears soften.`, source: `CoinDesk`, url: `https://www.coindesk.com/markets/2026/07/02/bitcoin-zooms-above-usd61-000-as-inflation-fears-soften` },
+          { text: `Analysts say July hinges on BTC defending the high-$50K–low-$60K range and on whether record ETF outflows stabilize.`, source: `Cryptopolitan`, url: `https://www.cryptopolitan.com/bitcoin-price-prediction/` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `Khamenei's funeral entered its second day amid chants for revenge; US-Iran negotiations remain paused.`, source: `CBS News`, url: `https://www.cbsnews.com/live-updates/us-iran-war-trump-negotiations-pause-ayatollah-funeral/` },
+          { text: `Super Typhoon Bavi is battering the Northern Mariana Islands with intense winds and flooding risk.`, source: `NPR`, url: `https://www.npr.org/sections/world/` },
+          { text: `World Cup: France edged Paraguay 1-0 on a Mbappé penalty to reach the quarterfinals, where they meet Morocco on Thursday.`, source: `France 24`, url: `https://www.france24.com/en/` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `Raye, Mark Ronson and Alicia Keys opened the 60th Montreux Jazz Festival.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `Since July 1, non-violent parenting is written into the Swiss Civil Code — one of several legal changes this month.`, source: `IamExpat`, url: `https://www.iamexpat.ch/expat-info/swiss-news/july-2026-changes-expats-need-know-switzerland` },
+          { text: `Temu, launched in Switzerland in 2023, is now among the country's top five e-commerce companies.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `Greece battled 60 wildfires in a single day, with evacuations in the north; ~85% of fires are attributed to negligence.`, source: `Greek Reporter`, url: `https://greekreporter.com/2026/07/05/greece-sixty-wildfires-day/` },
+          { text: `Thessaloniki residents were told to stay indoors over toxic smoke after a wildfire engulfed a recycling plant on the city's outskirts.`, source: `PBS News`, url: `https://www.pbs.org/newshour/world/wildfires-rage-in-portugal-greece-and-spain-while-greek-authorities-warn-of-toxic-smoke` },
+          { text: `Unemployment fell to 8.1% in May as employment continued to edge higher.`, source: `GTP Headlines`, url: `https://news.gtp.gr/` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Sunday, July 5, 2026`,
     iso: `2026-07-05`,
     greeting: `Good morning — here's your briefing for Sunday, July 5, 2026. A quiet day: no timed events, just the all-day Weekly Accounting work. The same four to-dos remain open in Tasklist A and B, and no follow-ups are due or overdue. In the news: the UN's Global Dialogue on AI Governance opens in Geneva tomorrow, bitcoin hit a one-month high above $63K, and Switzerland beat Algeria 2-0 to reach the World Cup Round of 16.`,
