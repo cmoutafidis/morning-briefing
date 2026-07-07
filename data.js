@@ -23,6 +23,98 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Tuesday, July 7, 2026`,
+    iso: `2026-07-07`,
+    greeting: `Good morning — here's your briefing for Tuesday, July 7, 2026. Two things on the calendar: the Snowflake Openflow webinar at 11:00 and a private block 17:30–19:00. The same four to-dos remain open in Tasklist A and B, and no follow-ups are due or overdue. In the news: the UN's Geneva AI summit wraps up amid 'catastrophic harm' warnings, H1 2026 startup funding hit a record $510B, bitcoin ETFs snapped a 10-day outflow streak, and Greece fights wildfires on three fronts.`,
+    calendar: {
+      allDay: [],
+      events: [
+        { time: `11:00–12:00`, title: `Powering Data Integration with AI: Mastering Openflow with Cortex Code (webinar)`, calendar: `Home` },
+        { time: `17:30–19:00`, title: `Busy (private)`, calendar: `Fiji Solutions` }
+      ],
+      note: `Webinar late morning, private block early evening — rest of the day clear.`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Get the files to get stamps or whatever`] },
+        { name: `Tasklist B`, tasks: [`Peak Code Consulting website copy home page should not be slop`, `Fiji Solutions website copy home page should not be slop`] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: []
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `The UN Global Dialogue on AI Governance concludes in Geneva today, with delegates pushing for international guardrails amid warnings of 'catastrophic harm' from ungoverned AI.`, source: `UN News`, url: `https://news.un.org/en/story/2026/07/1167862` },
+          { text: `Z.ai's inexpensive GLM-5.2 model is fueling debate over whether China has caught up with US frontier labs like OpenAI and Anthropic.`, source: `Crescendo AI News`, url: `https://www.crescendo.ai/news/latest-ai-news-and-updates` },
+          { text: `Alibaba consolidated its AI units — including Tongyi Lab and Qwen — into a single 'Token Hub' under CEO Eddie Wu, as China's daily token processing hits 140 trillion.`, source: `Build Fast with AI`, url: `https://www.buildfastwithai.com/blogs/ai-news-today-july-6-2026` }
+        ]
+      },
+      {
+        group: `Tech & Startups`,
+        section: `global`,
+        items: [
+          { text: `Global startups raised a record $510B in the first half of 2026, with nearly 90 new unicorns minted so far this year.`, source: `TechCrunch`, url: `https://techcrunch.com/2026/07/05/almost-40-new-unicorns-have-been-minted-so-far-this-year-here-they-are/` },
+          { text: `OpenAI is floating an equity stake to the US government, Meta prepares to rent out AI compute, and Google's data centers drove a record 37% jump in electricity use.`, source: `Tech Startups`, url: `https://techstartups.com/2026/07/06/top-tech-news-today-july-6-2026/` },
+          { text: `Meta released Pocket, an app for building AI-generated mini-games and interactive experiences with little to no code.`, source: `Tech Startups`, url: `https://techstartups.com/2026/07/06/top-tech-news-today-july-6-2026/` }
+        ]
+      },
+      {
+        group: `Software & Dev Tools`,
+        section: `global`,
+        items: [
+          { text: `OpenAI's 'Harness Engineering' write-up details Codex agents generating, testing and deploying a million-line production system under architectural constraints.`, source: `InfoQ`, url: `https://www.infoq.com/SoftwareEngineering/news/` },
+          { text: `Stripe's 'Minions' autonomous coding agents now ship 1,300+ production PRs a week from Slack tasks and bug reports, with human review retained.`, source: `InfoQ`, url: `https://www.infoq.com/SoftwareEngineering/news/` },
+          { text: `Temporal, Pkl, Faro, Devbox and Socket lead the emerging dev-tool pack for 2026 — targeting workflow reliability, config correctness and supply-chain security.`, source: `DEV Community`, url: `https://dev.to/thebitforge/top-5-emerging-developer-tools-to-watch-in-2026-12pl` }
+        ]
+      },
+      {
+        group: `Crypto`,
+        section: `global`,
+        items: [
+          { text: `US spot bitcoin ETFs snapped a 10-day outflow streak with $221.7M of inflows — the largest daily haul in two months — as BTC trades near $62K.`, source: `Investing News`, url: `https://investingnews.com/cryptocurrency-market-recap/` },
+          { text: `Strategy confirmed selling 3,588 BTC (~$216M) over the past week to cover dividend obligations on its Digital Credit securities.`, source: `Investing News`, url: `https://investingnews.com/cryptocurrency-market-recap/` },
+          { text: `Bitcoin closed July 6 at $62,813, with markets pricing a 71% chance of $65K this month after Fed Chair Warsh's dovish inflation comments.`, source: `Fortune`, url: `https://fortune.com/article/price-of-bitcoin-07-06-2026/` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `Iran held a massive public funeral for Ayatollah Khamenei as President Trump said the US will 'win one way or the other'.`, source: `CBS News`, url: `https://www.cbsnews.com/live-updates/us-iran-war-trump-negotiations-pause-ayatollah-funeral/` },
+          { text: `Hamas announced the dissolution of its Gaza governing body.`, source: `Al Jazeera`, url: `https://www.aljazeera.com/news/2026/7/6/hamas-announces-dissolution-of-gaza-governing-body` },
+          { text: `China launched a rare submarine-based ballistic missile into the Pacific ahead of the NATO summit in Ankara.`, source: `Fox News`, url: `https://www.foxnews.com/politics/china-launches-rare-submarine-ballistic-missile-pacific-allies-strengthen-defense-ties-nato-summit` },
+          { text: `Super Typhoon Bavi battered Guam and surrounding Pacific islands with intense winds and flooding.`, source: `NPR`, url: `https://www.npr.org/2026/07/05/g-s1-132052/guam-pacific-islands-brace-super-typhoon-bavi` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `Geneva hosts the UN's global AI governance summit through today, putting Switzerland at the center of the regulation debate.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `Switzerland beat Algeria 2-0 (Embolo, Ndoye) to reach the World Cup round of 16, where they face Colombia or Ghana.`, source: `Al Jazeera`, url: `https://www.aljazeera.com/sports/2026/7/3/switzerland-algeria-fifa-world-cup-2026-score-embolo-ndoye` },
+          { text: `New July rules: CHF 200 fine for undertaking on motorways, and corporal punishment of children is now explicitly banned in the Civil Code.`, source: `IamExpat`, url: `https://www.iamexpat.ch/expat-info/swiss-news/july-2026-changes-expats-need-know-switzerland` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `Three wildfire fronts are raging on a Greek island as flight delays continue to disrupt the country's airports.`, source: `Keep Talking Greece`, url: `https://www.keeptalkinggreece.com/` },
+          { text: `Greece recorded a sharp increase in migrant returns, per figures released July 6.`, source: `Greek Reporter`, url: `https://greekreporter.com/` },
+          { text: `Greece is phasing out old blue ID cards for travel as the replacement deadline nears.`, source: `Greek Reporter`, url: `https://greekreporter.com/` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Monday, July 6, 2026`,
     iso: `2026-07-06`,
     greeting: `Good morning — here's your briefing for Monday, July 6, 2026. One event today: the Weekly TRW Dev Meeting at 18:00. The same four to-dos remain open in Tasklist A and B, and no follow-ups are due or overdue. In the news: the UN's AI governance dialogue opens in Geneva today, Microsoft stands up a $2.5B AI deployment unit, bitcoin holds near $63K after its rebound, and Greece battled 60 wildfires in a single day.`,
