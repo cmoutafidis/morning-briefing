@@ -23,6 +23,96 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Wednesday, July 8, 2026`,
+    iso: `2026-07-08`,
+    greeting: `Good morning — here's your briefing for Wednesday, July 8, 2026. The calendar is clear today. The same four to-dos remain open in Tasklist A and B, and no follow-ups are due or overdue. In the news: the UN's Global Dialogue on AI Governance opens in Geneva, bitcoin ETFs snap a 10-day outflow streak, Switzerland books a World Cup quarterfinal against Argentina, and bombs rocked Macron's hotel in Damascus.`,
+    calendar: {
+      allDay: [],
+      events: [],
+      note: `Nothing scheduled today.`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Get the files to get stamps or whatever`] },
+        { name: `Tasklist B`, tasks: [`Peak Code Consulting website copy home page should not be slop`, `Fiji Solutions website copy home page should not be slop`] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: []
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `The UN's two-day Global Dialogue on AI Governance opened in Geneva, with governments, tech companies and civil society wrestling with how to regulate AI amid warnings of 'catastrophic harm'.`, source: `UN News`, url: `https://news.un.org/en/story/2026/07/1167862` },
+          { text: `Trump abruptly canceled the signing of a new AI executive order, citing concerns the text could undermine America's lead over China in AI.`, source: `Crescendo AI News`, url: `https://www.crescendo.ai/news/latest-ai-news-and-updates` },
+          { text: `Meta began laying off ~8,000 employees (about 10% of its workforce) in an AI-focused restructuring, with another 7,000 reassigned to AI teams.`, source: `Crescendo AI News`, url: `https://www.crescendo.ai/news/latest-ai-news-and-updates` },
+          { text: `Z.ai's inexpensive GLM-5.2 model is fueling debate over whether China has caught up with US frontier models from Anthropic and OpenAI.`, source: `Crescendo AI News`, url: `https://www.crescendo.ai/news/latest-ai-news-and-updates` }
+        ]
+      },
+      {
+        group: `Tech & Startups`,
+        section: `global`,
+        items: [
+          { text: `Norm Ai raised a $120M Series C at a $1.2B valuation led by Khosla Ventures for AI legal & compliance tools for regulated enterprises.`, source: `Tech Startups`, url: `https://techstartups.com/2026/07/07/top-tech-news-today-july-7-2026/` },
+          { text: `UK AI-infrastructure startup Nscale closed a $900M revolving credit facility backed by J.P. Morgan, Goldman Sachs, Morgan Stanley, BofA and Deutsche Bank for data-center buildouts across the US, Europe and APAC.`, source: `Tech Startups`, url: `https://techstartups.com/2026/07/07/top-tech-news-today-july-7-2026/` },
+          { text: `The UN and ITU launched the AI for Good Global Commission, convening tech leaders and heads of state — first meeting July 8 in Geneva.`, source: `Tech Startups`, url: `https://techstartups.com/2026/07/07/top-tech-news-today-july-7-2026/` }
+        ]
+      },
+      {
+        group: `Software & Dev Tools`,
+        section: `global`,
+        items: [
+          { text: `GitHub reports cutting token costs in agentic CI workflows by up to 62% by pruning unused MCP tools and swapping some calls for the gh CLI.`, source: `InfoQ`, url: `https://www.infoq.com/SoftwareEngineering/news/` },
+          { text: `OpenAI introduced 'Harness Engineering' — Codex agents that generate, test and deploy production systems with observability and architectural constraints built in.`, source: `InfoQ`, url: `https://www.infoq.com/SoftwareEngineering/news/` },
+          { text: `Stripe's autonomous 'Minions' coding agents now generate 1,300+ production-ready pull requests a week from Slack messages and bug reports.`, source: `InfoQ`, url: `https://www.infoq.com/SoftwareEngineering/news/` }
+        ]
+      },
+      {
+        group: `Crypto`,
+        section: `global`,
+        items: [
+          { text: `Bitcoin reclaimed $63K as the July rebound gathers steam (+8.4% this month), though falling open interest and weak spot demand raise sustainability doubts.`, source: `CryptoTicker`, url: `https://cryptoticker.io/en/crypto-price-today-bitcoin-reclaims-63k-july-rebound/` },
+          { text: `US spot Bitcoin ETFs snapped a 10-day outflow streak, pulling in $221.7M — their largest daily haul in two months.`, source: `Investing News`, url: `https://investingnews.com/cryptocurrency-market-recap/` },
+          { text: `Strategy (MicroStrategy) confirmed the sale of 3,588 BTC over the past week via its public treasury dashboard.`, source: `Investing News`, url: `https://investingnews.com/cryptocurrency-market-recap/` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `Bombs exploded near the Damascus Four Seasons where President Macron was staying on his Syrian state visit.`, source: `Fox News`, url: `https://www.foxnews.com/world/video-shows-bomb-rock-damascus-hotel-french-president-macron-staying-syrian-state-visit` },
+          { text: `Trump arrived at the NATO summit in Turkey with the Iran rift looming, hours after the US launched new strikes following attacks on ships in the Strait of Hormuz.`, source: `Fox News`, url: `https://www.foxnews.com/politics/trump-arrives-nato-summit-iran-rift-looms-over-alliance-talks` },
+          { text: `Russia unleashed waves of missiles and drones on Ukraine, killing at least 22 and exposing air-defense gaps four years into the war.`, source: `NPR`, url: `https://www.npr.org/sections/world/` },
+          { text: `World Cup: holders Argentina edged Egypt 3-2 in a Round-of-16 thriller to reach the quarterfinals.`, source: `NPR`, url: `https://www.npr.org/2026/07/07/nx-s1-5884872/2026-world-cup-fifa-argentina-egypt-round-of-16` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `Switzerland beat Colombia on penalties to reach their first World Cup quarterfinal since 1954 — Argentina awaits on July 12 in Kansas.`, source: `ESPN`, url: `https://www.espn.com/soccer/story/_/id/49303740/world-cup-2026-today-blog-08-06-2026-live-updates-news-fixtures-schedule-results-argentina-narrowly-advance-world-cup-quarter-finals-thriller-egypt-3-2-switzerland-beat-colombia-penalties` },
+          { text: `Geneva and Vaud reactivated heatwave plans with temperatures set to reach 35°C.`, source: `The Local Switzerland`, url: `https://www.thelocal.ch/` },
+          { text: `Basel private bank J. Safra Sarasin acquired Danish online-trading specialist Saxo Bank in its entirety.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `The Hellenic Fiscal Council trimmed its 2026 growth forecast to 1.9% and raised inflation to 3.2%, citing energy costs and the wind-down of EU recovery funds.`, source: `To Vima`, url: `https://www.tovima.com/` },
+          { text: `Multiple wildfire fronts hit Greece as blazes sweep southern Europe; flight delays at Greek airports compound the disruption.`, source: `Greek Reporter`, url: `https://greekreporter.com/greek-news/` },
+          { text: `Greece's IRIS instant-payments system expanded beyond the domestic market, enabling cross-border transfers in Europe via the recipient's mobile number.`, source: `Greek Reporter`, url: `https://greekreporter.com/greek-news/` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Tuesday, July 7, 2026`,
     iso: `2026-07-07`,
     greeting: `Good morning — here's your briefing for Tuesday, July 7, 2026. Two things on the calendar: the Snowflake Openflow webinar at 11:00 and a private block 17:30–19:00. The same four to-dos remain open in Tasklist A and B, and no follow-ups are due or overdue. In the news: the UN's Geneva AI summit wraps up amid 'catastrophic harm' warnings, H1 2026 startup funding hit a record $510B, bitcoin ETFs snapped a 10-day outflow streak, and Greece fights wildfires on three fronts.`,
