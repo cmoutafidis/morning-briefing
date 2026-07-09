@@ -23,6 +23,99 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Thursday, July 9, 2026`,
+    iso: `2026-07-09`,
+    greeting: `Good morning — here's your briefing for Thursday, July 9, 2026. On the calendar: Cleaning (all day) and the Weekly TRW Dev Meeting at 18:00. The same four to-dos remain open in Tasklist A and B, and no follow-ups are due or overdue. In the news: Trump declares the Iran ceasefire over, Guterres calls for worldwide AI controls, bitcoin slips toward $60K after the US-Iran strikes, and the World Cup quarterfinals kick off.`,
+    calendar: {
+      allDay: [`Cleaning`],
+      events: [
+        { time: `18:00–19:00`, title: `Weekly TRW Dev Meeting`, calendar: `charismoutafidis@gmail.com` }
+      ],
+      note: ``
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Get the files to get stamps or whatever`] },
+        { name: `Tasklist B`, tasks: [`Peak Code Consulting website copy home page should not be slop`, `Fiji Solutions website copy home page should not be slop`] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: []
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `UN chief Guterres issued an urgent call for far-reaching worldwide AI controls — including on 'killer robots' — as powerful civilian AI chips shift to the battlefield.`, source: `UN News`, url: `https://news.un.org/en/story/2026/07/1167873` },
+          { text: `Scientists combined machine learning with quantum physics to discover two new superconductors, sharply accelerating the hunt for a room-temperature one.`, source: `ScienceDaily`, url: `https://www.sciencedaily.com/releases/2026/07/260701205006.htm` },
+          { text: `Amazon confirmed custom AZ3 and AZ3 Pro AI chips for Echo and Fire TV with 50%+ better wake-word detection, expanding in-house silicon from 2027.`, source: `Tech Startups`, url: `https://techstartups.com/2026/07/07/top-tech-news-today-july-7-2026/` },
+          { text: `Google presents at ICML 2026 today — offline reinforcement learning, graph foundation models and mechanistic interpretability among the highlights.`, source: `Google Research`, url: `https://research.google/conferences-and-events/google-at-icml-2026/` }
+        ]
+      },
+      {
+        group: `Tech & Startups`,
+        section: `global`,
+        items: [
+          { text: `TwelveLabs raised a $100M Series B to expand its video-intelligence models and deepen its AWS partnership.`, source: `Tech Startups`, url: `https://techstartups.com/2026/07/07/top-tech-news-today-july-7-2026/` },
+          { text: `The autonomous-vehicle space is echoing the 2016 hype cycle — Travis Kalanick is building a robotics company as talent wars and capital heat up.`, source: `TechCrunch`, url: `https://techcrunch.com/` },
+          { text: `Research-led startups in neuromorphic chips, brain-computer interfaces and biotech are drawing investor attention for their stronger moats versus generic software.`, source: `MEAN.CEO`, url: `https://blog.mean.ceo/startup-research-breakthroughs-news-july-2026/` }
+        ]
+      },
+      {
+        group: `Software & Dev Tools`,
+        section: `global`,
+        items: [
+          { text: `TypeScript 7 — the native-code port that's ~10x faster — is now available.`, source: `GitHub Community`, url: `https://github.com/orgs/community/discussions/187143` },
+          { text: `Temporal, Pkl, Faro, Devbox and Socket are gaining traction for workflow reliability, config correctness, frontend observability, env consistency and supply-chain security.`, source: `DEV Community`, url: `https://dev.to/thebitforge/top-5-emerging-developer-tools-to-watch-in-2026-12pl` },
+          { text: `84% of developers use or plan to use AI tools, and 51% use them daily, per the latest Stack Overflow survey figures.`, source: `DevOps.com`, url: `https://devops.com/3-notable-software-development-trends-for-2026-and-beyond/` }
+        ]
+      },
+      {
+        group: `Crypto`,
+        section: `global`,
+        items: [
+          { text: `Bitcoin fell 2.2% to ~$61.9K (briefly under $60K) and ether slid to ~$1,733 as US strikes on Iran rattled risk assets.`, source: `Yahoo Finance`, url: `https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-wednesday-july-8-2026-crypto-prices-down-following-us-iran-strikes-130336886.html` },
+          { text: `The SEC is preparing its 'Regulation Crypto' agenda this July — a sweeping overhaul meant to clarify digital-asset rules.`, source: `Bitcoin Foundation`, url: `https://bitcoinfoundation.org/news/altcoins/top-july-2026-crypto-updates-is-crypto-crash-coming/` },
+          { text: `The market enters July in its most fragile state since the post-FTX bear cycle: ETF outflows, macro pressure and rotation into AI assets weigh on confidence.`, source: `MoneyMagpie`, url: `https://www.moneymagpie.com/investment-articles/bitcoin-price-prediction-july-2026-can-btc-recover` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `Trump declared the ceasefire with Iran over — crude oil jumped and stocks fell on fresh uncertainty for the global economy.`, source: `NPR`, url: `https://www.npr.org/sections/news` },
+          { text: `Marine Le Pen says she'll run for the French presidency next year despite being sentenced to wear an electronic monitor for embezzlement.`, source: `NPR`, url: `https://www.npr.org/sections/world/` },
+          { text: `The IOC effectively overturned the decade-long ban on Russian athletes imposed over state-sponsored doping and the invasion of Ukraine.`, source: `NPR`, url: `https://www.npr.org/sections/world/` },
+          { text: `World Cup: the US crashed out to Belgium at Seattle Stadium in the Round of 16.`, source: `NPR`, url: `https://www.npr.org/sections/news` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `World Cup quarterfinals kick off today with France–Morocco; Switzerland's first quarterfinal in 70+ years, against holders Argentina, follows on Sunday.`, source: `Yahoo Sports`, url: `https://sports.yahoo.com/soccer/article/2026-fifa-world-cup-daily-schedule-every-match-date-kickoff-time-and-venue-for-all-48-teams-234515087.html` },
+          { text: `Police from seven countries arrested 28 people and rescued three children in an operation against online child sexual exploitation.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `Minister Albert Rösti said international AI governance is a positive thing — if it stays 'minimal'.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `Mortality among over-65s ran higher than projected during the late-June heatwave week.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `Trump–Erdogan talks revived Ankara's hopes of rejoining the F-35 program, raising concern in Athens (and Israel).`, source: `Greek Reporter`, url: `https://greekreporter.com/greek-news/` },
+          { text: `Greece reported a 20% rise in migrant returns and a 27% drop in illegal sea arrivals in H1 2026, crediting tougher policies.`, source: `Greek Reporter`, url: `https://greekreporter.com/greek-news/` },
+          { text: `IARC projections show Greece's cancer death toll climbing sharply over the next 25 years.`, source: `Greek Reporter`, url: `https://greekreporter.com/greek-news/` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Wednesday, July 8, 2026`,
     iso: `2026-07-08`,
     greeting: `Good morning — here's your briefing for Wednesday, July 8, 2026. The calendar is clear today. The same four to-dos remain open in Tasklist A and B, and no follow-ups are due or overdue. In the news: the UN's Global Dialogue on AI Governance opens in Geneva, bitcoin ETFs snap a 10-day outflow streak, Switzerland books a World Cup quarterfinal against Argentina, and bombs rocked Macron's hotel in Damascus.`,
