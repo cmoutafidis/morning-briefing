@@ -23,6 +23,95 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Friday, July 10, 2026`,
+    iso: `2026-07-10`,
+    greeting: `Good morning — here's your briefing for Friday, July 10, 2026. The calendar is clear today. The same four to-dos remain open in Tasklist A and B, and no follow-ups are due or overdue. In the news: bitcoin rebounds to nearly $64K, France beats Morocco to reach the World Cup semifinals, US strikes on Iran continue, and parts of Valais hit the highest wildfire danger level.`,
+    calendar: {
+      allDay: [],
+      events: [],
+      note: `Nothing scheduled today.`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Get the files to get stamps or whatever`] },
+        { name: `Tasklist B`, tasks: [`Peak Code Consulting website copy home page should not be slop`, `Fiji Solutions website copy home page should not be slop`] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: []
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `Z.ai's inexpensive GLM-5.2 model is fueling the debate over whether China has caught up with US frontier labs like Anthropic and OpenAI.`, source: `Crescendo AI News`, url: `https://www.crescendo.ai/news/latest-ai-news-and-updates` },
+          { text: `NVIDIA lands 74 papers at ICML 2026 in Seoul — and roughly 2,000 accepted papers cite NVIDIA GPUs, with the workshops wrapping up July 10–11.`, source: `NVIDIA Blog`, url: `https://blogs.nvidia.com/blog/open-models-icml-2026/` },
+          { text: `The UN's Global Dialogue on AI Governance in Geneva pushed for international rules amid warnings of 'catastrophic harm' from unregulated AI.`, source: `UN News`, url: `https://news.un.org/en/story/2026/07/1167862` }
+        ]
+      },
+      {
+        group: `Tech & Startups`,
+        section: `global`,
+        items: [
+          { text: `Blue Origin is raising $10B in its first external round at a $130B pre-money valuation — Coatue expected to lead with $4B, Bezos adding $2B himself.`, source: `Tech Startups`, url: `https://techstartups.com/2026/07/08/top-tech-news-today-july-8-2026/` },
+          { text: `Norm AI raised a $120M Series C at a $1.2B valuation led by Khosla Ventures for AI legal and compliance tools.`, source: `Tech Startups`, url: `https://techstartups.com/` },
+          { text: `Global startups raised a record $510B in H1 2026 per Crunchbase, concentrated in AI infrastructure, applied AI and regulated tech.`, source: `MEAN.CEO`, url: `https://blog.mean.ceo/startups-united-states-news-july-2026/` }
+        ]
+      },
+      {
+        group: `Software & Dev Tools`,
+        section: `global`,
+        items: [
+          { text: `JetBrains AI for Teams and Organizations rolls out — shared context, reusable agentic workflows and governance, vendor-agnostic via MCP and ACP.`, source: `InfoWorld`, url: `https://www.infoworld.com/article/4194091/jetbrains-to-roll-out-ai-capabilities-for-software-development-teams-and-organizations.html` },
+          { text: `Microsoft's C++ tooling update adds a vcpkg switch to skip reinstalling cached packages, OpenHarmony support, curl 8.21, CGAL 6.2 and Graphviz 15.`, source: `Microsoft Dev Blogs`, url: `https://devblogs.microsoft.com/` },
+          { text: `AI dev tooling in 2026 moves past coding assistants toward org-wide platforms, as productivity promises collide with economic reality and talent shortages.`, source: `Cortex`, url: `https://www.cortex.io/post/the-engineering-leaders-guide-to-ai-tools-for-developers-in-2026` }
+        ]
+      },
+      {
+        group: `Crypto`,
+        section: `global`,
+        items: [
+          { text: `Bitcoin rebounded 3.5% to nearly $64K — up 4.2% on the week despite US strikes on Iran — as the chip rally and yen strength drive gains.`, source: `CoinDesk`, url: `https://www.coindesk.com/markets/2026/07/10/bitcoin-zips-to-nearly-usd64-000-as-chip-rally-and-yen-strength-drive-gains` },
+          { text: `Bitcoin is up ~10% in July as sentiment strengthens, though the rally is macro-driven rather than crypto-native.`, source: `Forbes`, url: `https://www.forbes.com/sites/digital-assets/2026/07/06/bitcoin-has-rallied-10-in-july-as-stronger-sentiment-fuels-gains/` },
+          { text: `The Coinbase Premium logged a 50-day negative streak — weak US demand puts July's gains at risk.`, source: `CoinDesk`, url: `https://www.coindesk.com/daybook-us/2026/07/07/bitcoin-s-july-gains-may-be-fleeting-as-u-s-demand-stays-weak` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `The US has struck Iran at least 170 times in two days as the conflict escalates.`, source: `Al Jazeera`, url: `https://www.aljazeera.com/` },
+          { text: `France blanked Morocco in the World Cup quarterfinals to move on to the semifinals.`, source: `Yahoo Sports`, url: `https://sports.yahoo.com/soccer/article/2026-fifa-world-cup-daily-schedule-every-match-date-kickoff-time-and-venue-for-all-48-teams-234515087.html` },
+          { text: `Deadly earthquakes deepen uncertainty over Venezuela's post-Maduro future.`, source: `CNN`, url: `https://edition.cnn.com/` },
+          { text: `Wimbledon: Karolína Muchová outlasted Coco Gauff and will face Linda Nosková in an all-Czech final.`, source: `ABC News`, url: `https://abcnews.com/international` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `Drought intensifies: parts of Valais and the Chur Rhine Valley declared the highest fire danger level, with fires banned in or near forests in many cantons.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `Switzerland is creating a national plan for safer public transport — coordinated police interventions across cantons and de-escalation training for staff.`, source: `The Local`, url: `https://www.thelocal.ch/20260709/today-in-switzerland-a-roundup-of-the-latest-news-on-thursday-245` },
+          { text: `Uber Eats Switzerland suffered a legal setback and must register as a postal services provider; the EFTA–Mexico free trade agreement is set for an update.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `Zakynthos Airport's runway was shut after a Greek Air Force F-16 made an emergency landing, disrupting flights.`, source: `Greek Reporter`, url: `https://greekreporter.com/` },
+          { text: `PM Mitsotakis told Turkish broadcaster A Haber that maritime zone delimitation is the only dispute between Greece and Turkey.`, source: `Parapolitika`, url: `https://en.parapolitika.gr/` },
+          { text: `Wind farm investments worth ~€400M boosted installed capacity in H1 2026, though permitting delays still slow the renewables rollout.`, source: `Greek City Times`, url: `https://greekcitytimes.com/` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Thursday, July 9, 2026`,
     iso: `2026-07-09`,
     greeting: `Good morning — here's your briefing for Thursday, July 9, 2026. On the calendar: Cleaning (all day) and the Weekly TRW Dev Meeting at 18:00. The same four to-dos remain open in Tasklist A and B, and no follow-ups are due or overdue. In the news: Trump declares the Iran ceasefire over, Guterres calls for worldwide AI controls, bitcoin slips toward $60K after the US-Iran strikes, and the World Cup quarterfinals kick off.`,
