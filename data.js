@@ -23,6 +23,95 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Saturday, July 11, 2026`,
+    iso: `2026-07-11`,
+    greeting: `Good morning — here's your briefing for Saturday, July 11, 2026. The calendar is clear today. The same four to-dos remain open in Tasklist A and B, and no follow-ups are due or overdue. In the news: OpenAI launches ChatGPT Work on GPT-5.6, bitcoin holds above $64K as ETF outflows end, Trump grants Kyiv a licence to build Patriot systems, and Switzerland pushes the EU to ease airport border checks.`,
+    calendar: {
+      allDay: [],
+      events: [],
+      note: `Nothing scheduled today.`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Get the files to get stamps or whatever`] },
+        { name: `Tasklist B`, tasks: [`Peak Code Consulting website copy home page should not be slop`, `Fiji Solutions website copy home page should not be slop`] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: []
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `OpenAI is launching ChatGPT Work, an agent product powered by Codex and the now publicly available GPT-5.6 that can handle complex projects across apps like Google Drive.`, source: `Crescendo AI News`, url: `https://www.crescendo.ai/news/latest-ai-news-and-updates` },
+          { text: `Accenture and Google Cloud launched a suite of pre-built agentic AI solutions aimed at mid-market companies with $300M–$3B in revenue.`, source: `Solutions Review`, url: `https://solutionsreview.com/ai-news-for-the-week-of-july-10-updates-from-accenture-google-cloud-supermicro-more/` },
+          { text: `The EU AI Act's phased rollout continued, with obligations for general-purpose and high-risk AI systems coming into force.`, source: `ZoneTechify`, url: `https://www.zonetechify.com/blog/ai-news-july-2026-latest-ai-developments` }
+        ]
+      },
+      {
+        group: `Tech & Startups`,
+        section: `global`,
+        items: [
+          { text: `General Intuition, a Bezos-backed startup valued at $2.3B, closed a $320M round with Coatue, Eric Schmidt and researchers from MIT and Google DeepMind joining.`, source: `YourStory / Dailyhunt`, url: `https://m.dailyhunt.in/news/india/english/yourstory-epaper-yourstory/startup+news+and+updates+daily+roundup+july+10+2026-newsid-n719142536` },
+          { text: `Cognizant plans a Frontier-certified AI workforce of 5,000 engineers and 10,000 business operators, with the first cohort available by Q4 2026.`, source: `YourStory / Dailyhunt`, url: `https://m.dailyhunt.in/news/india/english/yourstory-epaper-yourstory/startup+news+and+updates+daily+roundup+july+10+2026-newsid-n719142536` },
+          { text: `Arduino launched an Edge AI Innovation Lab at IIT Delhi for hands-on student work on Edge AI and Physical AI projects.`, source: `YourStory / Dailyhunt`, url: `https://m.dailyhunt.in/news/india/english/yourstory-epaper-yourstory/startup+news+and+updates+daily+roundup+july+10+2026-newsid-n719142536` }
+        ]
+      },
+      {
+        group: `Software & Dev Tools`,
+        section: `global`,
+        items: [
+          { text: `Amazon's CTO shared advice on how developers can ride out the AI-powered coding wave as tools like agentic coding assistants reshape the job.`, source: `Fortune`, url: `https://fortune.com/2026/07/09/amazons-cto-on-how-developers-can-ride-out-the-ai-powered-coding-wave/` },
+          { text: `OpenAI detailed "Harness Engineering" — Codex agents generating, testing and deploying a million-line production system with built-in observability and architectural constraints.`, source: `InfoQ`, url: `https://www.infoq.com/SoftwareEngineering/news/` },
+          { text: `Microsoft set November 10, 2026 as the end of servicing and security fixes for .NET 8 and .NET 9.`, source: `InfoWorld`, url: `https://www.infoworld.com/software-development/` }
+        ]
+      },
+      {
+        group: `Crypto`,
+        section: `global`,
+        items: [
+          { text: `Bitcoin trades at ~$64.2K (+1.4% in 24h) with the global crypto market cap at $2.28T; Polkadot and the XRP Ledger ecosystem led gainers.`, source: `CoinGabbar`, url: `https://www.coingabbar.com/en/crypto-currency-news/latest-crypto-news-today-july-11-btc-eth-pepe-lab-price` },
+          { text: `US bitcoin ETFs ended a 10-day outflow streak, adding to the week's recovery.`, source: `Investing News Network`, url: `https://investingnews.com/cryptocurrency-market-recap/` },
+          { text: `ESMA warned crypto firms about phishing emails exploiting MiCA rules, with scammers demanding fake approval fees — official mail comes only from @esma.europa.eu.`, source: `CoinGabbar`, url: `https://www.coingabbar.com/en/crypto-currency-news/latest-crypto-news-today-july-11-btc-eth-pepe-lab-price` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `Trump capped the NATO summit in Turkey by granting Ukraine a licence to manufacture Patriot air-defence systems.`, source: `Al Jazeera`, url: `https://www.aljazeera.com/news/2026/7/10/trump-grants-kyiv-patriots-licences-whats-next-in-the-russia-ukraine-war` },
+          { text: `Ukraine's drone offensive hit Russian oil tankers and refineries at "industrial scale"; Moscow banned diesel exports amid fuel shortages.`, source: `Fox News`, url: `https://www.foxnews.com/world/drone-offensive-hits-russian-oil-tankers-refineries-industrial-scale-moscow-bans-diesel-exports` },
+          { text: `Israel shared intelligence warning that Iran plotted a new assassination attempt against Trump.`, source: `Fox News`, url: `https://www.foxnews.com/politics/israel-shares-intelligence-warning-iran-plotted-new-assassination-attempt-trump-report` },
+          { text: `A major US housing bill becomes law at midnight without Trump's signature, as he demands a voter ID bill first.`, source: `NPR`, url: `https://www.npr.org/2026/07/10/nx-s1-5885027/housing-bill-without-trump-signature` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `Switzerland is urging the EU to temporarily ease airport border controls and extend the Entry/Exit System suspension to avoid waits of up to two hours.`, source: `The Local`, url: `https://www.thelocal.ch/20260710/today-in-switzerland-a-roundup-of-the-latest-news-on-friday-251` },
+          { text: `Parents will receive a childcare allowance from 2030 for children under 8 — at least 100 francs per month per weekly childcare day.`, source: `The Local`, url: `https://www.thelocal.ch/20260710/today-in-switzerland-a-roundup-of-the-latest-news-on-friday-251` },
+          { text: `Talks with France over sharing security costs for the G7 summit have failed.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `Greece recorded its first West Nile virus case of the 2026 transmission season.`, source: `Greek Reporter`, url: `https://greekreporter.com/` },
+          { text: `Sokratis Famellos resigned as SYRIZA president after mounting internal pressure and a wave of defections.`, source: `Keep Talking Greece`, url: `https://www.keeptalkinggreece.com/` },
+          { text: `Part of The Ellinikon Sports Park opens to the public on July 20, a milestone in the former Athens airport redevelopment.`, source: `ProtoThema`, url: `https://en.protothema.gr/` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Friday, July 10, 2026`,
     iso: `2026-07-10`,
     greeting: `Good morning — here's your briefing for Friday, July 10, 2026. The calendar is clear today. The same four to-dos remain open in Tasklist A and B, and no follow-ups are due or overdue. In the news: bitcoin rebounds to nearly $64K, France beats Morocco to reach the World Cup semifinals, US strikes on Iran continue, and parts of Valais hit the highest wildfire danger level.`,
