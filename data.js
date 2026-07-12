@@ -23,6 +23,97 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Sunday, July 12, 2026`,
+    iso: `2026-07-12`,
+    greeting: `Good morning — here's your briefing for Sunday, July 12, 2026. One all-day item today: Weekly Accounting work. The same four to-dos remain open in Tasklist A and B, and no follow-ups are due or overdue. In the news: Apple accuses OpenAI of stealing trade secrets, bitcoin ETFs snap a 10-day outflow streak, Iran strikes Gulf states after a US attack, Argentina end Switzerland's World Cup run in extra time, and a new Swiss heatwave sells out air conditioners.`,
+    calendar: {
+      allDay: [`Weekly Accounting work`],
+      events: [],
+      note: `No timed events today.`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Get the files to get stamps or whatever`] },
+        { name: `Tasklist B`, tasks: [`Peak Code Consulting website copy home page should not be slop`, `Fiji Solutions website copy home page should not be slop`] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: []
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `Apple accused OpenAI of stealing trade secrets as OpenAI works on its own hardware for ChatGPT — a major rupture in the partnership.`, source: `TechCrunch`, url: `https://techcrunch.com/category/artificial-intelligence/` },
+          { text: `OpenAI's GPT-5.6 Sol Ultra produced a proof of the 50-year-old Cycle Double Cover Conjecture in under an hour, using 64 subagents in parallel.`, source: `Build Fast with AI`, url: `https://www.buildfastwithai.com/blogs/ai-news-today-july-12-2026` },
+          { text: `Google Search results are now entirely Gemini 3.5 Flash-generated summaries, replacing the traditional ten blue links.`, source: `LLM Stats`, url: `https://llm-stats.com/ai-news` },
+          { text: `OpenAI is preparing a confidential IPO filing with Goldman Sachs and Morgan Stanley, targeting a debut as soon as September at a ~$730B valuation.`, source: `Crescendo AI News`, url: `https://www.crescendo.ai/news/latest-ai-news-and-updates` }
+        ]
+      },
+      {
+        group: `Tech & Startups`,
+        section: `global`,
+        items: [
+          { text: `SambaNova Systems secured $1B in fresh funding at an $11B valuation — one of the largest AI-infrastructure rounds of the year.`, source: `Tech Funding News`, url: `https://techfundingnews.com/` },
+          { text: `Higharc raised a $95M Series C for its AI platform that takes homebuilders from design to permit-ready construction documents.`, source: `Tech Startups`, url: `https://techstartups.com/2026/` },
+          { text: `China's BrainCo is betting on wearable brain tech as a non-invasive alternative to Neuralink's implants.`, source: `TechCrunch`, url: `https://techcrunch.com/` }
+        ]
+      },
+      {
+        group: `Software & Dev Tools`,
+        section: `global`,
+        items: [
+          { text: `Stripe's "Minions" — autonomous coding agents — now generate over 1,300 production PRs per week from tasks arriving via Slack and bug reports.`, source: `InfoQ`, url: `https://www.infoq.com/SoftwareEngineering/news/` },
+          { text: `GitHub cut token costs in agentic CI workflows by up to 62% by pruning unused MCP tools and running daily auditor/optimizer agents.`, source: `InfoQ`, url: `https://www.infoq.com/` },
+          { text: `Visual Studio now tracks Copilot usage by token consumption rather than per request, aligning with GitHub's new billing model.`, source: `SD Times`, url: `https://sdtimes.com/` },
+          { text: `JetBrains AI for Teams promises a vendor-agnostic system for agentic development with shared context, governance and cost control.`, source: `Developer Tech`, url: `https://www.developer-tech.com/` }
+        ]
+      },
+      {
+        group: `Crypto`,
+        section: `global`,
+        items: [
+          { text: `US spot bitcoin ETFs snapped a 10-day outflow streak, pulling in $221.7M — their largest daily haul in two months.`, source: `Investing News Network`, url: `https://investingnews.com/cryptocurrency-market-recap/` },
+          { text: `Bitcoin trades near $64.3K, but the Coinbase Premium has been negative for 50 straight days — a sign of weak US demand.`, source: `CoinDesk`, url: `https://www.coindesk.com/daybook-us/2026/07/07/bitcoin-s-july-gains-may-be-fleeting-as-u-s-demand-stays-weak` },
+          { text: `Nonprofit "Ethereum Institutional" launched with backing from Joe Lubin, citing relationships with banks and asset managers representing ~$250T in AUM.`, source: `The Block`, url: `https://www.theblock.co/` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `Iran launched attacks on Qatar, the UAE and Bahrain after a US strike on Iran over an attack on a vessel in the Strait of Hormuz.`, source: `CNN`, url: `https://edition.cnn.com/` },
+          { text: `Julian Alvarez's 112th-minute strike sent Argentina past Switzerland into the World Cup semifinals; England beat Norway 2-1.`, source: `Euronews`, url: `https://www.euronews.com/video/2026/07/12/latest-news-bulletin-july-12th-2026-morning` },
+          { text: `Historic rainfall left communities across several Missouri counties underwater, prompting water rescues and a summer-camp evacuation.`, source: `NPR`, url: `https://www.npr.org/sections/news/` },
+          { text: `Nigel Farage resigned from Parliament over questions about his finances and is running for re-election in his constituency.`, source: `NPR`, url: `https://www.npr.org/sections/world/` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `A new heatwave is set to last until at least Thursday, with air conditioners and fans selling out across the country.`, source: `The Local`, url: `https://www.thelocal.ch/` },
+          { text: `Zurich police arrested three people after a paint attack on the Turkish consulate.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `Funding was approved to relocate residents of the landslide-hit village of Brienz.`, source: `SWI swissinfo.ch`, url: `https://www.swissinfo.ch/eng/` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `A donation agreement worth up to €12M was signed for Greece's first National Museum of the 1821 War of Independence, to be housed in the Old Military Bakery in Goudi, Athens.`, source: `Greek Reporter`, url: `https://greekreporter.com/2026/07/12/greece-first-museum-war-independence/` },
+          { text: `PM Kyriakos Mitsotakis is in Ankara for the NATO Summit.`, source: `ProtoThema`, url: `https://en.protothema.gr/` },
+          { text: `Sunday's front pages: pension payments, the Thessaloniki Fair and F-35 procurement dominate.`, source: `CNN Greece`, url: `https://www.cnn.gr/ellada/story/542493/ta-protoselida-ton-efimeridon-12-iouliou` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Saturday, July 11, 2026`,
     iso: `2026-07-11`,
     greeting: `Good morning — here's your briefing for Saturday, July 11, 2026. The calendar is clear today. The same four to-dos remain open in Tasklist A and B, and no follow-ups are due or overdue. In the news: OpenAI launches ChatGPT Work on GPT-5.6, bitcoin holds above $64K as ETF outflows end, Trump grants Kyiv a licence to build Patriot systems, and Switzerland pushes the EU to ease airport border checks.`,
