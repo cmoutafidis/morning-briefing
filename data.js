@@ -23,6 +23,99 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Monday, July 13, 2026`,
+    iso: `2026-07-13`,
+    greeting: `Good morning — here's your briefing for Monday, July 13, 2026. One event today: the Weekly TRW Dev Meeting at 18:00. The same four to-dos remain open in Tasklists A and B, and no follow-ups are due or overdue. In the news: OpenAI ships GPT-5.6, bitcoin ETFs snap their outflow streak as BTC retests $64K, the US hits 140 targets in Iran, Switzerland's drought and heatwave deepen, and Greece's summer sales kick off today.`,
+    calendar: {
+      allDay: [],
+      events: [
+        { time: `18:00–19:00`, title: `Weekly TRW Dev Meeting`, calendar: `charismoutafidis@gmail.com` }
+      ],
+      note: `One timed event today.`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Get the files to get stamps or whatever`] },
+        { name: `Tasklist B`, tasks: [`Peak Code Consulting website copy home page should not be slop`, `Fiji Solutions website copy home page should not be slop`] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: []
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `Z.ai's inexpensive GLM-5.2 model fuels debate over whether China is catching up to the US in the AI race, rivaling frontier models from Anthropic and OpenAI.`, source: `Crescendo AI`, url: `https://www.crescendo.ai/news/latest-ai-news-and-updates` },
+          { text: `Anthropic extends Claude Fable 5 access on all paid plans and keeps Claude Code's weekly rate limits 50% higher through July 19; Claude Code also gains a built-in browser.`, source: `LLM Stats`, url: `https://llm-stats.com/ai-news` },
+          { text: `Amazon confirmed custom AZ3 and AZ3 Pro AI chips for Echo and Fire TV, improving wake-word detection over 50%, with in-house chip design expanding to Kindle and Ring from 2027.`, source: `ZoneTechify`, url: `https://www.zonetechify.com/blog/latest-ai-news-july-13-2026` }
+        ]
+      },
+      {
+        group: `Tech & Startups`,
+        section: `global`,
+        items: [
+          { text: `OpenAI released GPT-5.6 after US government clearance, claiming the same coding results with far fewer tokens — a potential cost-cutter for AI at scale.`, source: `Tech Startups`, url: `https://techstartups.com/2026/` },
+          { text: `Meta green-lit production of its own custom AI chip, and SK Hynix completed one of the largest foreign listings ever on Nasdaq.`, source: `Tech Startups`, url: `https://techstartups.com/2026/` },
+          { text: `UK AI-infrastructure startup Nscale closed a $900M revolving credit facility with JPMorgan, Goldman and others to accelerate data-center buildouts.`, source: `Tech Funding News`, url: `https://techfundingnews.com/` },
+          { text: `European startups raised ~$24B in Q2 2026 — their strongest venture quarter in four years.`, source: `Tech Funding News`, url: `https://techfundingnews.com/` }
+        ]
+      },
+      {
+        group: `Software & Dev Tools`,
+        section: `global`,
+        items: [
+          { text: `Stripe detailed "Minions" — autonomous coding agents generating 1,300+ production-ready pull requests per week from Slack messages and bug reports.`, source: `InfoQ`, url: `https://www.infoq.com/SoftwareEngineering/news/` },
+          { text: `GitHub cut token costs in agentic CI workflows by up to 62% by pruning unused MCP tools and running daily auditor/optimizer agents.`, source: `InfoQ`, url: `https://www.infoq.com/` },
+          { text: `Visual Studio's June update tracks Copilot usage by token consumption, and JetBrains is building a vendor-agnostic agentic-development system for teams.`, source: `SD Times`, url: `https://sdtimes.com/` }
+        ]
+      },
+      {
+        group: `Crypto`,
+        section: `global`,
+        items: [
+          { text: `Bitcoin retested $64,400; a break higher opens the path toward the June 15 peak of $67,250.`, source: `CryptoTicker`, url: `https://cryptoticker.io/en/crypto-price-today-bitcoin-reclaims-63k-july-rebound/` },
+          { text: `US spot bitcoin ETFs snapped a 10-day outflow streak with $221.7M of inflows — the largest daily haul in two months.`, source: `Investing News`, url: `https://investingnews.com/cryptocurrency-market-recap/` },
+          { text: `Whales bought $16.7B of bitcoin in two weeks while ETFs bled a record $4B — a divergence seen near past cycle bottoms; the Coinbase Premium has been negative 50 straight days.`, source: `CoinDesk`, url: `https://www.coindesk.com/daybook-us/2026/07/07/bitcoin-s-july-gains-may-be-fleeting-as-u-s-demand-stays-weak` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `The US military said it struck 140 targets across Iran overnight; Iran responded with fire toward Jordan and Gulf states, with sirens sounding in Bahrain.`, source: `Al Jazeera`, url: `https://www.aljazeera.com/` },
+          { text: `A shooting at a Latin culture festival in Toronto killed at least two people and injured four.`, source: `NPR`, url: `https://www.npr.org/sections/world/` },
+          { text: `Julian Alvarez's 112th-minute strike sent Argentina past Switzerland into the World Cup semifinals; Spain and France meet Tuesday.`, source: `NPR`, url: `https://www.npr.org/sections/news` },
+          { text: `New suspected Ebola cases were reported in previously unaffected parts of Congo, signaling spread beyond the Ituri epicenter.`, source: `Al Jazeera`, url: `https://www.aljazeera.com/` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `Meteorologists call Switzerland's drought "highly exceptional" after a dry spring, with the heatwave set to continue until at least Thursday.`, source: `The Local`, url: `https://www.thelocal.ch/` },
+          { text: `JD Vance, speaking from Switzerland, said the US and Iran laid "a very good foundation" for a deal.`, source: `CBS News`, url: `https://www.cbsnews.com/tag/switzerland/` },
+          { text: `Zurich police arrested three people after a paint attack on the Turkish consulate, and a prosecutor investigating the fatal Crans-Montana fire resigned.`, source: `Swissinfo`, url: `https://www.swissinfo.ch/eng/latest-news/` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `Greece's summer sales start today and run until August 31, with retailers expecting cautious spending.`, source: `Greek City Times`, url: `https://greekcitytimes.com/` },
+          { text: `Temperatures climb to 39°C while strengthening meltemi winds raise wildfire danger across the country.`, source: `Keep Talking Greece`, url: `https://www.keeptalkinggreece.com/` },
+          { text: `A rockfall at Myrtos Beach on Kefalonia sent debris tumbling near tourists — no injuries reported.`, source: `Greek Reporter`, url: `https://greekreporter.com/greek-news/` },
+          { text: `The Hellenic Air Force is sending an F-4E Phantom II to the Paris Bastille Day flypast on July 14.`, source: `Greek City Times`, url: `https://www.greekcitytimes.com/greek-news/` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Sunday, July 12, 2026`,
     iso: `2026-07-12`,
     greeting: `Good morning — here's your briefing for Sunday, July 12, 2026. One all-day item today: Weekly Accounting work. The same four to-dos remain open in Tasklist A and B, and no follow-ups are due or overdue. In the news: Apple accuses OpenAI of stealing trade secrets, bitcoin ETFs snap a 10-day outflow streak, Iran strikes Gulf states after a US attack, Argentina end Switzerland's World Cup run in extra time, and a new Swiss heatwave sells out air conditioners.`,
