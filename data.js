@@ -23,6 +23,97 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Tuesday, July 14, 2026`,
+    iso: `2026-07-14`,
+    greeting: `Good morning — here's your briefing for Tuesday, July 14, 2026. One event today: a private 10:00–10:30 appointment on your Fiji Solutions calendar. The same four to-dos remain open in Tasklists A and B, and no follow-ups are due or overdue. In the news: Five Eyes agencies issue joint guidance on agentic AI security, US VC funding hits $412.7B in H1 with AI taking 86%, bitcoin slips to ~$62.4K on Middle East tensions, Greek civil servants stage a nationwide work stoppage today, and Cassis attends the former Qatari emir's funeral.`,
+    calendar: {
+      allDay: [],
+      events: [
+        { time: `10:00–10:30`, title: `Busy (private appointment)`, calendar: `charis@fijisolutions.net` }
+      ],
+      note: `One timed event today (details private on this calendar).`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Get the files to get stamps or whatever`] },
+        { name: `Tasklist B`, tasks: [`Peak Code Consulting website copy home page should not be slop`, `Fiji Solutions website copy home page should not be slop`] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: []
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `Cybersecurity agencies of the US, UK, Canada, Australia and New Zealand jointly released guidance on "Careful Adoption of Agentic AI Services," targeting security risks in agentic AI systems.`, source: `Crescendo AI`, url: `https://www.crescendo.ai/news/latest-ai-news-and-updates` },
+          { text: `Innovative Eyewear rolled out Claude AI across its Lucyd smart glasses — users can switch between Claude and ChatGPT mid-conversation without losing context.`, source: `Crescendo AI`, url: `https://www.crescendo.ai/news/latest-ai-news-and-updates` },
+          { text: `UPenn researchers introduced "Mollifier Layers," a more stable technique for solving inverse PDEs with applications in genomics, materials science and climate modeling.`, source: `ScienceDaily`, url: `https://www.sciencedaily.com/news/computers_math/artificial_intelligence/` }
+        ]
+      },
+      {
+        group: `Tech & Startups`,
+        section: `global`,
+        items: [
+          { text: `US VC funding reached $412.7B in H1 2026 — up 30% on all of 2025 — with AI startups taking 86% ($355.9B) and seven $1B+ rounds in Q2 alone.`, source: `Tech Startups`, url: `https://techstartups.com/2026/07/13/top-tech-news-today-july-13-2026-apple-anthropic-blackstone-meta-openai-samsung-sharefile-more/` },
+          { text: `Meta plans to begin manufacturing its custom data-center AI chip "Iris" in September, part of a roadmap to scale compute to 14 gigawatts by 2027.`, source: `Tech Startups`, url: `https://techstartups.com/2026/07/13/top-tech-news-today-july-13-2026-apple-anthropic-blackstone-meta-openai-samsung-sharefile-more/` },
+          { text: `Capital keeps concentrating in infrastructure-first startups (ElevenLabs, MoonPay, Verily) embedded in speech, payments and health workflows.`, source: `Tech Startups`, url: `https://techstartups.com/2026/` }
+        ]
+      },
+      {
+        group: `Software & Dev Tools`,
+        section: `global`,
+        items: [
+          { text: `Microsoft's Agent 365 enters preview this month — wrapping AI agents in Entra identity, Intune management, Defender protection and Purview governance; hosted agents in Foundry Agent Service reach GA.`, source: `Microsoft Build 2026 news`, url: `https://github.com/microsoft/Build26-news/blob/main/news.md` },
+          { text: `Defender AI model scanning is in preview: it inspects model artifacts across registries, workspaces and CI/CD pipelines to block compromised models pre-deployment.`, source: `Microsoft Build 2026 news`, url: `https://github.com/microsoft/Build26-news/blob/main/news.md` },
+          { text: `SnapLogic shipped MCP Builder to simplify building MCP servers, and InsightFinder launched ARI Mobile, an action-capable ops AI agent for engineers on the go.`, source: `SD Times`, url: `https://sdtimes.com/` }
+        ]
+      },
+      {
+        group: `Crypto`,
+        section: `global`,
+        items: [
+          { text: `Bitcoin slid ~1.4% to about $62,400 and ether to ~$1,782 as renewed US–Iran hostilities triggered profit-taking; roughly $253M in leveraged positions were liquidated.`, source: `Investing News`, url: `https://investingnews.com/cryptocurrency-market-recap/` },
+          { text: `Analysts see the panic-selling phase ending: sellers' profit margins have evaporated while spot ETF inflows resumed despite the Gulf escalation.`, source: `CoinDesk`, url: `https://www.coindesk.com/` },
+          { text: `Bolivia is weighing adding Tether's USDT to its national payments system as crypto volumes hit $430M in the year since restrictions were lifted.`, source: `CoinDesk`, url: `https://www.coindesk.com/` },
+          { text: `Robinhood Chain has attracted $135M in value and 800,000 addresses since its July 1 launch.`, source: `CoinDesk`, url: `https://www.coindesk.com/` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `Iran launched waves of attacks across the Gulf in response to US airstrikes and claimed sole control of the Strait of Hormuz, putting Gulf states on the frontline of the escalation.`, source: `Euronews`, url: `https://www.euronews.com/news/international` },
+          { text: `Russian overnight strikes on Kyiv injured at least 10 people, including a child; Trump said the US will share Patriot defense technology with Ukraine.`, source: `Euronews`, url: `https://www.euronews.com/news/international` },
+          { text: `World Cup semifinals: Argentina face England on Wednesday in Atlanta — their sixth World Cup meeting — while France take on Spain in the other semi.`, source: `NBC News`, url: `https://www.nbcnews.com/world` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `Federal Councillor Ignazio Cassis is in Qatar (July 13–14) for the funeral of former emir Sheikh Hamad bin Khalifa Al-Thani.`, source: `admin.ch`, url: `https://www.admin.ch/en/newnsb` },
+          { text: `MeteoSwiss director Stefan Uhlenbrook warned budget cuts could compromise forecasts, putting weather-radar replacements at risk.`, source: `Swissinfo`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `4,474 former Swiss bankers were registered unemployed in June (+24% in 12 months), while house prices in Romandie rose 6.3% — twice the national pace.`, source: `Swissinfo`, url: `https://www.swissinfo.ch/eng/latest-news/` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `Civil servants stage a nationwide work stoppage today from 11:00 against the constitutional revision, with a 12:00 rally at Propilaia and a march to Parliament.`, source: `Keep Talking Greece`, url: `https://www.keeptalkinggreece.com/2026/07/03/greece-civil-servants-work-stoppage-july-14/` },
+          { text: `PM Mitsotakis unveiled fuel price cuts, a supermarket price freeze and major infrastructure deliveries in a push for an outright majority.`, source: `Greek Reporter`, url: `https://greekreporter.com/` },
+          { text: `Part of The Ellinikon Sports Park opens to the public on July 20, another milestone in redeveloping the former Athens airport site.`, source: `Greek City Times`, url: `https://greekcitytimes.com/` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Monday, July 13, 2026`,
     iso: `2026-07-13`,
     greeting: `Good morning — here's your briefing for Monday, July 13, 2026. One event today: the Weekly TRW Dev Meeting at 18:00. The same four to-dos remain open in Tasklists A and B, and no follow-ups are due or overdue. In the news: OpenAI ships GPT-5.6, bitcoin ETFs snap their outflow streak as BTC retests $64K, the US hits 140 targets in Iran, Switzerland's drought and heatwave deepen, and Greece's summer sales kick off today.`,
