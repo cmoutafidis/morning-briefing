@@ -23,6 +23,96 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Wednesday, July 15, 2026`,
+    iso: `2026-07-15`,
+    greeting: `Good morning — here's your briefing for Wednesday, July 15, 2026. On the calendar: the all-day reminder "Στρατός Πρόστιμο" and a private 10:00–10:30 appointment on your Fiji Solutions calendar. The same four to-dos remain open in Tasklists A and B, and no follow-ups are due or overdue. In the news: Trump abruptly cancels an AI executive-order signing, Meta cuts ~8,000 jobs in an AI restructuring, bitcoin ETFs snap a 10-day outflow streak with BTC near $62.5K, wildfire danger hits level 5 in Valais and Graubünden, and Greece probes a salmonella outbreak in Lamia.`,
+    calendar: {
+      allDay: [`Στρατός Πρόστιμο`],
+      events: [
+        { time: `10:00–10:30`, title: `Busy (private appointment)`, calendar: `charis@fijisolutions.net` }
+      ],
+      note: `One all-day reminder and one timed event today (details private on this calendar).`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Get the files to get stamps or whatever`] },
+        { name: `Tasklist B`, tasks: [`Peak Code Consulting website copy home page should not be slop`, `Fiji Solutions website copy home page should not be slop`] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: []
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `Trump abruptly canceled the Oval Office signing of a new AI executive order, arguing the text could undermine America's lead over China; the order grew out of banking-sector pressure over AI cybersecurity risks.`, source: `Crescendo AI`, url: `https://www.crescendo.ai/news/latest-ai-news-and-updates` },
+          { text: `Meta began laying off ~8,000 employees (about 10% of its workforce) in an AI-focused restructuring, with another 7,000 reassigned to AI teams.`, source: `Crescendo AI`, url: `https://www.crescendo.ai/news/latest-ai-news-and-updates` },
+          { text: `Cloudflare launched granular AI bot management — Search, Agent and Training crawlers can now be controlled separately, with Agent/Training bots blocked by default on ad-supported pages from September 15.`, source: `Crescendo AI`, url: `https://www.crescendo.ai/news/latest-ai-news-and-updates` }
+        ]
+      },
+      {
+        group: `Tech & Startups`,
+        section: `global`,
+        items: [
+          { text: `Bezos-backed General Intuition closed a $320M round at a $2.3B valuation, with Coatue, Eric Schmidt and researchers from MIT and Google DeepMind participating.`, source: `TechCrunch`, url: `https://techcrunch.com/` },
+          { text: `Almost 90 new unicorns have been minted so far in 2026 — most AI-related, but healthcare and even a few crypto companies made the list.`, source: `TechCrunch`, url: `https://techcrunch.com/2026/07/05/almost-40-new-unicorns-have-been-minted-so-far-this-year-here-they-are/` },
+          { text: `TwelveLabs raised a $100M Series B to expand its video-intelligence models and deepen its AWS partnership; Higharc took $95M to scale its AI platform for homebuilders.`, source: `Tech Funding News`, url: `https://techfundingnews.com/` }
+        ]
+      },
+      {
+        group: `Software & Dev Tools`,
+        section: `global`,
+        items: [
+          { text: `JetBrains unveiled AI for Teams and Organizations plus JetBrains Central — centralized visibility, governance, model/agent controls and cost attribution for engineering orgs.`, source: `InfoWorld`, url: `https://www.infoworld.com/article/4194091/jetbrains-to-roll-out-ai-capabilities-for-software-development-teams-and-organizations.html` },
+          { text: `Microsoft's hosted agents in Foundry Agent Service reach GA and Agent 365 enters preview this month, layering Entra, Intune, Defender and Purview onto agent management.`, source: `Microsoft Build 2026 news`, url: `https://github.com/microsoft/Build26-news/blob/main/news.md` },
+          { text: `Five Eyes cybersecurity agencies jointly published "Careful Adoption of Agentic AI Services," guidance on securing agentic AI in critical infrastructure.`, source: `Crescendo AI`, url: `https://www.crescendo.ai/news/latest-ai-news-and-updates` }
+        ]
+      },
+      {
+        group: `Crypto`,
+        section: `global`,
+        items: [
+          { text: `Bitcoin opened Tuesday at ~$62,260, down 2.3% day-over-day, keeping the market in its most fragile position since the post-FTX bear cycle.`, source: `Fortune`, url: `https://fortune.com/article/price-of-bitcoin-07-14-2026/` },
+          { text: `US spot bitcoin ETFs snapped a 10-day outflow streak, pulling in $221.7M — the largest daily haul in two months.`, source: `Investing News`, url: `https://investingnews.com/cryptocurrency-market-recap/` },
+          { text: `Ether trades near $1,737 and XRP at $1.09, both down ~2.9% over 24 hours.`, source: `Yahoo Finance`, url: `https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-tuesday-july-14-2026-123022806.html` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `The US said it will resume blockading maritime traffic to and from Iranian ports from July 14 after renewed hostilities over the Strait of Hormuz.`, source: `Al Jazeera`, url: `https://www.aljazeera.com/` },
+          { text: `More than 70 people were injured in a music-bar fire in Bangkok, 24 of them critically.`, source: `NBC News`, url: `https://www.nbcnews.com/world` },
+          { text: `Argentina beat Switzerland on a Julián Álvarez goal to reach the World Cup semifinals and now face England for a place in the final; US consumer inflation eased more than expected in June.`, source: `CNN`, url: `https://www.cnn.com/world` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `Wildfire hazard hits level 5 (the maximum) in parts of Valais — around Sion, Zermatt and Brig — and Graubünden as the heatwave continues.`, source: `The Local`, url: `https://www.thelocal.ch/20260714/today-in-switzerland-a-roundup-of-the-latest-news-on-tuesday-252` },
+          { text: `Switzerland and Britain concluded negotiations on an expanded free-trade agreement.`, source: `Swissinfo`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `Rents are climbing fastest in Nidwalden (+8.3%) and Graubünden (+6.7%); a federal audit found ~CHF 40M in pensions paid to people abroad who are not entitled to them.`, source: `The Local`, url: `https://www.thelocal.ch/` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `Health authorities are investigating a salmonella outbreak in Central Greece after about thirty people sought hospital treatment in Lamia.`, source: `Greek Reporter`, url: `https://greekreporter.com/greek-news/` },
+          { text: `Greeks buy from Chinese online platforms at the highest rate in the Eurozone, an ECB study finds, underscoring household budget pressure.`, source: `Greek City Times`, url: `https://greekcitytimes.com/` },
+          { text: `American Airlines' 13 new international routes for 2026 include a nonstop Dallas/Fort Worth–Athens service.`, source: `ProtoThema`, url: `https://en.protothema.gr/` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Tuesday, July 14, 2026`,
     iso: `2026-07-14`,
     greeting: `Good morning — here's your briefing for Tuesday, July 14, 2026. One event today: a private 10:00–10:30 appointment on your Fiji Solutions calendar. The same four to-dos remain open in Tasklists A and B, and no follow-ups are due or overdue. In the news: Five Eyes agencies issue joint guidance on agentic AI security, US VC funding hits $412.7B in H1 with AI taking 86%, bitcoin slips to ~$62.4K on Middle East tensions, Greek civil servants stage a nationwide work stoppage today, and Cassis attends the former Qatari emir's funeral.`,
