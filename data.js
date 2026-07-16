@@ -23,6 +23,98 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Thursday, July 16, 2026`,
+    iso: `2026-07-16`,
+    greeting: `Good morning — here's your briefing for Thursday, July 16, 2026. Travel day: flight LX 734 from Zurich to Amsterdam at 17:35, overlapping the 18:00 Weekly TRW Dev Meeting. The same four to-dos remain open in Tasklists A and B, and no follow-ups are due or overdue. In the news: Five Eyes fallout continues around agentic AI security, bitcoin reclaims $65K as ETF inflows return, the US hits Iran for a fourth straight night, UK PM Keir Starmer resigns, the Matterhorn is declared too dangerous to climb, and Greece and Cyprus team up on a combat drone.`,
+    calendar: {
+      allDay: [],
+      events: [
+        { time: `17:35–19:15`, title: `Flight: LX 734 from ZRH to AMS`, calendar: `charismoutafidis@gmail.com` },
+        { time: `18:00–19:00`, title: `Weekly TRW Dev Meeting`, calendar: `charismoutafidis@gmail.com` }
+      ],
+      note: `The dev meeting overlaps your flight — you'll likely be in the air for most of it.`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Get the files to get stamps or whatever`] },
+        { name: `Tasklist B`, tasks: [`Peak Code Consulting website copy home page should not be slop`, `Fiji Solutions website copy home page should not be slop`] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: []
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `UPenn engineers introduced "Mollifier Layers," embedding classical smoothing functions into neural networks to solve inverse PDEs with far greater stability and efficiency.`, source: `ScienceDaily`, url: `https://www.sciencedaily.com/news/computers_math/artificial_intelligence/` },
+          { text: `Innovative Eyewear rolled out a Claude AI integration across its Lucyd smart-glasses lineup — users can switch between Claude and ChatGPT mid-conversation.`, source: `Crescendo AI`, url: `https://www.crescendo.ai/news/latest-ai-news-and-updates` },
+          { text: `Korean researchers unveiled a hierarchical AI system that autonomously plans complex, long-horizon tasks.`, source: `TechXplore`, url: `https://techxplore.com/machine-learning-ai-news/` }
+        ]
+      },
+      {
+        group: `Tech & Startups`,
+        section: `global`,
+        items: [
+          { text: `Investor money is concentrating on startups that control real workflows in AI, fintech, healthtech, cybersecurity and deep tech — not hype-heavy consumer ideas.`, source: `Tech Startups`, url: `https://techstartups.com/` },
+          { text: `ElevenLabs keeps drawing attention as voice AI moves from novelty to production use in media, dubbing and developer APIs; MoonPay and Verily also shape the US startup conversation.`, source: `MEAN Blog`, url: `https://blog.mean.ceo/startups-united-states-news-july-2026/` },
+          { text: `Trend trackers flag Lila Sciences (+2400% search growth) and apilayer (+720%) among July's fastest-rising startups.`, source: `MEAN Blog`, url: `https://blog.mean.ceo/startups-united-states-news-july-2026/` }
+        ]
+      },
+      {
+        group: `Software & Dev Tools`,
+        section: `global`,
+        items: [
+          { text: `Anthropic hosted "Code with Claude 2026" in San Francisco, focused on Claude Code, the API platform, autonomy features and AI's impact on product architecture.`, source: `SD Times`, url: `https://sdtimes.com/` },
+          { text: `GitLab's 2026 AI Accountability Report finds an AI paradox: 78% of developers code faster, but delivery hasn't accelerated due to testing and review bottlenecks.`, source: `Developer Tech`, url: `https://www.developer-tech.com/` },
+          { text: `Google announced the Colab CLI, letting developers and AI agents drive remote Colab runtimes from a local terminal.`, source: `Developer Tech`, url: `https://www.developer-tech.com/` }
+        ]
+      },
+      {
+        group: `Crypto`,
+        section: `global`,
+        items: [
+          { text: `Bitcoin reclaimed $65K on softer inflation data; spot BTC ETFs took in $180M+ yesterday ($139M into IBIT), with $58M into iShares' Ethereum trust.`, source: `Motley Fool`, url: `https://www.fool.com/coverage/stock-market-today/2026/07/15/crypto-market-today-july-15-bitcoin-nears-usd65-000-as-crypto-rallies-on-softer-inflation-data/` },
+          { text: `A high-level White House meeting is planned to hash out the Clarity Act's contentious ethics section in the final weeks of Senate runway.`, source: `CoinDesk`, url: `https://www.coindesk.com/policy/2026/07/15/high-level-white-house-meeting-said-to-be-planned-to-hash-out-clarity-act-ethics-section` },
+          { text: `Japan reclassified cryptocurrencies as "financial assets," dramatically reducing crypto taxes.`, source: `Crypto News Roundup`, url: `https://sergeytereshkin.com/publications/cryptocurrency-news-bitcoin-holds-ground-etf-flows-return-wall-street-tokenization-16-july-2026` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `The US struck Iran for a fourth consecutive night, hitting dozens of military targets near the Strait of Hormuz; Iran retaliated against US military infrastructure in Kuwait, Bahrain and Jordan.`, source: `CNN`, url: `https://www.cnn.com/2026/07/15/world/live-news/iran-war-trump` },
+          { text: `UK Prime Minister Keir Starmer resigns.`, source: `Democracy Now!`, url: `https://www.democracynow.org/2026/7/15/headlines` },
+          { text: `China's GDP grew 4.7% year-over-year in the first half of 2026.`, source: `Wind Info`, url: `https://x.com/WindInfoUS/status/2077539531210063878` },
+          { text: `Argentina came from behind to beat England 2-1 — Lautaro Martínez heading in a stoppage-time winner from Messi's cross — and face Spain in the World Cup final.`, source: `Al Jazeera`, url: `https://www.aljazeera.com/` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `The Swiss Mountain Guides Association says the Matterhorn is currently not safe to climb — heatwave-driven rockfall, black ice and thawing permafrost; two mountaineers died descending a ridge.`, source: `The Local`, url: `https://www.thelocal.ch/20260716/today-in-switzerland-a-roundup-of-the-latest-news-on-thursday-246` },
+          { text: `A Sotomo survey finds 80% of Swiss look to the future with confidence — 82% in German-speaking Switzerland vs 73% in Romandie.`, source: `The Local`, url: `https://www.thelocal.ch/20260716/today-in-switzerland-a-roundup-of-the-latest-news-on-thursday-246` },
+          { text: `Switzerland faces one of its most severe rainfall deficits since records began in 1864; several cantons have introduced water-use restrictions.`, source: `Swissinfo`, url: `https://www.swissinfo.ch/eng/latest-news/` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `Greece and Cyprus are advancing a jointly developed combat drone under the EU's SAFE defense framework — one of their most ambitious defense-industrial collaborations yet.`, source: `Greek Reporter`, url: `https://greekreporter.com/2026/07/16/greece-cyprus-joint-combat-drone-program/` },
+          { text: `Greece beat its fiscal target with a €4.48B primary surplus in H1 2026 — though most of the overperformance stems from delayed government spending.`, source: `Greek Reporter`, url: `https://greekreporter.com/2026/07/15/greece-posts-huge-primary-budget-surplus-first-half-2026/` },
+          { text: `Greece's heatwaves are now five times more frequent and seven times longer than historical norms, with 40°C+ surges expected through July and August.`, source: `To Vima`, url: `https://www.tovima.com/climate/greeces-heatwaves-5-times-more-frequent-7-times-longer/` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Wednesday, July 15, 2026`,
     iso: `2026-07-15`,
     greeting: `Good morning — here's your briefing for Wednesday, July 15, 2026. On the calendar: the all-day reminder "Στρατός Πρόστιμο" and a private 10:00–10:30 appointment on your Fiji Solutions calendar. The same four to-dos remain open in Tasklists A and B, and no follow-ups are due or overdue. In the news: Trump abruptly cancels an AI executive-order signing, Meta cuts ~8,000 jobs in an AI restructuring, bitcoin ETFs snap a 10-day outflow streak with BTC near $62.5K, wildfire danger hits level 5 in Valais and Graubünden, and Greece probes a salmonella outbreak in Lamia.`,
