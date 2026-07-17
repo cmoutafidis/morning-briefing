@@ -23,6 +23,93 @@
  */
 window.BRIEFINGS = [
   {
+    date: `Friday, July 17, 2026`,
+    iso: `2026-07-17`,
+    greeting: `Good morning — here's your briefing for Friday, July 17, 2026. A quiet calendar: just the all-day item "The Vault", no timed events. The same four to-dos remain open in Tasklists A and B, and no follow-ups are due or overdue. In the news: Moonshot AI ships the 2.8T-parameter Kimi K3, Apple Intelligence clears China powered by Alibaba's Qwen, TSMC posts 34% revenue growth on AI demand, bitcoin holds near $64.7K ahead of today's Clarity Act hearing, WHO warns Ebola is spreading in DR Congo faster than any previous outbreak, extreme heat strains Switzerland, and SYRIZA unravels as Tsipras builds ELAS.`,
+    calendar: {
+      allDay: [`The Vault`],
+      events: [],
+      note: `No timed events today.`
+    },
+    checklist: {
+      source: `The Real World — Daily Checklist`,
+      url: `https://app.jointherealworld.com/checklist`,
+      groups: [
+        { name: `Tasklist A`, tasks: [`Check driving licence if it is valid`, `Get the files to get stamps or whatever`] },
+        { name: `Tasklist B`, tasks: [`Peak Code Consulting website copy home page should not be slop`, `Fiji Solutions website copy home page should not be slop`] }
+      ]
+    },
+    followups: {
+      source: `Fiji Solutions — Lead Outreach`,
+      url: `https://outreach.fijisolutions.net/`,
+      leads: []
+    },
+    news: [
+      {
+        group: `AI & ML`,
+        section: `global`,
+        items: [
+          { text: `Moonshot AI released Kimi K3, a 2.8-trillion-parameter open MoE model built on Kimi Delta Attention, activating 16 of 896 experts.`, source: `LLM Stats`, url: `https://llm-stats.com/ai-news` },
+          { text: `Apple Intelligence was registered with China's cyberspace regulator, clearing the way for a mainland launch powered by Alibaba's Qwen models.`, source: `Build Fast with AI`, url: `https://www.buildfastwithai.com/blogs/ai-news-today-july-16-2026` },
+          { text: `The UN is pushing for global AI governance amid expert warnings of "catastrophic harm" from ungoverned frontier systems.`, source: `UN News`, url: `https://news.un.org/en/story/2026/07/1167862` }
+        ]
+      },
+      {
+        group: `Tech & Startups`,
+        section: `global`,
+        items: [
+          { text: `TSMC's quarterly revenue climbed 34% to $40.2B on AI data-center demand; it raised its 2026 capex forecast to $60–64B.`, source: `Tech Startups`, url: `https://techstartups.com/2026/07/16/top-tech-news-today-july-15-2026/` },
+          { text: `Legal-AI startup Norm Ai raised a $120M Series C at a $1.2B valuation; LeapXpert landed $180M led by Riverwood Capital.`, source: `Tech Startups`, url: `https://techstartups.com/2026/07/15/venture-capital-startup-funding-roundup-july-15-2026-accel-crv-greylock-goldman-sachs-khosla-ventures-m13-and-nava-ventures/` },
+          { text: `Cybersecurity M&A hit 219 deals in H1 2026, with buyers increasingly chasing companies that secure AI models and autonomous agents.`, source: `Tech Startups`, url: `https://techstartups.com/` }
+        ]
+      },
+      {
+        group: `Software & Dev Tools`,
+        section: `global`,
+        items: [
+          { text: `Windsurf introduced Arena Mode, letting developers compare LLMs side by side on real coding tasks inside the IDE.`, source: `SD Times`, url: `https://sdtimes.com/` },
+          { text: `Vercel open-sourced bash-tool, a Bash execution engine that lets AI agents run filesystem commands to gather prompt context.`, source: `Developer Tech`, url: `https://www.developer-tech.com/` },
+          { text: `Microsoft's Agent 365 — integrating Entra, Intune, Defender and Purview — enters preview this month.`, source: `Microsoft Build 26 News`, url: `https://github.com/microsoft/Build26-news/blob/main/news.md` }
+        ]
+      },
+      {
+        group: `Crypto`,
+        section: `global`,
+        items: [
+          { text: `Bitcoin holds near $64.7K as cooling US inflation lifts crypto, though contagion from a 5% KOSPI drop capped gains overnight.`, source: `Yahoo Finance`, url: `https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-thursday-july-16-2026-prices-rise-ethereum-becomes-increasingly-compelling-124218108.html` },
+          { text: `The House Financial Services Committee holds its Clarity Act hearing today — seen as one of the last chances to move crypto legislation before summer recess.`, source: `CryptoNews`, url: `https://cryptonews.com/news/crypto-news-july-16-all-clarity-act-hearing-bitcoin-ethereum-price/` },
+          { text: `Ethereum reclaimed ~$1,900, liquidating $30M+ in shorts; spot ETH ETFs snapped an eight-week outflow streak with $84M of inflows.`, source: `Fortune`, url: `https://fortune.com/article/price-of-ethereum-07-15-2026/` }
+        ]
+      },
+      {
+        group: `World`,
+        section: `global`,
+        items: [
+          { text: `WHO warns Ebola is spreading through DR Congo faster than in any previous outbreak, with more than 2,000 confirmed cases.`, source: `France 24`, url: `https://www.france24.com/en/africa/20260716-ebola-spreading-faster-than-any-previous-outbreak-dr-congo-who-warns` },
+          { text: `Trump limited the length of US visas for students, exchange visitors and journalists.`, source: `Al Jazeera`, url: `https://www.aljazeera.com/news/2026/7/16/trump-limits-length-of-visas-for-students-exchange-visitors-journalists` },
+          { text: `Smoke from Canadian and Minnesota wildfires is blanketing the US Midwest and Northeast, putting millions under air-quality alerts.`, source: `CBS News`, url: `https://www.cbsnews.com/news/wildfires-smoke-millions-exposed-midwest-northeast-us/` }
+        ]
+      },
+      {
+        group: `Switzerland`,
+        section: `local`,
+        items: [
+          { text: `Extreme heat is back: air-conditioning units and fans are selling out nationwide, and Geneva's hospitals and prisons are straining under the temperatures.`, source: `Swissinfo`, url: `https://www.swissinfo.ch/eng/latest-news/` },
+          { text: `Switzerland and the UK concluded negotiations on an expanded free trade agreement.`, source: `Swissinfo`, url: `https://www.swissinfo.ch/eng/swiss-diaspora/switzerland-today/91725284` },
+          { text: `The federal supreme court dismissed appeals by Philip Morris and the tobacco trade association against the disposable e-cigarette ban.`, source: `Swissinfo`, url: `https://www.swissinfo.ch/eng/swiss-diaspora/switzerland-today/91744665` }
+        ]
+      },
+      {
+        group: `Greece`,
+        section: `local`,
+        items: [
+          { text: `SYRIZA is unravelling: leader Sokratis Famellos resigned amid a wave of departures, while Tsipras consolidates the left behind his new ELAS alliance.`, source: `Greek Reporter`, url: `https://greekreporter.com/2026/07/17/greek-left-realigns-syriza-unravels-tsipras-builds-elas/` },
+          { text: `US Secretary of State Rubio condemned the Thessaloniki arson attack that killed the 72-year-old mother of a New Democracy candidate as an assault on democracy.`, source: `Greek Reporter`, url: `https://greekreporter.com/2026/07/17/marco-rubio-vagia-nestora-political-violence-greece/` }
+        ]
+      }
+    ]
+  },
+  {
     date: `Thursday, July 16, 2026`,
     iso: `2026-07-16`,
     greeting: `Good morning — here's your briefing for Thursday, July 16, 2026. Travel day: flight LX 734 from Zurich to Amsterdam at 17:35, overlapping the 18:00 Weekly TRW Dev Meeting. The same four to-dos remain open in Tasklists A and B, and no follow-ups are due or overdue. In the news: Five Eyes fallout continues around agentic AI security, bitcoin reclaims $65K as ETF inflows return, the US hits Iran for a fourth straight night, UK PM Keir Starmer resigns, the Matterhorn is declared too dangerous to climb, and Greece and Cyprus team up on a combat drone.`,
